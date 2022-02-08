@@ -16,7 +16,7 @@ evaluate_criteria <- function(df) {
                                                             TRUE ~ 0)) %>%
     dplyr::mutate(raw_exceedance_cmc = case_when(result > cmc & detection != "nd" ~ 1,
                                                             TRUE ~ 0)) %>%
-    dplyr::mutate(raw_exceedance_d = case_when(result > d & detection != "d" ~ 1,
+    dplyr::mutate(raw_exceedance_d = case_when(result > d & detection != "nd" ~ 1,
                                                TRUE ~ 0))
 
 
