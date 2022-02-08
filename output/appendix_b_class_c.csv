@@ -1,601 +1,601 @@
-"","site_summary_segment","group_lower","2020_3030d_listing_category","impaired_use_category","number_of_samples_1990_to_2021","number_of_samples_2016_to_2021","most_recent_sample","number_of_detects","most_recent_detect","number_of_samples_exceeding_class_c","most_recent_class_c_exceedance","number_of_samples_since_last_class_c_exceedance","has_there_been_multi_class_c_exceedance_in_3yr","when_was_last_period_with_multi_class_c_exceedance"
-"1","Anacostia Lower","arsenic","","",181,43,2021,103,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"2","Anacostia Upper","arsenic","","",182,52,2021,107,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"3","Battery Kemble Creek","arsenic","","",42,NA,2013,15,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"4","Broad Branch","arsenic","","",37,13,2021,8,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"5","C&O Canal","arsenic","","",69,NA,2012,19,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"6","Dalecarlia Tributary","arsenic","","",39,NA,2012,13,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"7","Dumbarton Oaks Tributary","arsenic","","",37,13,2021,7,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"8","Fenwick Branch","arsenic","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"9","Fort Chaplin Tributary","arsenic","","",42,3,2019,13,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"10","Fort Davis Tributary","arsenic","","",45,3,2019,19,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"11","Fort Dupont Tributary","arsenic","","",46,16,2021,16,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"12","Fort Stanton Tributary","arsenic","","",55,16,2021,22,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"13","Foundry Branch","arsenic","","",9,NA,2013,8,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"14","Hickey Run","arsenic","","",44,1,2017,20,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"15","Kingman Lake","arsenic","","",89,15,2019,44,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"16","Klingle Valley Branch","arsenic","","",23,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"17","Lower Beaverdam Creek","arsenic","","",2,2,2017,1,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"18","Luzon Branch","arsenic","","",23,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"19","Mataponi Creek","arsenic","","",13,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"20","Melvin Hazen Valley Branch","arsenic","","",38,13,2021,6,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"21","Nash Run","arsenic","","",31,3,2019,5,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"22","Normanstone Creek","arsenic","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"23","Oxon Run","arsenic","","",49,13,2021,18,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"24","Patuxent River","arsenic","","",13,13,2021,2,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"25","Pinehurst Branch","arsenic","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"26","Piney Branch","arsenic","","",25,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"27","Pope Branch","arsenic","","",24,1,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"28","Portal Branch","arsenic","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"29","Potomac Lower","arsenic","","",164,13,2021,73,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"30","Potomac Middle","arsenic","","",54,13,2021,25,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"31","Potomac Upper","arsenic","","",91,13,2021,41,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"32","Rock Creek Lower","arsenic","","",58,13,2021,23,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"33","Rock Creek Upper","arsenic","","",68,21,2021,26,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"34","Soapstone Creek","arsenic","","",25,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"35","Texas Avenue Tributary","arsenic","","",40,3,2019,18,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"36","Tidal Basin","arsenic","","",48,NA,2012,15,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"37","Washington Ship Channel","arsenic","","",57,12,2016,35,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"38","Watts Banch","arsenic","","",3,3,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"39","Watts Branch","arsenic","","",117,NA,2012,44,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"40","Watts Branch - Upper","arsenic","","",13,13,2021,9,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"41","Anacostia Lower","chlordane","","",27,19,2021,7,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"42","Anacostia Upper","chlordane","","",84,73,2021,60,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"43","Battery Kemble Creek","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"44","Broad Branch","chlordane","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"45","C&O Canal","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"46","Dalecarlia Tributary","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"47","Dumbarton Oaks Tributary","chlordane","","",14,13,2021,2,"2021","2 (CCC), 0 (CMC)","2021 (CCC) NA (CMC)","4 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"48","Fenwick Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"49","Fort Chaplin Tributary","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"50","Fort Davis Tributary","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"51","Fort Dupont Tributary","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"52","Fort Stanton Tributary","chlordane","","",16,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"53","Foundry Branch","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"54","Hickey Run","chlordane","","",5,2,2019,2,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"55","Kingman Lake","chlordane","","",8,3,2019,4,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"56","Klingle Valley Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"57","Lower Beaverdam Creek","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"58","Luzon Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"59","Mataponi Creek","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"60","Melvin Hazen Valley Branch","chlordane","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"61","Nash Run","chlordane","","",6,3,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"62","Normanstone Creek","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"63","Oxon Run","chlordane","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"64","Patuxent River","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"65","Pinehurst Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"66","Piney Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"67","Pope Branch","chlordane","","",6,3,2019,4,"2013","1 (CCC), 0 (CMC)","2013 (CCC) NA (CMC)","4 (CCC), NA (CMC)",NA,NA
-"68","Portal Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"69","Potomac Lower","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"70","Potomac Middle","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"71","Potomac Upper","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"72","Rock Creek Lower","chlordane","","",13,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"73","Rock Creek Upper","chlordane","","",21,21,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"74","Soapstone Creek","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"75","Texas Avenue Tributary","chlordane","","",6,3,2019,4,"2013","1 (CCC), 0 (CMC)","2013 (CCC) NA (CMC)","4 (CCC), NA (CMC)",NA,NA
-"76","Tidal Basin","chlordane","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"77","Washington Ship Channel","chlordane","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"78","Watts Banch","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"79","Watts Branch","chlordane","","",6,3,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"80","Watts Branch - Upper","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"81","Anacostia Lower","copper","","",175,67,2021,138,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"82","Anacostia Upper","copper","","",189,76,2021,153,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"83","Battery Kemble Creek","copper","","",27,NA,2013,17,"2013","1 (CCC), 1 (CMC)","2001 (CCC) 2001 (CMC)","6 (CCC), 6 (CMC)",NA,NA
-"84","Broad Branch","copper","","",23,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"85","C&O Canal","copper","","",46,NA,2002,19,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"86","Dalecarlia Tributary","copper","","",24,NA,2002,14,"2001","1 (CCC), 1 (CMC)","2001 (CCC) 2001 (CMC)","5 (CCC), 5 (CMC)",NA,NA
-"87","Dumbarton Oaks Tributary","copper","","",24,13,2021,10,"2021","1 (CCC), 1 (CMC)","2020 (CCC) 2020 (CMC)","10 (CCC), 10 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"88","Fenwick Branch","copper","","",11,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"89","Fort Chaplin Tributary","copper","","",25,3,2019,14,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"90","Fort Davis Tributary","copper","","",29,3,2019,19,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"91","Fort Dupont Tributary","copper","","",30,16,2021,18,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"92","Fort Stanton Tributary","copper","","",42,16,2021,29,"2021","1 (CCC), 1 (CMC)","1995 (CCC) 1995 (CMC)","32 (CCC), 32 (CMC)",NA,NA
-"93","Foundry Branch","copper","","",9,NA,2013,9,"2013","4 (CCC), 4 (CMC)","1995 (CCC) 1995 (CMC)","1 (CCC), 1 (CMC)",NA,NA
-"94","Hickey Run","copper","","",176,102,2021,160,"2021","4 (CCC), 3 (CMC)","2018 (CCC) 2002 (CMC)","71 (CCC), 152 (CMC)","Yes (CCC), No (CMC)","2017 - 2020 (CCC), Never (CMC)"
-"95","Kingman Lake","copper","","",80,27,2019,65,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"96","Klingle Valley Branch","copper","","",10,NA,2002,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"97","Lower Beaverdam Creek","copper","","",2,2,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"98","Luzon Branch","copper","","",9,NA,2002,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"99","Mataponi Creek","copper","","",13,13,2021,5,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"100","Melvin Hazen Valley Branch","copper","","",23,13,2021,9,"2021","1 (CCC), 1 (CMC)","2020 (CCC) 2020 (CMC)","9 (CCC), 9 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"101","Nash Run","copper","","",16,3,2019,6,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"102","Normanstone Creek","copper","","",10,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"103","Oxon Run","copper","","",35,13,2021,26,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"104","Patuxent River","copper","","",13,13,2021,4,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"105","Pinehurst Branch","copper","","",10,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"106","Piney Branch","copper","","",11,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"107","Pope Branch","copper","","",10,1,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"108","Portal Branch","copper","","",10,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"109","Potomac Lower","copper","","",116,13,2021,75,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"110","Potomac Middle","copper","","",40,13,2021,27,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"111","Potomac Upper","copper","","",65,13,2021,41,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"112","Rock Creek Lower","copper","","",43,13,2021,25,"2021","3 (CCC), 2 (CMC)","2020 (CCC) 2020 (CMC)","6 (CCC), 6 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
-"113","Rock Creek Upper","copper","","",210,128,2021,185,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"114","Soapstone Creek","copper","","",11,NA,2002,1,"2000","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"115","Texas Avenue Tributary","copper","","",28,3,2019,19,"2014","1 (CCC), 1 (CMC)","1994 (CCC) 1994 (CMC)","24 (CCC), 24 (CMC)",NA,NA
-"116","Tidal Basin","copper","","",33,NA,2002,15,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"117","Washington Ship Channel","copper","","",59,24,2016,49,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"118","Watts Banch","copper","","",3,3,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"119","Watts Branch","copper","","",217,100,2021,183,"2021","1 (CCC), 0 (CMC)","2016 (CCC) NA (CMC)","106 (CCC), NA (CMC)",NA,NA
-"120","Watts Branch - Upper","copper","","",13,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"121","Anacostia Lower","ddd","","",59,43,2021,5,"2018","2 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","15 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"122","Anacostia Upper","ddd","","",116,97,2021,49,"2018","4 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","35 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"123","Battery Kemble Creek","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"124","Broad Branch","ddd","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"125","C&O Canal","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"126","Dalecarlia Tributary","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"127","Dumbarton Oaks Tributary","ddd","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"128","Fenwick Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"129","Fort Chaplin Tributary","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"130","Fort Davis Tributary","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"131","Fort Dupont Tributary","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"132","Fort Stanton Tributary","ddd","","",16,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","11 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"133","Foundry Branch","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"134","Hickey Run","ddd","","",5,2,2019,2,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"135","Kingman Lake","ddd","","",24,15,2019,4,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"136","Klingle Valley Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"137","Lower Beaverdam Creek","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"138","Luzon Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"139","Mataponi Creek","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"140","Melvin Hazen Valley Branch","ddd","","",14,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"141","Nash Run","ddd","","",6,3,2019,3,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"142","Normanstone Creek","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"143","Oxon Run","ddd","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"144","Patuxent River","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"145","Pinehurst Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"146","Piney Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"147","Pope Branch","ddd","","",6,3,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"148","Portal Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"149","Potomac Lower","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"150","Potomac Middle","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"151","Potomac Upper","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"152","Rock Creek Lower","ddd","","",13,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"153","Rock Creek Upper","ddd","","",21,21,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"154","Soapstone Creek","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"155","Texas Avenue Tributary","ddd","","",6,3,2019,5,"2018","5 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"156","Tidal Basin","ddd","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"157","Washington Ship Channel","ddd","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"158","Watts Banch","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"159","Watts Branch","ddd","","",6,3,2019,3,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"160","Watts Branch - Upper","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"161","Anacostia Lower","dde","","",59,43,2021,6,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"162","Anacostia Upper","dde","","",116,97,2021,60,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","61 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"163","Battery Kemble Creek","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"164","Broad Branch","dde","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"165","C&O Canal","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"166","Dalecarlia Tributary","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"167","Dumbarton Oaks Tributary","dde","","",14,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","10 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"168","Fenwick Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"169","Fort Chaplin Tributary","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"170","Fort Davis Tributary","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"171","Fort Dupont Tributary","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"172","Fort Stanton Tributary","dde","","",16,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"173","Foundry Branch","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"174","Hickey Run","dde","","",5,2,2019,3,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"175","Kingman Lake","dde","","",24,15,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"176","Klingle Valley Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"177","Lower Beaverdam Creek","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"178","Luzon Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"179","Mataponi Creek","dde","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"180","Melvin Hazen Valley Branch","dde","","",14,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"181","Nash Run","dde","","",6,3,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"182","Normanstone Creek","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"183","Oxon Run","dde","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"184","Patuxent River","dde","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"185","Pinehurst Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"186","Piney Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"187","Pope Branch","dde","","",6,3,2019,4,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"188","Portal Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"189","Potomac Lower","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"190","Potomac Middle","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"191","Potomac Upper","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"192","Rock Creek Lower","dde","","",13,13,2021,2,"2020","2 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"193","Rock Creek Upper","dde","","",38,21,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"194","Soapstone Creek","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"195","Texas Avenue Tributary","dde","","",6,3,2019,4,"2014","1 (CCC), 0 (CMC)","2014 (CCC) NA (CMC)","3 (CCC), NA (CMC)",NA,NA
-"196","Tidal Basin","dde","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"197","Washington Ship Channel","dde","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"198","Watts Banch","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"199","Watts Branch","dde","","",6,3,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"200","Watts Branch - Upper","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"201","Anacostia Lower","ddt","","",59,43,2021,11,"2018","3 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","15 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"202","Anacostia Upper","ddt","","",116,97,2021,68,"2018","9 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","35 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"203","Battery Kemble Creek","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"204","Broad Branch","ddt","","",14,13,2021,2,"2021","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"205","C&O Canal","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"206","Dalecarlia Tributary","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"207","Dumbarton Oaks Tributary","ddt","","",14,13,2021,3,"2020","2 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"208","Fenwick Branch","ddt","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"209","Fort Chaplin Tributary","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"210","Fort Davis Tributary","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"211","Fort Dupont Tributary","ddt","","",13,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"212","Fort Stanton Tributary","ddt","","",16,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"213","Foundry Branch","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"214","Hickey Run","ddt","","",5,2,2019,2,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"215","Kingman Lake","ddt","","",24,15,2019,6,"2018","3 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"216","Klingle Valley Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"217","Lower Beaverdam Creek","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"218","Luzon Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"219","Mataponi Creek","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"220","Melvin Hazen Valley Branch","ddt","","",14,13,2021,2,"2020","2 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","10 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"221","Nash Run","ddt","","",6,3,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"222","Normanstone Creek","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"223","Oxon Run","ddt","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"224","Patuxent River","ddt","","",13,13,2021,3,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"225","Pinehurst Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"226","Piney Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"227","Pope Branch","ddt","","",6,3,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"228","Portal Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"229","Potomac Lower","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"230","Potomac Middle","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"231","Potomac Upper","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"232","Rock Creek Lower","ddt","","",13,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"233","Rock Creek Upper","ddt","","",21,21,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"234","Soapstone Creek","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"235","Texas Avenue Tributary","ddt","","",6,3,2019,4,"2014","1 (CCC), 0 (CMC)","2014 (CCC) NA (CMC)","3 (CCC), NA (CMC)",NA,NA
-"236","Tidal Basin","ddt","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"237","Washington Ship Channel","ddt","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"238","Watts Banch","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"239","Watts Branch","ddt","","",6,3,2019,3,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"240","Watts Branch - Upper","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"241","Anacostia Lower","dieldrin","","",59,43,2021,7,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"242","Anacostia Upper","dieldrin","","",116,97,2021,54,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"243","Battery Kemble Creek","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"244","Broad Branch","dieldrin","","",14,13,2021,7,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"245","C&O Canal","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"246","Dalecarlia Tributary","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"247","Dumbarton Oaks Tributary","dieldrin","","",14,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"248","Fenwick Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"249","Fort Chaplin Tributary","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"250","Fort Davis Tributary","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"251","Fort Dupont Tributary","dieldrin","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"252","Fort Stanton Tributary","dieldrin","","",16,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"253","Foundry Branch","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"254","Hickey Run","dieldrin","","",5,2,2019,2,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"255","Kingman Lake","dieldrin","","",24,15,2019,3,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"256","Klingle Valley Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"257","Lower Beaverdam Creek","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"258","Luzon Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"259","Mataponi Creek","dieldrin","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"260","Melvin Hazen Valley Branch","dieldrin","","",14,13,2021,7,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"261","Nash Run","dieldrin","","",6,3,2019,4,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"262","Normanstone Creek","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"263","Oxon Run","dieldrin","","",14,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"264","Patuxent River","dieldrin","","",13,13,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"265","Pinehurst Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"266","Piney Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"267","Pope Branch","dieldrin","","",6,3,2019,3,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"268","Portal Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"269","Potomac Lower","dieldrin","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"270","Potomac Middle","dieldrin","","",13,13,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"271","Potomac Upper","dieldrin","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"272","Rock Creek Lower","dieldrin","","",13,13,2021,5,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"273","Rock Creek Upper","dieldrin","","",38,21,2021,6,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"274","Soapstone Creek","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"275","Texas Avenue Tributary","dieldrin","","",6,3,2019,6,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"276","Tidal Basin","dieldrin","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"277","Washington Ship Channel","dieldrin","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"278","Watts Banch","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"279","Watts Branch","dieldrin","","",6,3,2019,5,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"280","Watts Branch - Upper","dieldrin","","",13,13,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"281","Anacostia Lower","heptachlor epoxide","","",59,43,2021,6,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"282","Anacostia Upper","heptachlor epoxide","","",116,97,2021,60,"2021","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","35 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"283","Battery Kemble Creek","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"284","Broad Branch","heptachlor epoxide","","",14,13,2021,8,"2021","1 (CCC), 0 (CMC)","2021 (CCC) NA (CMC)","3 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"285","C&O Canal","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"286","Dalecarlia Tributary","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"287","Dumbarton Oaks Tributary","heptachlor epoxide","","",14,13,2021,10,"2021","5 (CCC), 0 (CMC)","2021 (CCC) NA (CMC)","2 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"288","Fenwick Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"289","Fort Chaplin Tributary","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"290","Fort Davis Tributary","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"291","Fort Dupont Tributary","heptachlor epoxide","","",13,13,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"292","Fort Stanton Tributary","heptachlor epoxide","","",16,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"293","Foundry Branch","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"294","Hickey Run","heptachlor epoxide","","",5,2,2019,2,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"295","Kingman Lake","heptachlor epoxide","","",24,15,2019,4,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"296","Klingle Valley Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"297","Lower Beaverdam Creek","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"298","Luzon Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"299","Mataponi Creek","heptachlor epoxide","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"300","Melvin Hazen Valley Branch","heptachlor epoxide","","",14,13,2021,2,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"301","Nash Run","heptachlor epoxide","","",6,3,2019,5,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"302","Normanstone Creek","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"303","Oxon Run","heptachlor epoxide","","",14,13,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"304","Patuxent River","heptachlor epoxide","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"305","Pinehurst Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"306","Piney Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"307","Pope Branch","heptachlor epoxide","","",6,3,2019,6,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"308","Portal Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"309","Potomac Lower","heptachlor epoxide","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"310","Potomac Middle","heptachlor epoxide","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"311","Potomac Upper","heptachlor epoxide","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"312","Rock Creek Lower","heptachlor epoxide","","",13,13,2021,7,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"313","Rock Creek Upper","heptachlor epoxide","","",21,21,2021,13,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"314","Soapstone Creek","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"315","Texas Avenue Tributary","heptachlor epoxide","","",6,3,2019,4,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"316","Tidal Basin","heptachlor epoxide","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"317","Washington Ship Channel","heptachlor epoxide","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"318","Watts Banch","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"319","Watts Branch","heptachlor epoxide","","",6,3,2019,3,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"320","Watts Branch - Upper","heptachlor epoxide","","",13,13,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"321","Anacostia Lower","mercury","","",89,37,2021,42,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"322","Anacostia Upper","mercury","","",92,37,2021,41,"2020","1 (CCC), 0 (CMC)","1994 (CCC) NA (CMC)","68 (CCC), NA (CMC)",NA,NA
-"323","Battery Kemble Creek","mercury","","",10,NA,1995,10,"1995","1 (CCC), 0 (CMC)","1994 (CCC) NA (CMC)","4 (CCC), NA (CMC)",NA,NA
-"324","Broad Branch","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"325","C&O Canal","mercury","","",15,NA,1995,15,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"326","Dalecarlia Tributary","mercury","","",10,NA,1995,10,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"327","Dumbarton Oaks Tributary","mercury","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"328","Fenwick Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"329","Fort Chaplin Tributary","mercury","","",5,NA,1995,5,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"330","Fort Davis Tributary","mercury","","",11,NA,1995,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"331","Fort Dupont Tributary","mercury","","",14,13,2021,1,"1994","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"332","Fort Stanton Tributary","mercury","","",24,13,2021,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"333","Foundry Branch","mercury","","",7,NA,1995,7,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"334","Hickey Run","mercury","","",111,99,2021,110,"2021","98 (CCC), 88 (CMC)","2021 (CCC) 2021 (CMC)","0 (CCC), 0 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
-"335","Kingman Lake","mercury","","",33,12,2016,15,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"336","Klingle Valley Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"337","Lower Beaverdam Creek","mercury","","",2,2,2017,1,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"338","Luzon Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"339","Mataponi Creek","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"340","Melvin Hazen Valley Branch","mercury","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"341","Nash Run","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"342","Normanstone Creek","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"343","Oxon Run","mercury","","",24,13,2021,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"344","Patuxent River","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"345","Pinehurst Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"346","Piney Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"347","Pope Branch","mercury","","",1,1,2017,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"348","Portal Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"349","Potomac Lower","mercury","","",63,13,2021,50,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"350","Potomac Middle","mercury","","",26,13,2021,13,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"351","Potomac Upper","mercury","","",39,13,2021,26,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"352","Rock Creek Lower","mercury","","",22,13,2021,9,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"353","Rock Creek Upper","mercury","","",134,122,2021,113,"2021","97 (CCC), 73 (CMC)","2021 (CCC) 2021 (CMC)","1 (CCC), 1 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
-"354","Soapstone Creek","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"355","Texas Avenue Tributary","mercury","","",11,NA,1995,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"356","Tidal Basin","mercury","","",10,NA,1995,10,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"357","Washington Ship Channel","mercury","","",29,12,2016,13,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"358","Watts Banch","mercury","","",3,3,2017,1,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"359","Watts Branch","mercury","","",134,100,2021,133,"2021","88 (CCC), 61 (CMC)","2021 (CCC) 2021 (CMC)","0 (CCC), 0 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
-"360","Watts Branch - Upper","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"361","Anacostia Lower","pah1","","",295,215,2021,35,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"362","Anacostia Upper","pah1","","",355,260,2021,84,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"363","Battery Kemble Creek","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"364","Broad Branch","pah1","","",70,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"365","C&O Canal","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"366","Dalecarlia Tributary","pah1","","",5,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"367","Dumbarton Oaks Tributary","pah1","","",70,65,2021,3,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"368","Fenwick Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"369","Fort Chaplin Tributary","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"370","Fort Davis Tributary","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"371","Fort Dupont Tributary","pah1","","",65,65,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"372","Fort Stanton Tributary","pah1","","",95,80,2021,17,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"373","Foundry Branch","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"374","Hickey Run","pah1","","",25,10,2019,15,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"375","Kingman Lake","pah1","","",120,75,2019,23,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"376","Klingle Valley Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"377","Lower Beaverdam Creek","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"378","Luzon Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"379","Mataponi Creek","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"380","Melvin Hazen Valley Branch","pah1","","",70,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"381","Nash Run","pah1","","",30,15,2019,18,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"382","Normanstone Creek","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"383","Oxon Run","pah1","","",70,65,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"384","Patuxent River","pah1","","",65,65,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"385","Pinehurst Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"386","Piney Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"387","Pope Branch","pah1","","",30,15,2019,13,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"388","Portal Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"389","Potomac Lower","pah1","","",65,65,2021,2,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"390","Potomac Middle","pah1","","",65,65,2021,2,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"391","Potomac Upper","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"392","Rock Creek Lower","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"393","Rock Creek Upper","pah1","","",105,105,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"394","Soapstone Creek","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"395","Texas Avenue Tributary","pah1","","",30,15,2019,16,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"396","Tidal Basin","pah1","","",15,NA,2014,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"397","Washington Ship Channel","pah1","","",95,60,2016,3,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"398","Watts Banch","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"399","Watts Branch","pah1","","",15,NA,2014,2,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"400","Watts Branch - Upper","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"401","Anacostia Lower","pah2","","",236,172,2021,71,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"402","Anacostia Upper","pah2","","",284,208,2021,137,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"403","Battery Kemble Creek","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"404","Broad Branch","pah2","","",56,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"405","C&O Canal","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"406","Dalecarlia Tributary","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"407","Dumbarton Oaks Tributary","pah2","","",56,52,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"408","Fenwick Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"409","Fort Chaplin Tributary","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"410","Fort Davis Tributary","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"411","Fort Dupont Tributary","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"412","Fort Stanton Tributary","pah2","","",76,64,2021,16,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"413","Foundry Branch","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"414","Hickey Run","pah2","","",20,8,2019,16,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"415","Kingman Lake","pah2","","",96,60,2019,44,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"416","Klingle Valley Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"417","Lower Beaverdam Creek","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"418","Luzon Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"419","Mataponi Creek","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"420","Melvin Hazen Valley Branch","pah2","","",56,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"421","Nash Run","pah2","","",24,12,2019,18,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"422","Normanstone Creek","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"423","Oxon Run","pah2","","",56,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"424","Patuxent River","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"425","Pinehurst Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"426","Piney Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"427","Pope Branch","pah2","","",24,12,2019,15,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"428","Portal Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"429","Potomac Lower","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"430","Potomac Middle","pah2","","",52,52,2021,3,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"431","Potomac Upper","pah2","","",52,52,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"432","Rock Creek Lower","pah2","","",52,52,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"433","Rock Creek Upper","pah2","","",84,84,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"434","Soapstone Creek","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"435","Texas Avenue Tributary","pah2","","",24,12,2019,16,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"436","Tidal Basin","pah2","","",12,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"437","Washington Ship Channel","pah2","","",76,48,2016,11,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"438","Watts Banch","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"439","Watts Branch","pah2","","",12,NA,2014,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"440","Watts Branch - Upper","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"441","Anacostia Lower","pah3","","",295,215,2021,49,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"442","Anacostia Upper","pah3","","",355,260,2021,88,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"443","Battery Kemble Creek","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"444","Broad Branch","pah3","","",70,65,2021,3,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"445","C&O Canal","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"446","Dalecarlia Tributary","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"447","Dumbarton Oaks Tributary","pah3","","",69,64,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"448","Fenwick Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"449","Fort Chaplin Tributary","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"450","Fort Davis Tributary","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"451","Fort Dupont Tributary","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"452","Fort Stanton Tributary","pah3","","",95,80,2021,15,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"453","Foundry Branch","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"454","Hickey Run","pah3","","",25,10,2019,10,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"455","Kingman Lake","pah3","","",120,75,2019,21,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"456","Klingle Valley Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"457","Lower Beaverdam Creek","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"458","Luzon Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"459","Mataponi Creek","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"460","Melvin Hazen Valley Branch","pah3","","",70,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"461","Nash Run","pah3","","",30,15,2019,17,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"462","Normanstone Creek","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"463","Oxon Run","pah3","","",70,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"464","Patuxent River","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"465","Pinehurst Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"466","Piney Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"467","Pope Branch","pah3","","",30,15,2019,18,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"468","Portal Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"469","Potomac Lower","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"470","Potomac Middle","pah3","","",65,65,2021,5,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"471","Potomac Upper","pah3","","",64,64,2021,5,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"472","Rock Creek Lower","pah3","","",65,65,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"473","Rock Creek Upper","pah3","","",105,105,2021,9,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"474","Soapstone Creek","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"475","Texas Avenue Tributary","pah3","","",30,15,2019,16,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"476","Tidal Basin","pah3","","",15,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"477","Washington Ship Channel","pah3","","",95,60,2016,9,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"478","Watts Banch","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"479","Watts Branch","pah3","","",15,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"480","Watts Branch - Upper","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"481","Anacostia Lower","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"482","Anacostia Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"483","Battery Kemble Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"484","Broad Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"485","C&O Canal","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"486","Dalecarlia Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"487","Dumbarton Oaks Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"488","Fenwick Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"489","Fort Chaplin Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"490","Fort Davis Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"491","Fort Dupont Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"492","Fort Stanton Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"493","Foundry Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"494","Hickey Run","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"495","Kingman Lake","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"496","Klingle Valley Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"497","Lower Beaverdam Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"498","Luzon Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"499","Mataponi Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"500","Melvin Hazen Valley Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"501","Nash Run","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"502","Normanstone Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"503","Oxon Run","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"504","Patuxent River","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"505","Pinehurst Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"506","Piney Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"507","Pope Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"508","Portal Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"509","Potomac Lower","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"510","Potomac Middle","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"511","Potomac Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"512","Rock Creek Lower","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"513","Rock Creek Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"514","Soapstone Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"515","Texas Avenue Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"516","Tidal Basin","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"517","Washington Ship Channel","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"518","Watts Banch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"519","Watts Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"520","Watts Branch - Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"521","Anacostia Lower","zinc","","",138,43,2021,103,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"522","Anacostia Upper","zinc","","",137,52,2021,105,"2021","2 (CCC), 2 (CMC)","1994 (CCC) 1994 (CMC)","126 (CCC), 126 (CMC)",NA,NA
-"523","Battery Kemble Creek","zinc","","",27,NA,2013,18,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"524","Broad Branch","zinc","","",23,13,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"525","C&O Canal","zinc","","",46,NA,2002,19,"1995","1 (CCC), 1 (CMC)","1995 (CCC) 1995 (CMC)","33 (CCC), 33 (CMC)",NA,NA
-"526","Dalecarlia Tributary","zinc","","",24,NA,2002,15,"2001","1 (CCC), 1 (CMC)","2001 (CCC) 2001 (CMC)","5 (CCC), 5 (CMC)",NA,NA
-"527","Dumbarton Oaks Tributary","zinc","","",24,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"528","Fenwick Branch","zinc","","",11,NA,2002,2,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"529","Fort Chaplin Tributary","zinc","","",27,3,2019,22,"2019","1 (CCC), 1 (CMC)","1994 (CCC) 1994 (CMC)","25 (CCC), 25 (CMC)",NA,NA
-"530","Fort Davis Tributary","zinc","","",30,3,2019,29,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"531","Fort Dupont Tributary","zinc","","",31,16,2021,24,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"532","Fort Stanton Tributary","zinc","","",42,16,2021,31,"2021","1 (CCC), 1 (CMC)","2000 (CCC) 2000 (CMC)","26 (CCC), 26 (CMC)",NA,NA
-"533","Foundry Branch","zinc","","",9,NA,2013,9,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"534","Hickey Run","zinc","","",177,102,2021,150,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"535","Kingman Lake","zinc","","",64,15,2019,58,"2018","3 (CCC), 3 (CMC)","2018 (CCC) 2018 (CMC)","1 (CCC), 1 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"536","Klingle Valley Branch","zinc","","",10,NA,2002,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"537","Lower Beaverdam Creek","zinc","","",2,2,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"538","Luzon Branch","zinc","","",9,NA,2002,4,"2002","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"539","Mataponi Creek","zinc","","",13,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"540","Melvin Hazen Valley Branch","zinc","","",23,13,2021,6,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"541","Nash Run","zinc","","",16,3,2019,15,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"542","Normanstone Creek","zinc","","",10,NA,2002,1,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"543","Oxon Run","zinc","","",35,13,2021,28,"2021","3 (CCC), 3 (CMC)","1999 (CCC) 1999 (CMC)","22 (CCC), 22 (CMC)",NA,NA
-"544","Patuxent River","zinc","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"545","Pinehurst Branch","zinc","","",10,NA,2002,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"546","Piney Branch","zinc","","",11,NA,2013,2,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"547","Pope Branch","zinc","","",10,1,2017,5,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"548","Portal Branch","zinc","","",10,NA,2002,6,"2002","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"549","Potomac Lower","zinc","","",104,13,2021,62,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"550","Potomac Middle","zinc","","",28,13,2021,7,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"551","Potomac Upper","zinc","","",55,13,2021,30,"2021","1 (CCC), 1 (CMC)","1991 (CCC) 1991 (CMC)","50 (CCC), 50 (CMC)",NA,NA
-"552","Rock Creek Lower","zinc","","",43,13,2021,25,"2021","1 (CCC), 1 (CMC)","2020 (CCC) 2020 (CMC)","6 (CCC), 6 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"553","Rock Creek Upper","zinc","","",208,128,2021,44,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"554","Soapstone Creek","zinc","","",11,NA,2002,4,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"555","Texas Avenue Tributary","zinc","","",28,3,2019,28,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"556","Tidal Basin","zinc","","",33,NA,2002,17,"2000","1 (CCC), 1 (CMC)","1994 (CCC) 1994 (CMC)","26 (CCC), 26 (CMC)",NA,NA
-"557","Washington Ship Channel","zinc","","",43,12,2016,32,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"558","Watts Banch","zinc","","",3,3,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"559","Watts Branch","zinc","","",219,100,2021,170,"2021","1 (CCC), 1 (CMC)","2000 (CCC) 2000 (CMC)","171 (CCC), 171 (CMC)",NA,NA
-"560","Watts Branch - Upper","zinc","","",13,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"561","Anacostia Lower","lead","","",181,37,2021,113,"2021","34 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"562","Anacostia Upper","lead","","",174,37,2021,113,"2021","36 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"563","Battery Kemble Creek","lead","","",42,NA,2013,18,"2013","7 (CCC), 0 (CMC)","2001 (CCC) NA (CMC)","21 (CCC), NA (CMC)",NA,NA
-"564","Broad Branch","lead","","",38,13,2021,7,"2021","1 (CCC), 0 (CMC)","2012 (CCC) NA (CMC)","15 (CCC), NA (CMC)",NA,NA
-"565","C&O Canal","lead","","",69,NA,2012,21,"2002","10 (CCC), 0 (CMC)","2002 (CCC) NA (CMC)","25 (CCC), NA (CMC)",NA,NA
-"566","Dalecarlia Tributary","lead","","",39,NA,2012,16,"2012","8 (CCC), 0 (CMC)","2012 (CCC) NA (CMC)","2 (CCC), NA (CMC)",NA,NA
-"567","Dumbarton Oaks Tributary","lead","","",38,13,2021,12,"2021","4 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","7 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"568","Fenwick Branch","lead","","",25,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"569","Fort Chaplin Tributary","lead","","",39,NA,2014,15,"2014","2 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","12 (CCC), NA (CMC)",NA,NA
-"570","Fort Davis Tributary","lead","","",41,NA,2014,22,"2014","11 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","10 (CCC), NA (CMC)",NA,NA
-"571","Fort Dupont Tributary","lead","","",43,13,2021,22,"2021","6 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","12 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"572","Fort Stanton Tributary","lead","","",53,13,2021,28,"2021","13 (CCC), 0 (CMC)","2014 (CCC) NA (CMC)","13 (CCC), NA (CMC)",NA,NA
-"573","Foundry Branch","lead","","",9,NA,2013,9,"2013","8 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","1 (CCC), NA (CMC)",NA,NA
-"574","Hickey Run","lead","","",44,1,2017,21,"2017","13 (CCC), 0 (CMC)","2004 (CCC) NA (CMC)","15 (CCC), NA (CMC)",NA,NA
-"575","Kingman Lake","lead","","",85,12,2016,72,"2016","45 (CCC), 2 (CMC)","2014 (CCC) 2000 (CMC)","18 (CCC), 61 (CMC)",NA,NA
-"576","Klingle Valley Branch","lead","","",24,NA,2012,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"577","Lower Beaverdam Creek","lead","","",2,2,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"578","Luzon Branch","lead","","",23,NA,2012,2,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"579","Mataponi Creek","lead","","",13,13,2021,9,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"580","Melvin Hazen Valley Branch","lead","","",38,13,2021,11,"2021","3 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"581","Nash Run","lead","","",28,NA,2014,8,"2014","5 (CCC), 0 (CMC)","2010 (CCC) NA (CMC)","8 (CCC), NA (CMC)",NA,NA
-"582","Normanstone Creek","lead","","",24,NA,2012,5,"2012","5 (CCC), 0 (CMC)","2012 (CCC) NA (CMC)","1 (CCC), NA (CMC)",NA,NA
-"583","Oxon Run","lead","","",48,13,2021,21,"2021","5 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","40 (CCC), NA (CMC)",NA,NA
-"584","Patuxent River","lead","","",13,13,2021,5,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"585","Pinehurst Branch","lead","","",24,NA,2012,2,"2012","1 (CCC), 0 (CMC)","2012 (CCC) NA (CMC)","1 (CCC), NA (CMC)",NA,NA
-"586","Piney Branch","lead","","",25,NA,2013,3,"2013","2 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","8 (CCC), NA (CMC)",NA,NA
-"587","Pope Branch","lead","","",24,1,2017,4,"2017","3 (CCC), 0 (CMC)","2004 (CCC) NA (CMC)","11 (CCC), NA (CMC)",NA,NA
-"588","Portal Branch","lead","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"589","Potomac Lower","lead","","",167,13,2021,75,"2021","27 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"590","Potomac Middle","lead","","",55,13,2021,26,"2021","7 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","42 (CCC), NA (CMC)",NA,NA
-"591","Potomac Upper","lead","","",93,13,2021,43,"2021","13 (CCC), 0 (CMC)","1994 (CCC) NA (CMC)","75 (CCC), NA (CMC)",NA,NA
-"592","Rock Creek Lower","lead","","",57,13,2021,28,"2021","10 (CCC), 1 (CMC)","2020 (CCC) 2020 (CMC)","6 (CCC), 6 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
-"593","Rock Creek Upper","lead","","",70,21,2021,35,"2021","7 (CCC), 0 (CMC)","2000 (CCC) NA (CMC)","53 (CCC), NA (CMC)",NA,NA
-"594","Soapstone Creek","lead","","",25,NA,2012,4,"2004","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"595","Texas Avenue Tributary","lead","","",37,NA,2014,17,"2014","7 (CCC), 0 (CMC)","2010 (CCC) NA (CMC)","6 (CCC), NA (CMC)",NA,NA
-"596","Tidal Basin","lead","","",48,NA,2012,17,"1995","6 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","40 (CCC), NA (CMC)",NA,NA
-"597","Washington Ship Channel","lead","","",59,12,2016,35,"2016","7 (CCC), 0 (CMC)","2010 (CCC) NA (CMC)","20 (CCC), NA (CMC)",NA,NA
-"598","Watts Banch","lead","","",3,3,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"599","Watts Branch","lead","","",119,NA,2012,54,"2009","25 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","28 (CCC), NA (CMC)",NA,NA
-"600","Watts Branch - Upper","lead","","",13,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"site_summary_segment","group_lower","2020_3030d_listing_category","impaired_use_category","number_of_samples_1990_to_2021","number_of_samples_2016_to_2021","most_recent_sample","number_of_detects","most_recent_detect","number_of_samples_exceeding_class_c","most_recent_class_c_exceedance","number_of_samples_since_last_class_c_exceedance","has_there_been_multi_class_c_exceedance_in_3yr","when_was_last_period_with_multi_class_c_exceedance"
+"Anacostia Lower","arsenic","","",181,43,2021,45,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Anacostia Upper","arsenic","","",182,52,2021,41,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Battery Kemble Creek","arsenic","","",42,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","arsenic","","",37,13,2021,8,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"C&O Canal","arsenic","","",69,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","arsenic","","",39,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","arsenic","","",37,13,2021,7,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Fenwick Branch","arsenic","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","arsenic","","",42,3,2019,4,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","arsenic","","",45,3,2019,4,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","arsenic","","",46,16,2021,12,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Fort Stanton Tributary","arsenic","","",55,16,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Foundry Branch","arsenic","","",9,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","arsenic","","",44,1,2017,4,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","arsenic","","",89,15,2019,19,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Klingle Valley Branch","arsenic","","",23,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","arsenic","","",2,2,2017,1,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","arsenic","","",23,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","arsenic","","",13,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","arsenic","","",38,13,2021,6,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Nash Run","arsenic","","",31,3,2019,5,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Normanstone Creek","arsenic","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","arsenic","","",49,13,2021,6,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Patuxent River","arsenic","","",13,13,2021,2,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","arsenic","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","arsenic","","",25,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","arsenic","","",24,1,2017,2,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","arsenic","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","arsenic","","",164,13,2021,13,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Potomac Middle","arsenic","","",54,13,2021,9,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Potomac Upper","arsenic","","",91,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Rock Creek Lower","arsenic","","",58,13,2021,9,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Rock Creek Upper","arsenic","","",68,21,2021,13,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Soapstone Creek","arsenic","","",25,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","arsenic","","",40,3,2019,5,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Tidal Basin","arsenic","","",48,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","arsenic","","",57,12,2016,15,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","arsenic","","",3,3,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","arsenic","","",117,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","arsenic","","",13,13,2021,9,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","chlordane","","",27,19,2021,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","chlordane","","",84,73,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Battery Kemble Creek","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","chlordane","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","chlordane","","",14,13,2021,2,"2021","2 (CCC), 0 (CMC)","2021 (CCC) NA (CMC)","4 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Fenwick Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","chlordane","","",16,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","chlordane","","",5,2,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","chlordane","","",8,3,2019,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","chlordane","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Nash Run","chlordane","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","chlordane","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","chlordane","","",6,3,2019,1,"2013","1 (CCC), 0 (CMC)","2013 (CCC) NA (CMC)","4 (CCC), NA (CMC)",NA,NA
+"Portal Branch","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","chlordane","","",13,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Rock Creek Upper","chlordane","","",21,21,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","chlordane","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","chlordane","","",6,3,2019,1,"2013","1 (CCC), 0 (CMC)","2013 (CCC) NA (CMC)","4 (CCC), NA (CMC)",NA,NA
+"Tidal Basin","chlordane","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","chlordane","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","chlordane","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","copper","","",138,43,2021,53,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","copper","","",149,52,2021,65,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Battery Kemble Creek","copper","","",27,NA,2013,2,"2013","1 (CCC), 1 (CMC)","2001 (CCC) 2001 (CMC)","6 (CCC), 6 (CMC)",NA,NA
+"Broad Branch","copper","","",23,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","copper","","",46,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","copper","","",24,NA,2002,1,"2001","1 (CCC), 1 (CMC)","2001 (CCC) 2001 (CMC)","5 (CCC), 5 (CMC)",NA,NA
+"Dumbarton Oaks Tributary","copper","","",24,13,2021,10,"2021","1 (CCC), 1 (CMC)","2020 (CCC) 2020 (CMC)","10 (CCC), 10 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Fenwick Branch","copper","","",11,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","copper","","",25,3,2019,5,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","copper","","",29,3,2019,3,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","copper","","",30,16,2021,14,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","copper","","",42,16,2021,16,"2021","1 (CCC), 1 (CMC)","1995 (CCC) 1995 (CMC)","32 (CCC), 32 (CMC)",NA,NA
+"Foundry Branch","copper","","",9,NA,2013,5,"2013","4 (CCC), 4 (CMC)","1995 (CCC) 1995 (CMC)","1 (CCC), 1 (CMC)",NA,NA
+"Hickey Run","copper","","",176,102,2021,146,"2021","4 (CCC), 3 (CMC)","2018 (CCC) 2002 (CMC)","71 (CCC), 152 (CMC)","Yes (CCC), No (CMC)","2017 - 2020 (CCC), Never (CMC)"
+"Kingman Lake","copper","","",62,15,2019,24,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","copper","","",10,NA,2002,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","copper","","",2,2,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","copper","","",9,NA,2002,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","copper","","",13,13,2021,5,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","copper","","",23,13,2021,9,"2021","1 (CCC), 1 (CMC)","2020 (CCC) 2020 (CMC)","9 (CCC), 9 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Nash Run","copper","","",16,3,2019,6,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","copper","","",10,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","copper","","",35,13,2021,13,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","copper","","",13,13,2021,4,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","copper","","",10,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","copper","","",11,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","copper","","",10,1,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","copper","","",10,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","copper","","",116,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","copper","","",40,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","copper","","",65,13,2021,9,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","copper","","",43,13,2021,11,"2021","3 (CCC), 2 (CMC)","2020 (CCC) 2020 (CMC)","6 (CCC), 6 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
+"Rock Creek Upper","copper","","",210,128,2021,170,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","copper","","",11,NA,2002,1,"2000","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","copper","","",28,3,2019,5,"2014","1 (CCC), 1 (CMC)","1994 (CCC) 1994 (CMC)","24 (CCC), 24 (CMC)",NA,NA
+"Tidal Basin","copper","","",33,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","copper","","",43,12,2016,17,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","copper","","",3,3,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","copper","","",217,100,2021,139,"2021","1 (CCC), 0 (CMC)","2016 (CCC) NA (CMC)","106 (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","copper","","",13,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","ddd","","",59,43,2021,3,"2018","2 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","15 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Anacostia Upper","ddd","","",116,97,2021,7,"2018","4 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","35 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Battery Kemble Creek","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","ddd","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","ddd","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fenwick Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","ddd","","",16,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","11 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Foundry Branch","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","ddd","","",5,2,2019,1,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Kingman Lake","ddd","","",24,15,2019,3,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Klingle Valley Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","ddd","","",14,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Nash Run","ddd","","",6,3,2019,1,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Normanstone Creek","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","ddd","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","ddd","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","ddd","","",13,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Rock Creek Upper","ddd","","",21,21,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","ddd","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","ddd","","",6,3,2019,5,"2018","5 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Tidal Basin","ddd","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","ddd","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","ddd","","",6,3,2019,1,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Watts Branch - Upper","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","dde","","",59,43,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","dde","","",116,97,2021,1,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","61 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Battery Kemble Creek","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","dde","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","dde","","",14,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","10 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Fenwick Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","dde","","",16,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","dde","","",5,2,2019,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","dde","","",24,15,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","dde","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","dde","","",14,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Nash Run","dde","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","dde","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","dde","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","dde","","",6,3,2019,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","dde","","",13,13,2021,2,"2020","2 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Rock Creek Upper","dde","","",38,21,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","dde","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","dde","","",6,3,2019,2,"2014","1 (CCC), 0 (CMC)","2014 (CCC) NA (CMC)","3 (CCC), NA (CMC)",NA,NA
+"Tidal Basin","dde","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","dde","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","dde","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","ddt","","",59,43,2021,6,"2018","3 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","15 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Anacostia Upper","ddt","","",116,97,2021,14,"2018","9 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","35 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Battery Kemble Creek","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","ddt","","",14,13,2021,2,"2021","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"C&O Canal","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","ddt","","",14,13,2021,3,"2020","2 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Fenwick Branch","ddt","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","ddt","","",13,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Fort Stanton Tributary","ddt","","",16,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","ddt","","",5,2,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","ddt","","",24,15,2019,4,"2018","3 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Klingle Valley Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","ddt","","",14,13,2021,2,"2020","2 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","10 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Nash Run","ddt","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","ddt","","",14,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","ddt","","",13,13,2021,3,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","ddt","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","ddt","","",13,13,2021,1,"2020","1 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Rock Creek Upper","ddt","","",21,21,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","ddt","","",1,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","ddt","","",6,3,2019,1,"2014","1 (CCC), 0 (CMC)","2014 (CCC) NA (CMC)","3 (CCC), NA (CMC)",NA,NA
+"Tidal Basin","ddt","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","ddt","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","ddt","","",6,3,2019,1,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Watts Branch - Upper","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","dieldrin","","",59,43,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","dieldrin","","",116,97,2021,23,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Battery Kemble Creek","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","dieldrin","","",14,13,2021,7,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"C&O Canal","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","dieldrin","","",14,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Fenwick Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","dieldrin","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","dieldrin","","",16,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","dieldrin","","",5,2,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","dieldrin","","",24,15,2019,1,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","dieldrin","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","dieldrin","","",14,13,2021,7,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Nash Run","dieldrin","","",6,3,2019,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","dieldrin","","",14,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Patuxent River","dieldrin","","",13,13,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","dieldrin","","",6,3,2019,1,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","dieldrin","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","dieldrin","","",13,13,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Potomac Upper","dieldrin","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","dieldrin","","",13,13,2021,5,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Rock Creek Upper","dieldrin","","",38,21,2021,6,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Soapstone Creek","dieldrin","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","dieldrin","","",6,3,2019,5,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Tidal Basin","dieldrin","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","dieldrin","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","dieldrin","","",6,3,2019,3,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","dieldrin","","",13,13,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","heptachlor epoxide","","",59,43,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","heptachlor epoxide","","",116,97,2021,17,"2021","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","35 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Battery Kemble Creek","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","heptachlor epoxide","","",14,13,2021,8,"2021","1 (CCC), 0 (CMC)","2021 (CCC) NA (CMC)","3 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"C&O Canal","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","heptachlor epoxide","","",14,13,2021,10,"2021","5 (CCC), 0 (CMC)","2021 (CCC) NA (CMC)","2 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Fenwick Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","heptachlor epoxide","","",13,13,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","heptachlor epoxide","","",16,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","heptachlor epoxide","","",5,2,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","heptachlor epoxide","","",24,15,2019,1,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","heptachlor epoxide","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","heptachlor epoxide","","",14,13,2021,2,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Nash Run","heptachlor epoxide","","",6,3,2019,2,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","heptachlor epoxide","","",14,13,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Patuxent River","heptachlor epoxide","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","heptachlor epoxide","","",6,3,2019,3,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","heptachlor epoxide","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","heptachlor epoxide","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","heptachlor epoxide","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","heptachlor epoxide","","",13,13,2021,7,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Rock Creek Upper","heptachlor epoxide","","",21,21,2021,13,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Soapstone Creek","heptachlor epoxide","","",1,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","heptachlor epoxide","","",6,3,2019,2,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Tidal Basin","heptachlor epoxide","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","heptachlor epoxide","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","heptachlor epoxide","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","heptachlor epoxide","","",13,13,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","mercury","","",89,37,2021,41,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","mercury","","",92,37,2021,41,"2020","1 (CCC), 0 (CMC)","1994 (CCC) NA (CMC)","68 (CCC), NA (CMC)",NA,NA
+"Battery Kemble Creek","mercury","","",10,NA,1995,10,"1995","1 (CCC), 0 (CMC)","1994 (CCC) NA (CMC)","4 (CCC), NA (CMC)",NA,NA
+"Broad Branch","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","mercury","","",15,NA,1995,15,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","mercury","","",10,NA,1995,10,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","mercury","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fenwick Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","mercury","","",5,NA,1995,5,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","mercury","","",11,NA,1995,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","mercury","","",14,13,2021,1,"1994","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","mercury","","",24,13,2021,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","mercury","","",7,NA,1995,7,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","mercury","","",111,99,2021,110,"2021","98 (CCC), 88 (CMC)","2021 (CCC) 2021 (CMC)","0 (CCC), 0 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
+"Kingman Lake","mercury","","",33,12,2016,17,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","mercury","","",2,2,2017,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","mercury","","",13,13,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Nash Run","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","mercury","","",24,13,2021,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","mercury","","",1,1,2017,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","mercury","","",63,13,2021,50,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","mercury","","",26,13,2021,13,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","mercury","","",39,13,2021,26,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","mercury","","",22,13,2021,9,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Upper","mercury","","",134,122,2021,113,"2021","97 (CCC), 73 (CMC)","2021 (CCC) 2021 (CMC)","1 (CCC), 1 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
+"Soapstone Creek","mercury","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","mercury","","",11,NA,1995,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Tidal Basin","mercury","","",10,NA,1995,10,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","mercury","","",29,12,2016,13,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","mercury","","",3,3,2017,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","mercury","","",134,100,2021,133,"2021","88 (CCC), 61 (CMC)","2021 (CCC) 2021 (CMC)","0 (CCC), 0 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
+"Watts Branch - Upper","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","pah1","","",295,215,2021,9,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","pah1","","",355,260,2021,18,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Battery Kemble Creek","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","pah1","","",70,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","pah1","","",5,NA,2013,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","pah1","","",70,65,2021,3,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fenwick Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","pah1","","",65,65,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","pah1","","",95,80,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","pah1","","",25,10,2019,6,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","pah1","","",120,75,2019,10,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","pah1","","",70,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Nash Run","pah1","","",30,15,2019,7,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","pah1","","",70,65,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","pah1","","",65,65,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","pah1","","",30,15,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","pah1","","",65,65,2021,2,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","pah1","","",65,65,2021,2,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Upper","pah1","","",105,105,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","pah1","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","pah1","","",30,15,2019,2,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Tidal Basin","pah1","","",15,NA,2014,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","pah1","","",95,60,2016,3,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","pah1","","",15,NA,2014,2,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","pah2","","",236,172,2021,47,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Anacostia Upper","pah2","","",284,208,2021,77,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Battery Kemble Creek","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","pah2","","",56,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","pah2","","",56,52,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Fenwick Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","pah2","","",76,64,2021,4,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","pah2","","",20,8,2019,8,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","pah2","","",96,60,2019,32,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Klingle Valley Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","pah2","","",56,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Nash Run","pah2","","",24,12,2019,10,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Normanstone Creek","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","pah2","","",56,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","pah2","","",24,12,2019,3,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","pah2","","",52,52,2021,3,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Potomac Upper","pah2","","",52,52,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Rock Creek Lower","pah2","","",52,52,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Rock Creek Upper","pah2","","",84,84,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Soapstone Creek","pah2","","",4,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","pah2","","",24,12,2019,4,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Tidal Basin","pah2","","",12,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","pah2","","",76,48,2016,11,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Watts Banch","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","pah2","","",12,NA,2014,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","pah3","","",295,215,2021,19,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Anacostia Upper","pah3","","",355,260,2021,13,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Battery Kemble Creek","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","pah3","","",70,65,2021,3,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"C&O Canal","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","pah3","","",69,64,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fenwick Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","pah3","","",95,80,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","pah3","","",25,10,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","pah3","","",120,75,2019,6,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","pah3","","",70,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Nash Run","pah3","","",30,15,2019,7,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Normanstone Creek","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","pah3","","",70,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","pah3","","",30,15,2019,3,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","pah3","","",65,65,2021,5,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Potomac Upper","pah3","","",64,64,2021,5,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Rock Creek Lower","pah3","","",65,65,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Rock Creek Upper","pah3","","",105,105,2021,9,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Soapstone Creek","pah3","","",5,NA,2013,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","pah3","","",30,15,2019,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Tidal Basin","pah3","","",15,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","pah3","","",95,60,2016,9,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
+"Watts Banch","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","pah3","","",15,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Battery Kemble Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fenwick Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Foundry Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Klingle Valley Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Nash Run","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Patuxent River","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Rock Creek Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Tidal Basin","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","zinc","","",138,43,2021,80,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Upper","zinc","","",137,52,2021,96,"2021","2 (CCC), 2 (CMC)","1994 (CCC) 1994 (CMC)","126 (CCC), 126 (CMC)",NA,NA
+"Battery Kemble Creek","zinc","","",27,NA,2013,9,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Broad Branch","zinc","","",23,13,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"C&O Canal","zinc","","",46,NA,2002,13,"1995","1 (CCC), 1 (CMC)","1995 (CCC) 1995 (CMC)","33 (CCC), 33 (CMC)",NA,NA
+"Dalecarlia Tributary","zinc","","",24,NA,2002,7,"2001","1 (CCC), 1 (CMC)","2001 (CCC) 2001 (CMC)","5 (CCC), 5 (CMC)",NA,NA
+"Dumbarton Oaks Tributary","zinc","","",24,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fenwick Branch","zinc","","",11,NA,2002,2,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","zinc","","",27,3,2019,20,"2019","1 (CCC), 1 (CMC)","1994 (CCC) 1994 (CMC)","25 (CCC), 25 (CMC)",NA,NA
+"Fort Davis Tributary","zinc","","",30,3,2019,26,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","zinc","","",31,16,2021,22,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Stanton Tributary","zinc","","",42,16,2021,25,"2021","1 (CCC), 1 (CMC)","2000 (CCC) 2000 (CMC)","26 (CCC), 26 (CMC)",NA,NA
+"Foundry Branch","zinc","","",9,NA,2013,9,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Hickey Run","zinc","","",177,102,2021,145,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Kingman Lake","zinc","","",64,15,2019,52,"2018","3 (CCC), 3 (CMC)","2018 (CCC) 2018 (CMC)","1 (CCC), 1 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Klingle Valley Branch","zinc","","",10,NA,2002,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","zinc","","",2,2,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","zinc","","",9,NA,2002,4,"2002","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","zinc","","",13,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","zinc","","",23,13,2021,6,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Nash Run","zinc","","",16,3,2019,15,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","zinc","","",10,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Oxon Run","zinc","","",35,13,2021,25,"2021","3 (CCC), 3 (CMC)","1999 (CCC) 1999 (CMC)","22 (CCC), 22 (CMC)",NA,NA
+"Patuxent River","zinc","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","zinc","","",10,NA,2002,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Piney Branch","zinc","","",11,NA,2013,2,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pope Branch","zinc","","",10,1,2017,5,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Portal Branch","zinc","","",10,NA,2002,6,"2002","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","zinc","","",104,13,2021,32,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Middle","zinc","","",28,13,2021,4,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Upper","zinc","","",55,13,2021,22,"2021","1 (CCC), 1 (CMC)","1991 (CCC) 1991 (CMC)","50 (CCC), 50 (CMC)",NA,NA
+"Rock Creek Lower","zinc","","",43,13,2021,21,"2021","1 (CCC), 1 (CMC)","2020 (CCC) 2020 (CMC)","6 (CCC), 6 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Rock Creek Upper","zinc","","",208,128,2021,38,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","zinc","","",11,NA,2002,2,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","zinc","","",28,3,2019,28,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Tidal Basin","zinc","","",33,NA,2002,13,"2000","1 (CCC), 1 (CMC)","1994 (CCC) 1994 (CMC)","26 (CCC), 26 (CMC)",NA,NA
+"Washington Ship Channel","zinc","","",43,12,2016,21,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Banch","zinc","","",3,3,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","zinc","","",219,100,2021,154,"2021","1 (CCC), 1 (CMC)","2000 (CCC) 2000 (CMC)","171 (CCC), 171 (CMC)",NA,NA
+"Watts Branch - Upper","zinc","","",13,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Anacostia Lower","lead","","",181,37,2021,72,"2021","33 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Anacostia Upper","lead","","",174,37,2021,77,"2021","35 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Battery Kemble Creek","lead","","",42,NA,2013,8,"2013","7 (CCC), 0 (CMC)","2001 (CCC) NA (CMC)","21 (CCC), NA (CMC)",NA,NA
+"Broad Branch","lead","","",38,13,2021,7,"2021","1 (CCC), 0 (CMC)","2012 (CCC) NA (CMC)","15 (CCC), NA (CMC)",NA,NA
+"C&O Canal","lead","","",69,NA,2012,10,"2002","10 (CCC), 0 (CMC)","2002 (CCC) NA (CMC)","25 (CCC), NA (CMC)",NA,NA
+"Dalecarlia Tributary","lead","","",39,NA,2012,8,"2012","8 (CCC), 0 (CMC)","2012 (CCC) NA (CMC)","2 (CCC), NA (CMC)",NA,NA
+"Dumbarton Oaks Tributary","lead","","",38,13,2021,12,"2021","4 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","7 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Fenwick Branch","lead","","",25,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Fort Chaplin Tributary","lead","","",39,NA,2014,5,"2014","2 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","12 (CCC), NA (CMC)",NA,NA
+"Fort Davis Tributary","lead","","",41,NA,2014,15,"2014","11 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","10 (CCC), NA (CMC)",NA,NA
+"Fort Dupont Tributary","lead","","",43,13,2021,18,"2021","5 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","12 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Fort Stanton Tributary","lead","","",53,13,2021,23,"2021","12 (CCC), 0 (CMC)","2004 (CCC) NA (CMC)","27 (CCC), NA (CMC)",NA,NA
+"Foundry Branch","lead","","",9,NA,2013,9,"2013","8 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","1 (CCC), NA (CMC)",NA,NA
+"Hickey Run","lead","","",44,1,2017,14,"2017","13 (CCC), 0 (CMC)","2004 (CCC) NA (CMC)","15 (CCC), NA (CMC)",NA,NA
+"Kingman Lake","lead","","",85,12,2016,61,"2016","44 (CCC), 2 (CMC)","2012 (CCC) 2000 (CMC)","23 (CCC), 61 (CMC)",NA,NA
+"Klingle Valley Branch","lead","","",24,NA,2012,1,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Lower Beaverdam Creek","lead","","",2,2,2017,1,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Luzon Branch","lead","","",23,NA,2012,2,"2001","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Mataponi Creek","lead","","",13,13,2021,9,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Melvin Hazen Valley Branch","lead","","",38,13,2021,11,"2021","3 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Nash Run","lead","","",28,NA,2014,8,"2014","5 (CCC), 0 (CMC)","2010 (CCC) NA (CMC)","8 (CCC), NA (CMC)",NA,NA
+"Normanstone Creek","lead","","",24,NA,2012,5,"2012","5 (CCC), 0 (CMC)","2012 (CCC) NA (CMC)","1 (CCC), NA (CMC)",NA,NA
+"Oxon Run","lead","","",48,13,2021,14,"2021","5 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","40 (CCC), NA (CMC)",NA,NA
+"Patuxent River","lead","","",13,13,2021,5,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Pinehurst Branch","lead","","",24,NA,2012,2,"2012","1 (CCC), 0 (CMC)","2012 (CCC) NA (CMC)","1 (CCC), NA (CMC)",NA,NA
+"Piney Branch","lead","","",25,NA,2013,3,"2013","2 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","8 (CCC), NA (CMC)",NA,NA
+"Pope Branch","lead","","",24,1,2017,4,"2017","3 (CCC), 0 (CMC)","2004 (CCC) NA (CMC)","11 (CCC), NA (CMC)",NA,NA
+"Portal Branch","lead","","",24,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Potomac Lower","lead","","",167,13,2021,38,"2021","27 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","9 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Potomac Middle","lead","","",55,13,2021,16,"2021","7 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","42 (CCC), NA (CMC)",NA,NA
+"Potomac Upper","lead","","",93,13,2021,24,"2021","13 (CCC), 0 (CMC)","1994 (CCC) NA (CMC)","75 (CCC), NA (CMC)",NA,NA
+"Rock Creek Lower","lead","","",57,13,2021,19,"2021","10 (CCC), 1 (CMC)","2020 (CCC) 2020 (CMC)","6 (CCC), 6 (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
+"Rock Creek Upper","lead","","",70,21,2021,26,"2021","7 (CCC), 0 (CMC)","2000 (CCC) NA (CMC)","53 (CCC), NA (CMC)",NA,NA
+"Soapstone Creek","lead","","",25,NA,2012,3,"2004","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Texas Avenue Tributary","lead","","",37,NA,2014,9,"2014","7 (CCC), 0 (CMC)","2010 (CCC) NA (CMC)","6 (CCC), NA (CMC)",NA,NA
+"Tidal Basin","lead","","",48,NA,2012,6,"1995","6 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","40 (CCC), NA (CMC)",NA,NA
+"Washington Ship Channel","lead","","",59,12,2016,15,"2016","7 (CCC), 0 (CMC)","2010 (CCC) NA (CMC)","20 (CCC), NA (CMC)",NA,NA
+"Watts Banch","lead","","",3,3,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","lead","","",119,NA,2012,25,"2009","25 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","28 (CCC), NA (CMC)",NA,NA
+"Watts Branch - Upper","lead","","",13,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
