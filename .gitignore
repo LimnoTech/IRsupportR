@@ -34,3 +34,6 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+*.csv
+output/appendix_b_class_c.csv
+output/appendix_b_class_d.csv
