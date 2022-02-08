@@ -33,17 +33,23 @@ my_basic_summary <- summarize_basic(my_criteria_results, site_summary_segment, g
 my_basic_summary_recent <- summarize_basic_recent(criteria_results = my_criteria_results, start_date = "07/01/2016", end_date = "06/30/2021", site_summary_segment, group_lower)
 
 
-#7. Detailed Exceedance Summary (looks at sample plus next three years of samples)
-my_period_summary_forward <- summarize_periods_forward(criteria_results = my_criteria_results, range_in_years = 3, site_summary_segment, group_lower, year)
-
-#8. Detailed Exceedance Summary (looks at sample plus previous three years)
-my_period_summary_backward <- summarize_periods_backward(criteria_results = my_criteria_results, range_in_years = 3, site_summary_segment, group_lower, year)
-
-#9. Format period summary
-my_formated_period <- format_period_summary(my_period_summary_backward)
+#7. Exceedance summary, 2016-2021
+my_period_summary_2016_2021 <- summarize_periods_2016_2021(my_criteria_results)
 
 
-#10. consolidate for appendix B
+#8. Format period summary
+my_formatted_period <- format_period_summary(my_period_summary_2016_2021)
+
+
+#9. consolidate for Appendix B - Class C
+my_appendix_b_class_c <- create_ir_appendix_b_class_c(my_basic_summary, my_basic_summary_recent, my_formatted_period)
+write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c.csv")
+
+
+#10. consolidate for Appendix B - Class D
+my_appendix_b_class_d <- create_ir_appendix_b_class_d(my_basic_summary, my_basic_summary_recent, my_formatted_period)
+write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d.csv")
+
 
 
 

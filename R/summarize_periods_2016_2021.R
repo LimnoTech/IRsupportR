@@ -43,7 +43,7 @@ summarize_periods_2016_2021 <- function(criteria_results,
   #year_mon <- expand.grid(year = years, mon= mons) %>% dplyr::mutate(year_mon = paste0(year, "-", mon)) %>% arrange(year, mon) %>% select(year_mon) %>% as.vector(.)
 
   df_ts <- expand.grid(site_summary_segment = segments, group_lower = groups, date = dateseq) %>%
-    dplyr::left_join(df %>% select(site_summary_segment, group_lower, date, evidence_based_exceedance_ccc, evidence_based_exceedance_cmc))
+    dplyr::left_join(df %>% select(site_summary_segment, group_lower, date, evidence_based_exceedance_ccc, evidence_based_exceedance_cmc, evidence_based_exceedance_d))
 
 
   tally <- NULL
@@ -59,7 +59,8 @@ summarize_periods_2016_2021 <- function(criteria_results,
           dplyr::filter(between(date, d, d+365*3)) %>%
           dplyr::group_by(site_summary_segment, group_lower) %>%
           dplyr::summarize(evidence_based_exceedance_ccc_3yr_sum = sum(evidence_based_exceedance_ccc, na.rm = T),
-                           evidence_based_exceedance_cmc_3yr_sum = sum(evidence_based_exceedance_cmc, na.rm = T)) %>%
+                           evidence_based_exceedance_cmc_3yr_sum = sum(evidence_based_exceedance_cmc, na.rm = T),
+                           evidence_based_exceedance_d_3yr_sum = sum(evidence_based_exceedance_d, na.rm = T)) %>%
           dplyr::mutate(start_date = d,
                         end_date = d+365*3)
 

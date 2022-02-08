@@ -62,13 +62,29 @@ summarize_basic <- function(criteria_results, ...) {
     dplyr::relocate(most_recent_cmc_exceedance_date, .after = dplyr::last_col()) %>%
     dplyr::relocate(most_recent_cmc_exceedance_year, .after = dplyr::last_col())
 
+  # most recent D
+
+  df_summary <- df %>%
+    dplyr::group_by_at(vars(!!!dots)) %>%
+    dplyr::filter(evidence_based_exceedance_d > 0) %>%
+    dplyr::summarize(most_recent_d_exceedance_date = max(date),
+                     most_recent_d_exceedance_year = max(year)) %>%
+    dplyr::right_join(df_summary) %>%
+    dplyr::relocate(most_recent_d_exceedance_date, .after = dplyr::last_col()) %>%
+    dplyr::relocate(most_recent_d_exceedance_year, .after = dplyr::last_col())
+
 
   # report formatting most recent ccc and cmc:
   df_summary <- df_summary %>%
     dplyr::mutate(most_recent_class_c_exceedance = paste0(most_recent_ccc_exceedance_year, " (CCC) ", most_recent_cmc_exceedance_year, " (CMC)"))
 
+  # report formatting most recent D:
+  df_summary <- df_summary %>%
+    dplyr::mutate(most_recent_class_d_exceedance = most_recent_d_exceedance_year)
 
-  # n samples since last ccc
+
+
+  # n samples since last ccc / cmc
   df_summary <- df %>%
     dplyr::left_join(df_summary %>% select(site_summary_segment, group_lower, most_recent_ccc_exceedance_date, most_recent_cmc_exceedance_date)) %>%
     dplyr::group_by_at(vars(!!!dots)) %>%
@@ -77,6 +93,15 @@ summarize_basic <- function(criteria_results, ...) {
     dplyr::right_join(df_summary) %>%
     dplyr::relocate(n_since_most_recent_ccc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_cmc_exceedance, .after = dplyr::last_col())
+
+
+  # n samples since last d exceedance
+  df_summary <- df %>%
+    dplyr::left_join(df_summary %>% select(site_summary_segment, group_lower, most_recent_d_exceedance_date)) %>%
+    dplyr::group_by_at(vars(!!!dots)) %>%
+    dplyr::summarize(n_since_most_recent_d_exceedance = sum(date > most_recent_d_exceedance_date)) %>%
+    dplyr::right_join(df_summary) %>%
+    dplyr::relocate(n_since_most_recent_d_exceedance, .after = dplyr::last_col())
 
 
   return(df_summary)
