@@ -10,15 +10,10 @@
 #' @examples
 summarize_basic_recent <- function(criteria_results,
                                    start_date,
-                                   end_date,
-                                   ...) {
+                                   end_date) {
 
 
 
-
-  ######### Capture expressions #######
-
-  dots <- ensyms(...)
 
   ######### Group Data ##############
 
@@ -30,7 +25,7 @@ summarize_basic_recent <- function(criteria_results,
 
   df_summary <- df %>%
     dplyr::filter(between(date, start_date, end_date)) %>%
-    dplyr::group_by_at(vars(!!!dots)) %>%
+    dplyr::group_by(site_summary_segment, group_lower) %>%
     dplyr::summarize(n_samples_recent = n(),
                      most_recent_sample_recent = max(year),
                      n_detects_recent = sum(detection == "d"),
@@ -43,7 +38,7 @@ summarize_basic_recent <- function(criteria_results,
 
   df_summary <- df %>%
     dplyr::filter(between(date, start_date, end_date)) %>%
-    dplyr::group_by_at(vars(!!!dots)) %>%
+    dplyr::group_by(site_summary_segment, group_lower) %>%
     dplyr::filter(detection == "d" & suspected_nd == FALSE) %>%
     dplyr::summarize(most_recent_detect_recent = max(year)) %>%
     dplyr::right_join(df_summary) %>%
