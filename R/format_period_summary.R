@@ -14,7 +14,7 @@ format_period_summary <- function(period_summary) {
   df_summary_ccc <- df %>%
     dplyr::mutate(start_year = lubridate::year(start_date),
                   end_year = lubridate::year(end_date)) %>%
-    dplyr::filter(evidence_based_exceedance_ccc_3yr_sum > 0) %>%
+    dplyr::filter(evidence_based_exceedance_ccc_3yr_sum > 1) %>%
     dplyr::group_by(site_summary_segment, group_lower) %>%
     dplyr::summarize(most_recent_period_with_multiple_ccc_exceedances = paste0(max(end_year)-3, " - ", max(end_year)))
 

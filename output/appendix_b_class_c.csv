@@ -36,8 +36,7 @@
 "Texas Avenue Tributary","arsenic","","",40,3,2019,5,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Tidal Basin","arsenic","","",48,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","arsenic","","",57,12,2016,15,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","arsenic","","",3,3,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Branch","arsenic","","",117,NA,2012,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
+"Watts Branch","arsenic","","",120,3,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","arsenic","","",13,13,2021,9,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","chlordane","","",27,19,2021,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Upper","chlordane","","",84,73,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
@@ -76,7 +75,6 @@
 "Texas Avenue Tributary","chlordane","","",6,3,2019,1,"2013","1 (CCC), 0 (CMC)","2013 (CCC) NA (CMC)","4 (CCC), NA (CMC)",NA,NA
 "Tidal Basin","chlordane","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","chlordane","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","chlordane","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","chlordane","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","chlordane","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","copper","","",138,43,2021,53,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
@@ -116,8 +114,7 @@
 "Texas Avenue Tributary","copper","","",28,3,2019,5,"2014","1 (CCC), 1 (CMC)","1994 (CCC) 1994 (CMC)","24 (CCC), 24 (CMC)",NA,NA
 "Tidal Basin","copper","","",33,NA,2002,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","copper","","",43,12,2016,17,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","copper","","",3,3,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Branch","copper","","",217,100,2021,139,"2021","1 (CCC), 0 (CMC)","2016 (CCC) NA (CMC)","106 (CCC), NA (CMC)",NA,NA
+"Watts Branch","copper","","",220,103,2021,142,"2021","1 (CCC), 0 (CMC)","2016 (CCC) NA (CMC)","109 (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","copper","","",13,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","ddd","","",59,43,2021,3,"2018","2 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","15 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
 "Anacostia Upper","ddd","","",116,97,2021,7,"2018","4 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","35 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
@@ -156,7 +153,6 @@
 "Texas Avenue Tributary","ddd","","",6,3,2019,5,"2018","5 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
 "Tidal Basin","ddd","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","ddd","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","ddd","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","ddd","","",6,3,2019,1,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
 "Watts Branch - Upper","ddd","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","dde","","",59,43,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
@@ -196,7 +192,6 @@
 "Texas Avenue Tributary","dde","","",6,3,2019,2,"2014","1 (CCC), 0 (CMC)","2014 (CCC) NA (CMC)","3 (CCC), NA (CMC)",NA,NA
 "Tidal Basin","dde","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","dde","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","dde","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","dde","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","dde","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","ddt","","",59,43,2021,6,"2018","3 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","15 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
@@ -236,7 +231,6 @@
 "Texas Avenue Tributary","ddt","","",6,3,2019,1,"2014","1 (CCC), 0 (CMC)","2014 (CCC) NA (CMC)","3 (CCC), NA (CMC)",NA,NA
 "Tidal Basin","ddt","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","ddt","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","ddt","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","ddt","","",6,3,2019,1,"2018","1 (CCC), 0 (CMC)","2018 (CCC) NA (CMC)","1 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
 "Watts Branch - Upper","ddt","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","dieldrin","","",59,43,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
@@ -276,7 +270,6 @@
 "Texas Avenue Tributary","dieldrin","","",6,3,2019,5,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
 "Tidal Basin","dieldrin","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","dieldrin","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","dieldrin","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","dieldrin","","",6,3,2019,3,"2018","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","dieldrin","","",13,13,2021,3,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","heptachlor epoxide","","",59,43,2021,1,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
@@ -316,7 +309,6 @@
 "Texas Avenue Tributary","heptachlor epoxide","","",6,3,2019,2,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Tidal Basin","heptachlor epoxide","","",3,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","heptachlor epoxide","","",19,12,2016,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","heptachlor epoxide","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","heptachlor epoxide","","",6,3,2019,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","heptachlor epoxide","","",13,13,2021,1,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","mercury","","",89,37,2021,41,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
@@ -356,8 +348,7 @@
 "Texas Avenue Tributary","mercury","","",11,NA,1995,11,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Tidal Basin","mercury","","",10,NA,1995,10,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","mercury","","",29,12,2016,13,"1995","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","mercury","","",3,3,2017,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Branch","mercury","","",134,100,2021,133,"2021","88 (CCC), 61 (CMC)","2021 (CCC) 2021 (CMC)","0 (CCC), 0 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
+"Watts Branch","mercury","","",137,103,2021,133,"2021","88 (CCC), 61 (CMC)","2021 (CCC) 2021 (CMC)","0 (CCC), 0 (CMC)","Yes (CCC), Yes (CMC)","2018 - 2021 (CCC), 2018 - 2021 (CMC)"
 "Watts Branch - Upper","mercury","","",13,13,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","pah1","","",295,215,2021,9,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Upper","pah1","","",355,260,2021,18,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
@@ -396,7 +387,6 @@
 "Texas Avenue Tributary","pah1","","",30,15,2019,2,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Tidal Basin","pah1","","",15,NA,2014,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","pah1","","",95,60,2016,3,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","pah1","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","pah1","","",15,NA,2014,2,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","pah1","","",65,65,2021,2,"2020","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","pah2","","",236,172,2021,47,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
@@ -436,7 +426,6 @@
 "Texas Avenue Tributary","pah2","","",24,12,2019,4,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Tidal Basin","pah2","","",12,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","pah2","","",76,48,2016,11,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"Watts Banch","pah2","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","pah2","","",12,NA,2014,1,"2013","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","pah2","","",52,52,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","pah3","","",295,215,2021,19,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
@@ -476,7 +465,6 @@
 "Texas Avenue Tributary","pah3","","",30,15,2019,1,"2014","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Tidal Basin","pah3","","",15,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","pah3","","",95,60,2016,9,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)","No (CCC), No (CMC)","Never (CCC), Never (CMC)"
-"Watts Banch","pah3","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","pah3","","",15,NA,2014,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","pah3","","",65,65,2021,0,"never","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
@@ -516,7 +504,6 @@
 "Texas Avenue Tributary","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Tidal Basin","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","pcbs","","",NA,NA,NA,NA,NA,"NA (CCC), NA (CMC)",NA,"NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","zinc","","",138,43,2021,80,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
@@ -556,8 +543,7 @@
 "Texas Avenue Tributary","zinc","","",28,3,2019,28,"2019","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Tidal Basin","zinc","","",33,NA,2002,13,"2000","1 (CCC), 1 (CMC)","1994 (CCC) 1994 (CMC)","26 (CCC), 26 (CMC)",NA,NA
 "Washington Ship Channel","zinc","","",43,12,2016,21,"2016","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Banch","zinc","","",3,3,2017,3,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Branch","zinc","","",219,100,2021,154,"2021","1 (CCC), 1 (CMC)","2000 (CCC) 2000 (CMC)","171 (CCC), 171 (CMC)",NA,NA
+"Watts Branch","zinc","","",222,103,2021,157,"2021","1 (CCC), 1 (CMC)","2000 (CCC) 2000 (CMC)","174 (CCC), 174 (CMC)",NA,NA
 "Watts Branch - Upper","zinc","","",13,13,2021,10,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
 "Anacostia Lower","lead","","",181,37,2021,72,"2021","33 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
 "Anacostia Upper","lead","","",174,37,2021,77,"2021","35 (CCC), 0 (CMC)","2020 (CCC) NA (CMC)","6 (CCC), NA (CMC)","Yes (CCC), No (CMC)","2018 - 2021 (CCC), Never (CMC)"
@@ -596,6 +582,5 @@
 "Texas Avenue Tributary","lead","","",37,NA,2014,9,"2014","7 (CCC), 0 (CMC)","2010 (CCC) NA (CMC)","6 (CCC), NA (CMC)",NA,NA
 "Tidal Basin","lead","","",48,NA,2012,6,"1995","6 (CCC), 0 (CMC)","1995 (CCC) NA (CMC)","40 (CCC), NA (CMC)",NA,NA
 "Washington Ship Channel","lead","","",59,12,2016,15,"2016","7 (CCC), 0 (CMC)","2010 (CCC) NA (CMC)","20 (CCC), NA (CMC)",NA,NA
-"Watts Banch","lead","","",3,3,2017,2,"2017","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA
-"Watts Branch","lead","","",119,NA,2012,25,"2009","25 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","28 (CCC), NA (CMC)",NA,NA
+"Watts Branch","lead","","",122,3,2017,27,"2017","25 (CCC), 0 (CMC)","2009 (CCC) NA (CMC)","31 (CCC), NA (CMC)",NA,NA
 "Watts Branch - Upper","lead","","",13,13,2021,11,"2021","0 (CCC), 0 (CMC)","NA (CCC) NA (CMC)","NA (CCC), NA (CMC)",NA,NA

@@ -8,13 +8,11 @@
 #' @export
 #'
 #' @examples
-summarize_periods_2016_2021 <- function(criteria_results,
-                                        ...) {
+summarize_periods_2016_2021 <- function(criteria_results) {
 
 
   ######### Capture expressions #######
 
-  dots <- ensyms(...)
 
   #####################################
 
@@ -23,7 +21,6 @@ summarize_periods_2016_2021 <- function(criteria_results,
 
 
   df_summary <- df %>%
-    #dplyr::group_by_at(vars(!!!dots)) %>%
     dplyr::group_by(site_summary_segment, group_lower, year) %>%
     dplyr::summarize(n_samples = n(),
                      most_recent_sample = max(year),

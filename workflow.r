@@ -3,7 +3,8 @@
 
 # 0. Raw data
 file <- "data/All_TMDL_Data_forAnalysis_20220110.csv"
-ir_data <- read_ir_data(file)
+ir_data <- read_ir_data(file) %>%
+  qaqc_input()
 
 # 1. Remove overlapping metals (only use total if a total and dissolved are collected in same segment on same day)
 ir_data <- remove_overlapping_metals(ir_data)
