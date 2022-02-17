@@ -1,8 +1,10 @@
 #### IR Assessment Workflow ####
 
+devtools::load_all()
+library(dplyr)
 
 # 0. Raw data
-file <- "data/All_TMDL_Data_forAnalysis_20220110.csv"
+file <- "data/All_TMDL_Data_forAnalysis_20220217.csv"
 ir_data <- read_ir_data(file) %>%
   qaqc_input()
 
@@ -17,6 +19,9 @@ ir_data <- lookup_criteria(ir_data)
 #2. Review DLs
 ir_data <- review_dls(ir_data)
 
+########## Write intermediate output #############
+write.csv(ir_data, "output/curated_ir_data.csv")
+##################################################
 
 #3. Evaluate Criteria
 criteria_results <- evaluate_criteria(ir_data)
@@ -24,6 +29,10 @@ criteria_results <- evaluate_criteria(ir_data)
 
 #4. Filter by Desired Timeframe
 my_criteria_results <- filter_by_date(criteria_results, "01/01/1990", "06/30/2021")
+
+########## Write intermediate output #############
+write.csv(my_criteria_results, "output/criteria_results.csv")
+##################################################
 
 
 #5. Basic Summary
