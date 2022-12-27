@@ -7,9 +7,6 @@ devtools::load_all()
 file <- "data/final_processed_data_20221223.csv"
 ir_data <- read_ir_data(file)
 
-# 1. Remove overlapping metals (only use total if a total and dissolved are collected in same segment on same day)
-ir_data <- remove_overlapping_metals(ir_data)
-
 
 #1. Lookup Criteria
 ir_data <- lookup_criteria(ir_data)
