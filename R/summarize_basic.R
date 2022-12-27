@@ -30,7 +30,7 @@ summarize_basic <- function(criteria_results) {
   df_summary <- df %>%
     dplyr::group_by(site_summary_segment, group_lower) %>%
     dplyr::filter(detection == "d" & suspected_nd == FALSE) %>%
-    dplyr::summarize(most_recent_detect = max(year)) %>%
+    dplyr::summarize(most_recent_detect = as.character(max(year))) %>%
     dplyr::right_join(df_summary) %>%
     dplyr::mutate(most_recent_detect = tidyr::replace_na(most_recent_detect, "never")) %>%
     dplyr::relocate(site_summary_segment, group_lower, n_samples, most_recent_sample, n_detects)
