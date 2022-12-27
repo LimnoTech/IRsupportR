@@ -1,12 +1,11 @@
 #### IR Assessment Workflow ####
 
 devtools::load_all()
-library(dplyr)
+# library(dplyr)
 
 # 0. Raw data
-file <- "data/All_TMDL_Data_forAnalysis_20220217.csv"
-ir_data <- read_ir_data(file) %>%
-  qaqc_input()
+file <- "data/final_processed_data_20221223.csv"
+ir_data <- read_ir_data(file)
 
 # 1. Remove overlapping metals (only use total if a total and dissolved are collected in same segment on same day)
 ir_data <- remove_overlapping_metals(ir_data)
