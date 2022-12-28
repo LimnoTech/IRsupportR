@@ -24,26 +24,25 @@ summarize_basic_recent <- function(criteria_results,
 
 
   df_summary <- df %>%
-    dplyr::filter(between(date, start_date, end_date)) %>%
-    dplyr::group_by(site_summary_segment, group_lower) %>%
-    dplyr::summarize(n_samples_recent = n(),
+    dplyr::filter(dplyr::between(sample_date, start_date, end_date)) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::summarize(n_samples_recent = dplyr::n(),
                      most_recent_sample_recent = max(year),
-                     n_detects_recent = sum(detection == "d"),
-                     n_suspected_detects_recent = sum(detection == "d" & suspected_nd == FALSE),
-                     n_ccc_exceedance_recent = sum(evidence_based_exceedance_ccc),
-                     n_cmc_exceedance_recent = sum(evidence_based_exceedance_cmc),
-                     n_d_exceedance_recent = sum(evidence_based_exceedance_d))
+                     n_detects_recent = sum(processed_detect_status == "D"),
+                     n_ccc_exceedance_recent = sum(exceedance_ccc),
+                     n_cmc_exceedance_recent = sum(exceedance_cmc),
+                     n_d_exceedance_recent = sum(exceedance_d))
 
 
 
   df_summary <- df %>%
-    dplyr::filter(between(date, start_date, end_date)) %>%
-    dplyr::group_by(site_summary_segment, group_lower) %>%
-    dplyr::filter(detection == "d" & suspected_nd == FALSE) %>%
+    dplyr::filter(dplyr::between(sample_date, start_date, end_date)) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::filter(processed_detect_status == "D") %>%
     dplyr::summarize(most_recent_detect_recent = as.character(max(year))) %>%
     dplyr::right_join(df_summary) %>%
     dplyr::mutate(most_recent_detect_recent = tidyr::replace_na(most_recent_detect_recent, "never")) %>%
-    dplyr::relocate(site_summary_segment, group_lower, n_samples_recent, most_recent_sample_recent, n_detects_recent)
+    dplyr::relocate(waterbody_segment, pollutant_group, n_samples_recent, most_recent_sample_recent, n_detects_recent)
 
 
   return(df_summary)
