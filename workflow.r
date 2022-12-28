@@ -25,15 +25,15 @@ write.csv(criteria_results, "output/criteria_results.csv")
 
 
 #5. Basic Summary
-my_basic_summary <- summarize_basic(my_criteria_results)
+my_basic_summary <- summarize_basic(criteria_results)
 
 
 #6. Last 5 Year Summary
-my_basic_summary_recent <- summarize_basic_recent(criteria_results = my_criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+my_basic_summary_recent <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
 
 
 #7. Exceedance summary, 2016-2021
-my_period_summary_2016_2021 <- summarize_periods_2016_2021(my_criteria_results)
+my_period_summary_2016_2021 <- summarize_periods_2016_2021(criteria_results)
 
 
 #8. Format period summary

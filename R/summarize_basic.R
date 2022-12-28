@@ -16,31 +16,31 @@ summarize_basic <- function(criteria_results) {
   # very basic summary
 
   df_summary <- df %>%
-    dplyr::group_by(site_summary_segment, group_lower) %>%
-    dplyr::summarize(n_samples = n(),
+    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::summarize(n_samples = dplyr::n(),
               most_recent_sample = max(year),
-              n_detects = sum(detection == "d" & suspected_nd == FALSE), #consider whether we think the detection flag is incorrect
-              n_ccc_exceedance = sum(evidence_based_exceedance_ccc),
-              n_cmc_exceedance = sum(evidence_based_exceedance_cmc),
-              n_d_exceedance = sum(evidence_based_exceedance_d)) %>%
+              n_detects = sum(processed_detect_status == "D"),
+              n_ccc_exceedance = sum(exceedance_ccc),
+              n_cmc_exceedance = sum(exceedance_cmc),
+              n_d_exceedance = sum(exceedance_d)) %>%
     dplyr::mutate(n_exc_ccc_or_cmc = paste0(n_ccc_exceedance, " (CCC) ", n_cmc_exceedance, " (CMC)"))
 
   # most recent detect
 
   df_summary <- df %>%
-    dplyr::group_by(site_summary_segment, group_lower) %>%
-    dplyr::filter(detection == "d" & suspected_nd == FALSE) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::filter(processed_detect_status == "D") %>%
     dplyr::summarize(most_recent_detect = as.character(max(year))) %>%
     dplyr::right_join(df_summary) %>%
     dplyr::mutate(most_recent_detect = tidyr::replace_na(most_recent_detect, "never")) %>%
-    dplyr::relocate(site_summary_segment, group_lower, n_samples, most_recent_sample, n_detects)
+    dplyr::relocate(waterbody_segment, pollutant_group, n_samples, most_recent_sample, n_detects)
 
   # most recent CCC
 
   df_summary <- df %>%
-    dplyr::group_by(site_summary_segment, group_lower) %>%
-    dplyr::filter(evidence_based_exceedance_ccc > 0) %>%
-    dplyr::summarize(most_recent_ccc_exceedance_date = max(date),
+    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::filter(exceedance_ccc > 0) %>%
+    dplyr::summarize(most_recent_ccc_exceedance_date = max(sample_date),
                      most_recent_ccc_exceedance_year = max(year)) %>%
     dplyr::right_join(df_summary) %>%
     dplyr::relocate(most_recent_ccc_exceedance_date, .after = dplyr::last_col()) %>%
@@ -49,9 +49,9 @@ summarize_basic <- function(criteria_results) {
   # most recent CMC
 
   df_summary <- df %>%
-    dplyr::group_by(site_summary_segment, group_lower) %>%
-    dplyr::filter(evidence_based_exceedance_cmc > 0) %>%
-    dplyr::summarize(most_recent_cmc_exceedance_date = max(date),
+    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::filter(exceedance_cmc > 0) %>%
+    dplyr::summarize(most_recent_cmc_exceedance_date = max(sample_date),
                      most_recent_cmc_exceedance_year = max(year)) %>%
     dplyr::right_join(df_summary) %>%
     dplyr::relocate(most_recent_cmc_exceedance_date, .after = dplyr::last_col()) %>%
@@ -60,9 +60,9 @@ summarize_basic <- function(criteria_results) {
   # most recent D
 
   df_summary <- df %>%
-    dplyr::group_by(site_summary_segment, group_lower) %>%
-    dplyr::filter(evidence_based_exceedance_d > 0) %>%
-    dplyr::summarize(most_recent_d_exceedance_date = max(date),
+    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::filter(exceedance_d > 0) %>%
+    dplyr::summarize(most_recent_d_exceedance_date = max(sample_date),
                      most_recent_d_exceedance_year = max(year)) %>%
     dplyr::right_join(df_summary) %>%
     dplyr::relocate(most_recent_d_exceedance_date, .after = dplyr::last_col()) %>%
@@ -77,11 +77,11 @@ summarize_basic <- function(criteria_results) {
 
   # n samples since last ccc / cmc / d
   df_summary <- df %>%
-    dplyr::left_join(df_summary %>% select(site_summary_segment, group_lower, most_recent_ccc_exceedance_date, most_recent_cmc_exceedance_date, most_recent_d_exceedance_date)) %>%
-    dplyr::group_by(site_summary_segment, group_lower) %>%
-    dplyr::summarize(n_since_most_recent_ccc_exceedance = sum(date > most_recent_ccc_exceedance_date),
-                     n_since_most_recent_cmc_exceedance = sum(date > most_recent_cmc_exceedance_date),
-                     n_since_most_recent_d_exceedance = sum(date > most_recent_d_exceedance_date)) %>%
+    dplyr::left_join(df_summary %>% dplyr::select(waterbody_segment, pollutant_group, most_recent_ccc_exceedance_date, most_recent_cmc_exceedance_date, most_recent_d_exceedance_date)) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::summarize(n_since_most_recent_ccc_exceedance = sum(sample_date > most_recent_ccc_exceedance_date),
+                     n_since_most_recent_cmc_exceedance = sum(sample_date > most_recent_cmc_exceedance_date),
+                     n_since_most_recent_d_exceedance = sum(sample_date > most_recent_d_exceedance_date)) %>%
     dplyr::right_join(df_summary) %>%
     dplyr::relocate(n_since_most_recent_ccc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_cmc_exceedance, .after = dplyr::last_col()) %>%
