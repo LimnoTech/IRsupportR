@@ -8,27 +8,44 @@
 #' @examples
 evaluate_criteria <- function(df) {
 
-  #only applicable for parameters for which an exceedance is a results greater than the criteria (e.g. metals). will not work for alternatives like DO
+  # Determine all non-metals using list of all metals
+  metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
+  non_metals <- unique(ir_data$pollutant_name[!(ir_data$pollutant_name %in% metals)])
 
-  #calculate raw exceedance results using only detection flags and results
+  # Create lists of metals to determine which criteria type and test fractions apply
+  metals_d_total_criteria <- c("ARSENIC", "MERCURY", "ZINC")
+  metals_ccc_diss_criteria <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
+  metals_cmc_diss_criteria <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
+
+
+  #calculate raw exceedance results - evaluate metals and non-metals separately
   df <- df %>%
-    dplyr::mutate(raw_exceedance_ccc = case_when(result > ccc & detection != "nd" ~ 1,
-                                                            TRUE ~ 0)) %>%
-    dplyr::mutate(raw_exceedance_cmc = case_when(result > cmc & detection != "nd" ~ 1,
-                                                            TRUE ~ 0)) %>%
-    dplyr::mutate(raw_exceedance_d = case_when(result > d & detection != "nd" ~ 1,
-                                               TRUE ~ 0))
+    dplyr::mutate(raw_exceedance_ccc = dplyr::case_when(pollutant_name %in% metals_ccc_diss_criteria &
+                                                   test_fraction == "DISSOLVED" &
+                                                   processed_result_value > ccc &
+                                                   processed_detect_status != "ND" ~ 1,
+                                                 pollutant_name %in% non_metals &
+                                                   processed_result_value > ccc &
+                                                   processed_detect_status != "ND" ~ 1,
+                                                 TRUE ~ 0)) %>%
+    dplyr::mutate(raw_exceedance_cmc = dplyr::case_when(pollutant_name %in% metals_cmc_diss_criteria &
+                                                   test_fraction == "DISSOLVED" &
+                                                   processed_result_value > cmc &
+                                                   processed_detect_status != "ND" ~ 1,
+                                                 pollutant_name %in% non_metals &
+                                                   processed_result_value > cmc &
+                                                   processed_detect_status != "ND" ~ 1,
+                                                 TRUE ~ 0)) %>%
+    dplyr::mutate(raw_exceedance_d = dplyr::case_when(pollutant_name %in% metals_d_total_criteria &
+                                                   test_fraction == "TOTAL" &
+                                                   processed_result_value > d &
+                                                   processed_detect_status != "ND" ~ 1,
+                                                 pollutant_name %in% non_metals &
+                                                   processed_result_value > d &
+                                                   processed_detect_status != "ND" ~ 1,
+                                                 TRUE ~ 0))
 
 
-
-  #calculate evidence based exceedances (excludes raw exceedances if the value is suspected as a ND because of a result equal to a rounded DL (e.g. 5, 25, or 50 ug/L))
-  df <- df %>%
-    dplyr::mutate(evidence_based_exceedance_ccc = case_when(raw_exceedance_ccc == TRUE &  suspected_nd == FALSE ~ 1,
-                                                            TRUE ~ 0)) %>%
-    dplyr::mutate(evidence_based_exceedance_cmc = case_when(raw_exceedance_cmc == TRUE &  suspected_nd == FALSE ~ 1,
-                                                            TRUE ~ 0)) %>%
-    dplyr::mutate(evidence_based_exceedance_d = case_when(raw_exceedance_d == TRUE &  suspected_nd == FALSE ~ 1,
-                                                          TRUE ~ 0))
 
 
 }

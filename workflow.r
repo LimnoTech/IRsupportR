@@ -20,7 +20,7 @@ write.csv(ir_data, "output/curated_ir_data.csv")
 criteria_results <- evaluate_criteria(ir_data)
 
 ########## Write intermediate output #############
-write.csv(my_criteria_results, "output/criteria_results.csv")
+write.csv(criteria_results, "output/criteria_results.csv")
 ##################################################
 
 
