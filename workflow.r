@@ -11,20 +11,13 @@ ir_data <- read_ir_data(file)
 #1. Lookup Criteria
 ir_data <- lookup_criteria(ir_data)
 
-
-#2. Review DLs
-ir_data <- review_dls(ir_data)
-
 ########## Write intermediate output #############
 write.csv(ir_data, "output/curated_ir_data.csv")
 ##################################################
 
+
 #3. Evaluate Criteria
 criteria_results <- evaluate_criteria(ir_data)
-
-
-#4. Filter by Desired Timeframe
-my_criteria_results <- filter_by_date(criteria_results, "01/01/1990", "06/30/2021")
 
 ########## Write intermediate output #############
 write.csv(my_criteria_results, "output/criteria_results.csv")
