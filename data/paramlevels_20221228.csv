@@ -1,6 +1,6 @@
 pollutant_group,pollutant_group_upper
 ARSENIC,Arsenic
-CHLORDANE,Chlordane
+CHLORDANE_TECHNICAL,Chlordane Technical
 COPPER,Copper
 DDD,DDD
 DDE,DDE
@@ -11,6 +11,6 @@ MERCURY,Mercury
 PAH1,PAH1
 PAH2,PAH2
 PAH3,PAH3
-TOTAL_PCB,Total PCB
+PCB_TOTAL,PCB Total
 ZINC,Zinc
 LEAD,Lead
