@@ -12,26 +12,26 @@ create_ir_appendix_b_class_c <- function (basic_summary,
 
 
   period <- formatted_period_results %>%
-    mutate(has_there_been_multi_ccc_exceedance_in_3yr = case_when(is.na(most_recent_period_with_multiple_ccc_exceedances) == F ~ "Yes (CCC)",
+    dplyr::mutate(has_there_been_multi_ccc_exceedance_in_3yr = dplyr::case_when(is.na(most_recent_period_with_multiple_ccc_exceedances) == F ~ "Yes (CCC)",
                                                                   TRUE ~ "No (CCC)")) %>%
-    mutate(has_there_been_multi_cmc_exceedance_in_3yr = case_when(is.na(most_recent_period_with_multiple_cmc_exceedances) == F ~ "Yes (CMC)",
+    dplyr::mutate(has_there_been_multi_cmc_exceedance_in_3yr = dplyr::case_when(is.na(most_recent_period_with_multiple_cmc_exceedances) == F ~ "Yes (CMC)",
                                                                   TRUE ~ "No (CMC)")) %>%
-    mutate(has_there_been_multi_class_c_exceedance_in_3yr = paste0(has_there_been_multi_ccc_exceedance_in_3yr, ", ", has_there_been_multi_cmc_exceedance_in_3yr)) %>%
-    mutate(when_was_last_ccc_3yr = case_when(is.na(most_recent_period_with_multiple_ccc_exceedances) == F ~ paste0(most_recent_period_with_multiple_ccc_exceedances, " (CCC)"),
+    dplyr::mutate(has_there_been_multi_class_c_exceedance_in_3yr = paste0(has_there_been_multi_ccc_exceedance_in_3yr, ", ", has_there_been_multi_cmc_exceedance_in_3yr)) %>%
+    dplyr::mutate(when_was_last_ccc_3yr = dplyr::case_when(is.na(most_recent_period_with_multiple_ccc_exceedances) == F ~ paste0(most_recent_period_with_multiple_ccc_exceedances, " (CCC)"),
                                              TRUE ~ "Never (CCC)")) %>%
-    mutate(when_was_last_cmc_3yr = case_when(is.na(most_recent_period_with_multiple_cmc_exceedances) == F ~ paste0(most_recent_period_with_multiple_cmc_exceedances, " (CMC)"),
+    dplyr::mutate(when_was_last_cmc_3yr = dplyr::case_when(is.na(most_recent_period_with_multiple_cmc_exceedances) == F ~ paste0(most_recent_period_with_multiple_cmc_exceedances, " (CMC)"),
                                              TRUE ~ "Never (CMC)")) %>%
-    mutate(when_was_last_period_with_multi_class_c_exceedances = paste0(when_was_last_ccc_3yr, ", ", when_was_last_cmc_3yr))
+    dplyr::mutate(when_was_last_period_with_multi_class_c_exceedances = paste0(when_was_last_ccc_3yr, ", ", when_was_last_cmc_3yr))
 
 
-  df <- expand.grid(site_summary_segment = unique(basic_summary$site_summary_segment), group_lower = paramlevels$lower)
+  df <- expand.grid(waterbody_segment = unique(basic_summary$waterbody_segment), pollutant_group = paramlevels$pollutant_group)
 
   df <- df %>%
-    left_join(basic_summary) %>%
-    left_join(basic_summary_recent) %>%
-    left_join(period) %>%
-    filter(site_summary_segment != "") %>%
-    mutate(`2020_3030d_listing_category` = "",
+    dplyr::left_join(basic_summary) %>%
+    dplyr::left_join(basic_summary_recent) %>%
+    dplyr::left_join(period) %>%
+    dplyr::filter(waterbody_segment != "") %>%
+    dplyr::mutate(`2020_3030d_listing_category` = "",
            impaired_use_category = "",
            number_of_samples_1990_to_2021 = n_samples,
            number_of_samples_2016_to_2021 = n_samples_recent,
@@ -44,8 +44,8 @@ create_ir_appendix_b_class_c <- function (basic_summary,
            has_there_been_multi_class_c_exceedance_in_3yr = has_there_been_multi_class_c_exceedance_in_3yr,
            when_was_last_period_with_multi_class_c_exceedance = when_was_last_period_with_multi_class_c_exceedances
     ) %>%
-    select(site_summary_segment,
-           group_lower,
+    dplyr::select(waterbody_segment,
+           pollutant_group,
            `2020_3030d_listing_category`,
            impaired_use_category,
            number_of_samples_1990_to_2021,
