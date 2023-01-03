@@ -15,7 +15,7 @@ summarize_periods_forward <- function(criteria_results,
 
   ######### Capture expressions #######
 
-  dots <- ensyms(...)
+  dots <- rlang::ensyms(...)
 
   #####################################
 
@@ -24,42 +24,41 @@ summarize_periods_forward <- function(criteria_results,
 
 
   df_summary <- df %>%
-    dplyr::group_by_at(vars(!!!dots)) %>%
-    #dplyr::group_by(site_summary_segment, group_lower, year) %>%
-    dplyr::summarize(n_samples = n(),
+    dplyr::group_by_at(dplyr::vars(!!!dots)) %>%
+    #dplyr::group_by(waterbody_segment, pollutant_group, year) %>%
+    dplyr::summarize(n_samples = dplyr::n(),
                      most_recent_sample = max(year),
-                     n_detects = sum(detection == "d"),
-                     n_suspected_detects = sum(detection == "d" & suspected_nd == FALSE),
-                     n_ccc_exceedance = sum(evidence_based_exceedance_ccc),
-                     n_cmc_exceedance = sum(evidence_based_exceedance_cmc),
-                     n_d_exceedance = sum(evidence_based_exceedance_d))
+                     n_detects = sum(processed_detect_status == "D"),
+                     n_ccc_exceedance = sum(exceedance_ccc),
+                     n_cmc_exceedance = sum(exceedance_cmc),
+                     n_d_exceedance = sum(exceedance_d))
 
 
   #years <- seq(min(df$year), max(df$year))
-  segments <- levels(as.factor(df$site_summary_segment))
-  groups <- levels(as.factor(df$group_lower))
-  dates <- seq.Date(min(df$date), max(df$date), by='day')
+  segments <- levels(as.factor(df$waterbody_segment))
+  groups <- levels(as.factor(df$pollutant_group))
+  dates <- seq.Date(min(df$sample_date), max(df$sample_date), by='day')
   #mons <- seq(1,12)
   #year_mon <- expand.grid(year = years, mon= mons) %>% dplyr::mutate(year_mon = paste0(year, "-", mon)) %>% arrange(year, mon) %>% select(year_mon) %>% as.vector(.)
 
-  df_ts <- expand.grid(site_summary_segment = segments, group_lower = groups, date = dates) %>%
-    dplyr::left_join(df %>% select(site_summary_segment, group_lower, date, evidence_based_exceedance_ccc, evidence_based_exceedance_cmc))
+  df_ts <- expand.grid(waterbody_segment = segments, pollutant_group = groups, date = dates) %>%
+    dplyr::left_join(df %>% dplyr::select(waterbody_segment, pollutant_group, sample_date, exceedance_ccc, exceedance_cmc))
 
 
   tally <- NULL
   for(g in groups) {
     for(site in segments) {
       dat <- df %>%
-        dplyr::filter(group_lower == g & site_summary_segment == site)
-      dates <- unique(dat$date)
+        dplyr::filter(pollutant_group == g & waterbody_segment == site)
+      dates <- unique(dat$sample_date)
 
       for(d in dates) {
         ts <- df_ts %>%
-          dplyr::filter(group_lower == g & site_summary_segment == site) %>%
-          dplyr::filter(between(date, d, d+365*range_in_years)) %>%
-          dplyr::group_by(site_summary_segment, group_lower) %>%
-          dplyr::summarize(evidence_based_exceedance_ccc_3yr_sum = sum(evidence_based_exceedance_ccc, na.rm = T),
-                           evidence_based_exceedance_cmc_3yr_sum = sum(evidence_based_exceedance_cmc, na.rm = T)) %>%
+          dplyr::filter(pollutant_group == g & waterbody_segment == site) %>%
+          dplyr::filter(dplyr::between(sample_date, d, d+365*range_in_years)) %>%
+          dplyr::group_by(waterbody_segment, pollutant_group) %>%
+          dplyr::summarize(exceedance_ccc_3yr_sum = sum(exceedance_ccc, na.rm = T),
+                           exceedance_cmc_3yr_sum = sum(exceedance_cmc, na.rm = T)) %>%
           dplyr::mutate(start_date = d,
                         end_date = d+365*range_in_years)
 
