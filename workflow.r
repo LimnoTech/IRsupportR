@@ -35,12 +35,9 @@ my_basic_summary_recent <- summarize_basic_recent(criteria_results = criteria_re
 #7. Detailed Exceedance Summary (looks at sample plus next three years of samples)
 my_period_summary_forward <- summarize_periods_forward(criteria_results = criteria_results, range_in_years = 3)
 
-# #8. Detailed Exceedance Summary (looks at sample plus previous three years)
-# my_period_summary_backward <- summarize_periods_backward(criteria_results = criteria_results, range_in_years = 3, waterbody_segment, pollutant_group, year)
-
 
 #9. Format period summary
-my_formatted_period <- format_period_summary(my_period_summary_forward)
+my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2021", range_in_years = 3)
 
 
 #9. consolidate for Appendix B - Class C

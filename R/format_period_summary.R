@@ -6,33 +6,39 @@
 #' @export
 #'
 #' @examples
-format_period_summary <- function(period_summary) {
+format_period_summary <- function(period_summary,
+                                  period_end_year,
+                                  range_in_years) {
 
-  df <- period_summary
+  period_end_year <- lubridate::year(as.Date(paste(period_end_year, 1, 1, sep = "-")))
+
+
+  # Limit range so that it does not go beyond analysis period
+  df <- period_summary %>%
+    dplyr::mutate(start_year = lubridate::year(start_date),
+           end_year = lubridate::year(end_date)) %>%
+    dplyr::mutate(adjusted_start_year = dplyr::case_when(end_year > period_end_year ~ period_end_year - range_in_years,
+                                                         TRUE ~ start_year),
+                  adjusted_end_year = dplyr::case_when(end_year > period_end_year ~ period_end_year,
+                                              TRUE ~ end_year))
 
 
   df_summary_ccc <- df %>%
-    dplyr::mutate(start_year = lubridate::year(start_date),
-                  end_year = lubridate::year(end_date)) %>%
     dplyr::filter(exceedance_ccc_3yr_sum > 1) %>%
     dplyr::group_by(waterbody_segment, pollutant_group) %>%
-    dplyr::summarize(most_recent_period_with_multiple_ccc_exceedances = paste0(max(end_year)-3, " - ", max(end_year)))
+    dplyr::summarize(most_recent_period_with_multiple_ccc_exceedances = paste0(max(adjusted_start_year), " - ", max(adjusted_end_year)))
 
 
   df_summary_cmc <- df %>%
-    dplyr::mutate(start_year = lubridate::year(start_date),
-                  end_year = lubridate::year(end_date)) %>%
     dplyr::filter(exceedance_cmc_3yr_sum > 1) %>%
     dplyr::group_by(waterbody_segment, pollutant_group) %>%
-    dplyr::summarize(most_recent_period_with_multiple_cmc_exceedances = paste0(max(end_year)-3, " - ", max(end_year)))
+    dplyr::summarize(most_recent_period_with_multiple_cmc_exceedances = paste0(max(adjusted_start_year), " - ", max(adjusted_end_year)))
 
 
   df_summary_d <- df %>%
-    dplyr::mutate(start_year = lubridate::year(start_date),
-                  end_year = lubridate::year(end_date)) %>%
     dplyr::filter(exceedance_d_3yr_sum > 1) %>%
     dplyr::group_by(waterbody_segment, pollutant_group) %>%
-    dplyr::summarize(most_recent_period_with_multiple_d_exceedances = paste0(max(end_year)-3, " - ", max(end_year)))
+    dplyr::summarize(most_recent_period_with_multiple_d_exceedances = paste0(max(adjusted_start_year), " - ", max(adjusted_end_year)))
 
 
   df_summary <- dplyr::full_join(df_summary_ccc, df_summary_cmc)
