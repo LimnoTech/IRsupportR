@@ -22,7 +22,7 @@ format_period_summary <- function(period_summary,
                   adjusted_end_year = dplyr::case_when(end_year > period_end_year ~ period_end_year,
                                               TRUE ~ end_year))
 
-
+  # Find periods with more than one exceedance
   df_summary_ccc <- df %>%
     dplyr::filter(exceedance_ccc_3yr_sum > 1) %>%
     dplyr::group_by(waterbody_segment, pollutant_group) %>%

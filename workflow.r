@@ -3,8 +3,8 @@
 devtools::load_all()
 # library(dplyr)
 
-# 0. Raw data
-file <- "data/final_processed_data_20230103.csv"
+# 0. Processed data
+file <- "data/final_processed_data_20230109.csv"
 ir_data <- read_ir_data(file)
 
 
@@ -42,12 +42,12 @@ my_formatted_period <- format_period_summary(my_period_summary_forward, period_e
 
 #9. consolidate for Appendix B - Class C
 my_appendix_b_class_c <- create_ir_appendix_b_class_c(my_basic_summary, my_basic_summary_recent, my_formatted_period)
-write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230105.csv", row.names = F)
+write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230109.csv", row.names = F)
 
 
 #10. consolidate for Appendix B - Class D
 my_appendix_b_class_d <- create_ir_appendix_b_class_d(my_basic_summary, my_basic_summary_recent, my_formatted_period)
-write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230105.csv", row.names = F)
+write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230109.csv", row.names = F)
 
 
 
