@@ -23,26 +23,26 @@ evaluate_criteria <- function(df) {
     dplyr::mutate(exceedance_ccc = dplyr::case_when(pollutant_name %in% metals_ccc_diss_criteria &
                                                    test_fraction == "DISSOLVED" &
                                                    processed_result_value > ccc &
-                                                   processed_detect_status != "ND" ~ 1,
+                                                   processed_detect_status %in% c("D", NA) ~ 1,
                                                  pollutant_name %in% non_metals &
                                                    processed_result_value > ccc &
-                                                   processed_detect_status != "ND" ~ 1,
+                                                   processed_detect_status %in% c("D", NA) ~ 1,
                                                  TRUE ~ 0)) %>%
     dplyr::mutate(exceedance_cmc = dplyr::case_when(pollutant_name %in% metals_cmc_diss_criteria &
                                                    test_fraction == "DISSOLVED" &
                                                    processed_result_value > cmc &
-                                                   processed_detect_status != "ND" ~ 1,
+                                                   processed_detect_status %in% c("D", NA) ~ 1,
                                                  pollutant_name %in% non_metals &
                                                    processed_result_value > cmc &
-                                                   processed_detect_status != "ND" ~ 1,
+                                                   processed_detect_status %in% c("D", NA) ~ 1,
                                                  TRUE ~ 0)) %>%
     dplyr::mutate(exceedance_d = dplyr::case_when(pollutant_name %in% metals_d_total_criteria &
                                                    test_fraction == "TOTAL" &
                                                    processed_result_value > d &
-                                                   processed_detect_status != "ND" ~ 1,
+                                                   processed_detect_status %in% c("D", NA) ~ 1,
                                                  pollutant_name %in% non_metals &
                                                    processed_result_value > d &
-                                                   processed_detect_status != "ND" ~ 1,
+                                                   processed_detect_status %in% c("D", NA) ~ 1,
                                                  TRUE ~ 0))
 
 
