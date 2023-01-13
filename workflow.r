@@ -7,6 +7,10 @@ devtools::load_all()
 file <- "data/final_processed_data_20230113.csv"
 ir_data <- read_ir_data(file)
 
+# Categories of pollutant_group
+metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
+organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PAH1", "PAH2","PAH3", "PCB_TOTAL")
+
 
 #1. Lookup Criteria
 ir_data <- lookup_criteria(ir_data)
@@ -23,6 +27,9 @@ criteria_results <- evaluate_criteria(ir_data)
 write.csv(criteria_results, "output/criteria_results_draft_20230113.csv")
 ##################################################
 
+
+#4. Basic Summary - Metals only (take into account test_fraction in analysis)
+my_basic_summary_metals <- summarize_basic_metals(criteria_results)
 
 #5. Basic Summary
 my_basic_summary <- summarize_basic(criteria_results)
