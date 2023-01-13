@@ -8,15 +8,15 @@
 #' @examples
 lookup_criteria <- function(df) {
 
-  # Expand non_metals_criteria table so that there is a record for pollutant/waterbody combination
-  my_non_metals_criteria <- expand.grid(waterbody_segment = waterbodies$waterbody_segment, pollutant_name = non_metals_criteria$pollutant_name )
+  # Expand organics_criteria table so that there is a record for pollutant/waterbody combination
+  my_organics_criteria <- expand.grid(waterbody_segment = waterbodies$waterbody_segment, pollutant_name = organics_criteria$pollutant_name )
 
-  my_non_metals_criteria <- my_non_metals_criteria %>%
-    dplyr::left_join(non_metals_criteria, by = "pollutant_name")
+  my_organics_criteria <- my_organics_criteria %>%
+    dplyr::left_join(organics_criteria, by = "pollutant_name")
 
 
   # Combine metal and non-metal criteria
-  all_criteria <- dplyr::bind_rows(metals_criteria, my_non_metals_criteria)
+  all_criteria <- dplyr::bind_rows(metals_criteria, my_organics_criteria)
 
 
   # Join criteria to main dataframe
