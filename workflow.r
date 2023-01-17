@@ -44,7 +44,7 @@ my_period_summary_forward <- summarize_periods_forward(criteria_results)
 
 
 #9. Format period summary
-my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2021", range_in_years = 3)
+my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2021")
 
 
 #9. consolidate for Appendix B - Class C

@@ -49,8 +49,8 @@ summarize_periods_forward <- function(criteria_results) {
         dplyr::filter(dplyr::between(sample_date, as.Date(paste((yr-1),7,1, sep="-"), "%Y-%m-%d"), as.Date(paste((yr+2),6,30, sep="-"), "%Y-%m-%d"))) %>%
         dplyr::group_by(waterbody_segment, pollutant_group) %>%
         dplyr::summarize(exceedance_ccc_3yr_sum = sum(exceedance_ccc, na.rm = T)) %>%
-        dplyr::mutate(start_date = yr-1,
-                      end_date = yr+2)
+        dplyr::mutate(start_year = yr-1,
+                      end_year = yr+2)
 
       # if sample_month is from July to December, filter between 7/1/sample_year and 6/30/(sample_year + 3)
     } else if(mo >= 7 & mo <= 12){
@@ -59,8 +59,8 @@ summarize_periods_forward <- function(criteria_results) {
         dplyr::filter(dplyr::between(sample_date, as.Date(paste(yr,7,1, sep="-"), "%Y-%m-%d"), as.Date(paste((yr+3),6,30, sep="-"), "%Y-%m-%d"))) %>%
         dplyr::group_by(waterbody_segment, pollutant_group) %>%
         dplyr::summarize(exceedance_ccc_3yr_sum = sum(exceedance_ccc, na.rm = T)) %>%
-        dplyr::mutate(start_date = yr,
-                      end_date = yr+3)
+        dplyr::mutate(start_year = yr,
+                      end_year = yr+3)
     }
 
     tally <- dplyr::bind_rows(tally, ts)
@@ -84,8 +84,8 @@ summarize_periods_forward <- function(criteria_results) {
         dplyr::filter(dplyr::between(sample_date, as.Date(paste((yr-1),7,1, sep="-"), "%Y-%m-%d"), as.Date(paste((yr+2),6,30, sep="-"), "%Y-%m-%d"))) %>%
         dplyr::group_by(waterbody_segment, pollutant_group) %>%
         dplyr::summarize(exceedance_cmc_3yr_sum = sum(exceedance_cmc, na.rm = T)) %>%
-        dplyr::mutate(start_date = yr-1,
-                      end_date = yr+2)
+        dplyr::mutate(start_year = yr-1,
+                      end_year = yr+2)
 
       # if sample_month is from July to December, filter between 7/1/sample_year and 6/30/(sample_year + 3)
     } else if(mo >= 7 & mo <= 12){
@@ -94,8 +94,8 @@ summarize_periods_forward <- function(criteria_results) {
         dplyr::filter(dplyr::between(sample_date, as.Date(paste(yr,7,1, sep="-"), "%Y-%m-%d"), as.Date(paste((yr+3),6,30, sep="-"), "%Y-%m-%d"))) %>%
         dplyr::group_by(waterbody_segment, pollutant_group) %>%
         dplyr::summarize(exceedance_cmc_3yr_sum = sum(exceedance_cmc, na.rm = T)) %>%
-        dplyr::mutate(start_date = yr,
-                      end_date = yr+3)
+        dplyr::mutate(start_year = yr,
+                      end_year = yr+3)
     }
 
     tally <- dplyr::bind_rows(tally, ts)
@@ -118,8 +118,8 @@ summarize_periods_forward <- function(criteria_results) {
         dplyr::filter(dplyr::between(sample_date, as.Date(paste((yr-1),7,1, sep="-"), "%Y-%m-%d"), as.Date(paste((yr+2),6,30, sep="-"), "%Y-%m-%d"))) %>%
         dplyr::group_by(waterbody_segment, pollutant_group) %>%
         dplyr::summarize(exceedance_d_3yr_sum = sum(exceedance_d, na.rm = T)) %>%
-        dplyr::mutate(start_date = yr-1,
-                      end_date = yr+2)
+        dplyr::mutate(start_year = yr-1,
+                      end_year = yr+2)
 
       # if sample_month is from July to December, filter between 7/1/sample_year and 6/30/(sample_year + 3)
     } else if(mo >= 7 & mo <= 12){
@@ -128,8 +128,8 @@ summarize_periods_forward <- function(criteria_results) {
         dplyr::filter(dplyr::between(sample_date, as.Date(paste(yr,7,1, sep="-"), "%Y-%m-%d"), as.Date(paste((yr+3),6,30, sep="-"), "%Y-%m-%d"))) %>%
         dplyr::group_by(waterbody_segment, pollutant_group) %>%
         dplyr::summarize(exceedance_d_3yr_sum = sum(exceedance_d, na.rm = T)) %>%
-        dplyr::mutate(start_date = yr,
-                      end_date = yr+3)
+        dplyr::mutate(start_year = yr,
+                      end_year = yr+3)
     }
 
     tally <- dplyr::bind_rows(tally, ts)
@@ -140,9 +140,7 @@ summarize_periods_forward <- function(criteria_results) {
 
 
   period_summary <- tally %>%
-    dplyr::relocate(start_date, end_date, .after = exceedance_d_3yr_sum) %>%
-    dplyr::mutate(start_date = as.Date(start_date, origin = "1970-01-01"),
-                  end_date = as.Date(end_date, origin = "1970-01-01"))
+    dplyr::relocate(start_year, end_year, .after = exceedance_d_3yr_sum)
 
 
   return(period_summary)

@@ -7,17 +7,14 @@
 #'
 #' @examples
 format_period_summary <- function(period_summary,
-                                  period_end_year,
-                                  range_in_years) {
+                                  period_end_year) {
 
   period_end_year <- lubridate::year(as.Date(paste(period_end_year, 1, 1, sep = "-")))
 
 
   # Limit range so that it does not go beyond analysis period
   df <- period_summary %>%
-    dplyr::mutate(start_year = lubridate::year(start_date),
-           end_year = lubridate::year(end_date)) %>%
-    dplyr::mutate(adjusted_start_year = dplyr::case_when(end_year > period_end_year ~ period_end_year - range_in_years,
+    dplyr::mutate(adjusted_start_year = dplyr::case_when(end_year > period_end_year ~ period_end_year - 3,
                                                          TRUE ~ start_year),
                   adjusted_end_year = dplyr::case_when(end_year > period_end_year ~ period_end_year,
                                               TRUE ~ end_year))
