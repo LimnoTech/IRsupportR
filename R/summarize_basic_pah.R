@@ -86,6 +86,16 @@ summarize_basic_pah <- function(criteria_results) {
   #   dplyr::relocate(n_since_most_recent_d_exceedance, .after = dplyr::last_col())
 
 
+
+  # df_summary_pah_samples <- df_summary_pah_samples %>%
+  #   dplyr::mutate(most_recent_ccc_exceedance_date = dplyr::case_when( is.infinite(most_recent_ccc_exceedance_date) | is.na(most_recent_ccc_exceedance_date) ~ as.Date("1900-01-01"),
+  #                                                                   TRUE ~ most_recent_ccc_exceedance_date),
+  #               most_recent_cmc_exceedance_date = dplyr::case_when( is.infinite(most_recent_cmc_exceedance_date) | is.na(most_recent_cmc_exceedance_date) ~ as.Date("1900-01-01"),
+  #                                                                   TRUE ~ most_recent_cmc_exceedance_date),
+  #               most_recent_d_exceedance_date = dplyr::case_when( is.infinite(most_recent_d_exceedance_date) | is.na(most_recent_d_exceedance_date) ~ as.Date("1900-01-01"),
+  #                                                                 TRUE ~ most_recent_d_exceedance_date))
+  #
+
   # Roll up to Group Level
   df_summary_pah <- df_summary_pah_samples %>%
     dplyr::group_by(waterbody_segment, pollutant_group) %>%
@@ -102,20 +112,38 @@ summarize_basic_pah <- function(criteria_results) {
                      most_recent_cmc_exceedance_year = max(most_recent_cmc_exceedance_year, na.rm = TRUE),
                      most_recent_d_exceedance_date = max(most_recent_d_exceedance_date, na.rm = TRUE),
                      most_recent_d_exceedance_year = max(most_recent_d_exceedance_year, na.rm = TRUE),
-                     n_since_most_recent_ccc_exceedance = sum(most_recent_result_date > max(most_recent_ccc_exceedance_date) - sum(is.na(most_recent_ccc_exceedance_date))),
-                     n_since_most_recent_cmc_exceedance = sum(most_recent_result_date > max(most_recent_cmc_exceedance_date) - sum(is.na(most_recent_cmc_exceedance_date))),
-                     n_since_most_recent_d_exceedance = sum(most_recent_result_date > max(most_recent_d_exceedance_date) - sum(is.na(most_recent_d_exceedance_date)))
+                     n_since_most_recent_ccc_exceedance = sum(most_recent_result_date > max(most_recent_ccc_exceedance_date)),
+                     n_since_most_recent_cmc_exceedance = sum(most_recent_result_date > max(most_recent_cmc_exceedance_date)),
+                     n_since_most_recent_d_exceedance = sum(most_recent_result_date > max(most_recent_d_exceedance_date))
                   )
 
+  # Correct counts of samples since most recent exceedance (should be zero) when there are no exceedances
+  df_summary_pah <- df_summary_pah %>%
+    dplyr::mutate(n_since_most_recent_ccc_exceedance = dplyr::case_when(n_ccc_exceedance == 0 ~ 0,
+                                                                        TRUE ~ as.numeric(n_since_most_recent_ccc_exceedance)),
+                  n_since_most_recent_cmc_exceedance = dplyr::case_when(n_cmc_exceedance == 0 ~ 0,
+                                                                        TRUE ~ as.numeric(n_since_most_recent_cmc_exceedance)),
+                  n_since_most_recent_d_exceedance = dplyr::case_when(n_d_exceedance == 0 ~ 0,
+                                                                        TRUE ~ as.numeric(n_since_most_recent_d_exceedance)),)
+
   # df_summary_pah2 <- df_summary_pah_samples %>%
+  #   dplyr::mutate(most_recent_ccc_exceedance_date = dplyr::case_when( is.infinite(most_recent_ccc_exceedance_date) | is.na(most_recent_ccc_exceedance_date) ~ as.Date("1950-01-01"),
+  #                                                                     TRUE ~ most_recent_ccc_exceedance_date))
   #   dplyr::group_by(waterbody_segment, pollutant_group) %>%
   #   dplyr::summarize(n_since_most_recent_ccc_exceedance = sum(most_recent_result_date > max(most_recent_ccc_exceedance_date)),
   #                    n_since_most_recent_cmc_exceedance = sum(most_recent_result_date > max(most_recent_cmc_exceedance_date)),
   #                    n_since_most_recent_d_exceedance = sum(most_recent_result_date > max(most_recent_d_exceedance_date)))
-
-
-  df_summary_pah <- df_summary_pah %>%
-    dplyr::na_if(-Inf) %>%
+  #
+  # df_test <- df_test %>%
+  #   dplyr::mutate(most_recent_ccc_exceedance_date = dplyr::case_when( is.infinite(most_recent_ccc_exceedance_date) ~ as.Date("1995-01-01"),
+  #                                                                     TRUE ~ as.Date("2020-01-01")))
+  #
+  # df_test <- df_test %>%
+  #     dplyr::mutate(most_recent_ccc_exceedance_date = tidyr::replace_na(most_recent_ccc_exceedance_date, as.Date("1995-01-01")))
+  #
+  #
+  # df_summary_pah <- df_summary_pah %>%
+  #   dplyr::na_if(-Inf) %>%
 
 
 
