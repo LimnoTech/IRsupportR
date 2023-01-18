@@ -1,4 +1,4 @@
-#' summarize_basic
+#' summarize_basic_metals
 #'
 #' @param df
 #'
