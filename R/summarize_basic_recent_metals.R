@@ -1,4 +1,4 @@
-#' summarize_basic_recent
+#' summarize_basic_recent_metals
 #'
 #' @param df
 #' @param start_date
@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-summarize_basic_recent <- function(criteria_results,
+summarize_basic_recent_metals <- function(criteria_results,
                                    start_date,
                                    end_date) {
 
@@ -18,7 +18,7 @@ summarize_basic_recent <- function(criteria_results,
   ######### Group Data ##############
 
   df <- criteria_results %>%
-    dplyr::filter(pollutant_name %in% basic_other)
+    dplyr::filter(pollutant_group %in% basic_metals)
 
   start_date <- as.Date(start_date, format = "%m/%d/%Y")
   end_date <- as.Date(end_date, format = "%m/%d/%Y")
@@ -26,7 +26,7 @@ summarize_basic_recent <- function(criteria_results,
 
   df_summary <- df %>%
     dplyr::filter(dplyr::between(sample_date, start_date, end_date)) %>%
-    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::summarize(n_samples_recent = dplyr::n(),
                      most_recent_sample_recent = max(year),
                      n_detects_recent = sum(processed_detect_status == "D"),
@@ -38,7 +38,7 @@ summarize_basic_recent <- function(criteria_results,
 
   df_summary <- df %>%
     dplyr::filter(dplyr::between(sample_date, start_date, end_date)) %>%
-    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::filter(processed_detect_status == "D") %>%
     dplyr::summarize(most_recent_detect_recent = as.character(max(year))) %>%
     dplyr::right_join(df_summary) %>%

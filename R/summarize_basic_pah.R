@@ -161,8 +161,8 @@ summarize_basic_pah <- function(criteria_results) {
                   n_d_exceedance = as.numeric(n_d_exceedance)) %>%
     dplyr::mutate(n_exc_ccc_or_cmc = paste0(n_ccc_exceedance, " (CCC) ", n_cmc_exceedance, " (CMC)"),
                   most_recent_class_c_exceedance = paste0(most_recent_ccc_exceedance_year, " (CCC) ", most_recent_cmc_exceedance_year, " (CMC)"),
-                  most_recent_class_d_exceedance = paste0(most_recent_d_exceedance_year, " (D)")) %>%
-    dplyr::mutate(test_fraction = as.character(NA))
+                  most_recent_class_d_exceedance = paste0(most_recent_d_exceedance_year, " (D)"))
+    # dplyr::mutate(test_fraction = as.character(NA))
 
 
 

@@ -21,7 +21,7 @@ basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTAC
 ir_data <- lookup_criteria(ir_data)
 
 ########## Write intermediate output #############
-write.csv(ir_data, "output/curated_ir_data_draft_20230116.csv")
+write.csv(ir_data, "output/curated_ir_data_draft_20230119.csv")
 ##################################################
 
 
@@ -29,7 +29,7 @@ write.csv(ir_data, "output/curated_ir_data_draft_20230116.csv")
 criteria_results <- evaluate_criteria(ir_data)
 
 ########## Write intermediate output #############
-write.csv(criteria_results, "output/criteria_results_draft_20230116.csv")
+write.csv(criteria_results, "output/criteria_results_draft_20230119.csv")
 ##################################################
 
 
@@ -47,9 +47,18 @@ my_basic_summary <- compile_basic(my_basic_summary_other, my_basic_summary_pah, 
 
 
 
+#5a. Last 5 Year Summary - Metals Only
+my_basic_summary_recent_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
 
-#6. Last 5 Year Summary
-my_basic_summary_recent <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+#5b. Last 5 Year Summary - PAHs Only
+my_basic_summary_recent_pah <- summarize_basic_recent_pah(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+
+#5c. Last 5 Year Summary - Other (non Metal/PAH) parameters
+my_basic_summary_recent_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+
+#5d. Compile All Last 5 Year Summaries
+my_basic_summary_recent <- compile_basic_recent(my_basic_summary_recent_metals,  my_basic_summary_recent_pah, my_basic_summary_recent_other)
+
 
 
 #7. Detailed Exceedance Summary (Sum exceedances for three year periods starting in June and ending in July)

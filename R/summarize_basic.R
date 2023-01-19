@@ -88,9 +88,9 @@ summarize_basic <- function(criteria_results) {
     dplyr::relocate(n_since_most_recent_cmc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_d_exceedance, .after = dplyr::last_col())
 
-  # Add empty column for test_fraction
-  df_summary <- df_summary %>%
-    dplyr::mutate(test_fraction = as.character(NA))
+  # # Add empty column for test_fraction
+  # df_summary <- df_summary %>%
+  #   dplyr::mutate(test_fraction = as.character(NA))
 
 
 
