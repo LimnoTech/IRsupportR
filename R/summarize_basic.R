@@ -11,14 +11,15 @@ summarize_basic <- function(criteria_results) {
 
   ######### Group Data ##############
 
-  df <- criteria_results
+  df <- criteria_results %>%
+    dplyr::filter(pollutant_name %in% basic_other)
 
   # very basic summary
 
   df_summary <- df %>%
     dplyr::group_by(waterbody_segment, pollutant_group) %>%
     dplyr::summarize(n_samples = dplyr::n(),
-              most_recent_sample = max(year),
+              most_recent_sample_year = max(year),
               n_detects = sum(processed_detect_status == "D"),
               n_ccc_exceedance = sum(exceedance_ccc),
               n_cmc_exceedance = sum(exceedance_cmc),
@@ -30,10 +31,10 @@ summarize_basic <- function(criteria_results) {
   df_summary <- df %>%
     dplyr::group_by(waterbody_segment, pollutant_group) %>%
     dplyr::filter(processed_detect_status == "D") %>%
-    dplyr::summarize(most_recent_detect = as.character(max(year))) %>%
+    dplyr::summarize(most_recent_detect_year = as.character(max(year))) %>%
     dplyr::right_join(df_summary) %>%
-    dplyr::mutate(most_recent_detect = tidyr::replace_na(most_recent_detect, "never")) %>%
-    dplyr::relocate(waterbody_segment, pollutant_group, n_samples, most_recent_sample, n_detects)
+    dplyr::mutate(most_recent_detect_year = tidyr::replace_na(most_recent_detect_year, "never")) %>%
+    dplyr::relocate(waterbody_segment, pollutant_group, n_samples, most_recent_sample_year, n_detects)
 
   # most recent CCC
 
@@ -72,7 +73,7 @@ summarize_basic <- function(criteria_results) {
   # report formatting most recent ccc / cmc / d:
   df_summary <- df_summary %>%
     dplyr::mutate(most_recent_class_c_exceedance = paste0(most_recent_ccc_exceedance_year, " (CCC) ", most_recent_cmc_exceedance_year, " (CMC)")) %>%
-    dplyr::mutate(most_recent_class_d_exceedance = most_recent_d_exceedance_year)
+    dplyr::mutate(most_recent_class_d_exceedance = paste0(most_recent_d_exceedance_year, " (D)"))
 
 
   # n samples since last ccc / cmc / d
@@ -86,6 +87,10 @@ summarize_basic <- function(criteria_results) {
     dplyr::relocate(n_since_most_recent_ccc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_cmc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_d_exceedance, .after = dplyr::last_col())
+
+  # Add empty column for test_fraction
+  df_summary <- df_summary %>%
+    dplyr::mutate(test_fraction = as.character(NA))
 
 
 

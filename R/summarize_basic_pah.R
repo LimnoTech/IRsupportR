@@ -12,7 +12,7 @@ summarize_basic_pah <- function(criteria_results) {
   ######### Group Data ##############
 
   df <- criteria_results %>%
-    dplyr::filter(pollutant_group %in% c("PAH1", "PAH2", "PAH3"))
+    dplyr::filter(pollutant_group %in% baSic_pahs)
 
   # very basic summary
 
@@ -102,7 +102,7 @@ summarize_basic_pah <- function(criteria_results) {
     dplyr::summarize(n_samples = dplyr::n(),
                      most_recent_sample_year = max(most_recent_result_year),
                      n_detects = sum(n_detects > 0),
-                     most_recent_detect_year = max(most_recent_detect_year, na.rm = TRUE),
+                     most_recent_detect_year = as.character(max(most_recent_detect_year, na.rm = TRUE)),
                      n_ccc_exceedance = sum(n_ccc_exceedance > 0),
                      n_cmc_exceedance = sum(n_cmc_exceedance > 0),
                      n_d_exceedance = sum(n_d_exceedance > 0),
@@ -146,12 +146,23 @@ summarize_basic_pah <- function(criteria_results) {
   #   dplyr::na_if(-Inf) %>%
 
 
-
+  # Make formats consistent with other basic summary tables
   df_summary_pah <- df_summary_pah %>%
     dplyr::na_if(-Inf) %>%
+    dplyr::mutate(most_recent_detect_year = tidyr::replace_na(most_recent_detect_year, "never"),
+                  most_recent_ccc_exceedance_year = as.integer(most_recent_ccc_exceedance_year),
+                  most_recent_cmc_exceedance_year = as.integer(most_recent_cmc_exceedance_year),
+                  most_recent_d_exceedance_year = as.integer(most_recent_d_exceedance_year),
+                  n_since_most_recent_ccc_exceedance = as.integer(n_since_most_recent_ccc_exceedance),
+                  n_since_most_recent_cmc_exceedance = as.integer(n_since_most_recent_cmc_exceedance),
+                  n_since_most_recent_d_exceedance = as.integer(n_since_most_recent_d_exceedance),
+                  n_ccc_exceedance = as.numeric(n_ccc_exceedance),
+                  n_cmc_exceedance = as.numeric(n_cmc_exceedance),
+                  n_d_exceedance = as.numeric(n_d_exceedance)) %>%
     dplyr::mutate(n_exc_ccc_or_cmc = paste0(n_ccc_exceedance, " (CCC) ", n_cmc_exceedance, " (CMC)"),
                   most_recent_class_c_exceedance = paste0(most_recent_ccc_exceedance_year, " (CCC) ", most_recent_cmc_exceedance_year, " (CMC)"),
-                  most_recent_class_d_exceedance = paste0(most_recent_d_exceedance_year, " (D)"))
+                  most_recent_class_d_exceedance = paste0(most_recent_d_exceedance_year, " (D)")) %>%
+    dplyr::mutate(test_fraction = as.character(NA))
 
 
 
