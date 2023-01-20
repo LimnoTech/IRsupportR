@@ -22,19 +22,19 @@ format_period_summary <- function(period_summary,
   # Find periods with more than one exceedance
   df_summary_ccc <- df %>%
     dplyr::filter(exceedance_ccc_3yr_sum > 1) %>%
-    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::summarize(most_recent_period_with_multiple_ccc_exceedances = paste0(max(adjusted_start_year), " - ", max(adjusted_end_year)))
 
 
   df_summary_cmc <- df %>%
     dplyr::filter(exceedance_cmc_3yr_sum > 1) %>%
-    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::summarize(most_recent_period_with_multiple_cmc_exceedances = paste0(max(adjusted_start_year), " - ", max(adjusted_end_year)))
 
 
   df_summary_d <- df %>%
     dplyr::filter(exceedance_d_3yr_sum > 1) %>%
-    dplyr::group_by(waterbody_segment, pollutant_group) %>%
+    dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::summarize(most_recent_period_with_multiple_d_exceedances = paste0(max(adjusted_start_year), " - ", max(adjusted_end_year)))
 
 

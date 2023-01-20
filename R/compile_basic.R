@@ -12,7 +12,8 @@ compile_basic <- function(my_basic_summary_metals, my_basic_summary_pah, my_basi
 
 
   df_compiled <- my_basic_summary_metals %>%
-    dplyr::bind_rows(my_basic_summary_pah, my_basic_summary_other)
+    dplyr::bind_rows(my_basic_summary_pah, my_basic_summary_other) %>%
+    dplyr::relocate(test_fraction, .after = pollutant_group)
 
   return(df_compiled)
 

@@ -24,13 +24,15 @@ create_ir_appendix_b_class_c <- function (basic_summary,
     dplyr::mutate(when_was_last_period_with_multi_class_c_exceedances = paste0(when_was_last_ccc_3yr, ", ", when_was_last_cmc_3yr))
 
 
-  df <- expand.grid(waterbody_segment = unique(basic_summary$waterbody_segment), pollutant_group = paramlevels$pollutant_group)
+  df_grid <- expand.grid(waterbody_segment = unique(basic_summary$waterbody_segment), pollutant_group = paramlevels$pollutant_group,  test_fraction = c("TOTAL", "DISSOLVED", NA))
 
-  df <- df %>%
+  df <- df_grid %>%
     dplyr::left_join(basic_summary) %>%
     dplyr::left_join(basic_summary_recent) %>%
     dplyr::left_join(period) %>%
     dplyr::filter(waterbody_segment != "") %>%
+    dplyr::filter(!pollutant_group %in% metals | test_fraction == "DISSOLVED") %>% #Keep only dissolved metals. Remove metals where test fraction is DISSOLVED or NA
+    dplyr::filter(!pollutant_group %in% organics | is.na(test_fraction)) %>%  #Remove total and dissolved rows for organics - data tracked without test fraction
     dplyr::mutate(`2020_3030d_listing_category` = "",
            impaired_use_category = "",
            number_of_samples_1990_to_2021 = n_samples,
@@ -46,6 +48,7 @@ create_ir_appendix_b_class_c <- function (basic_summary,
     ) %>%
     dplyr::select(waterbody_segment,
            pollutant_group,
+           test_fraction,
            `2020_3030d_listing_category`,
            impaired_use_category,
            number_of_samples_1990_to_2021,
