@@ -62,7 +62,21 @@ my_basic_summary_recent <- compile_basic_recent(my_basic_summary_recent_metals, 
 
 
 #7. Detailed Exceedance Summary (Sum exceedances for three year periods starting in June and ending in July)
-my_period_summary_forward <- summarize_periods_forward(criteria_results)
+#7a. Metals Only
+my_period_summary_forward_metals <- summarize_periods_forward_metals(criteria_results)
+
+#7b. PAHs Only
+my_period_summary_forward_pah <- summarize_periods_forward_pah(criteria_results)
+
+#7c. Other (non Metal/PAH) parameters
+my_period_summary_forward_other <- summarize_periods_forward(criteria_results)
+
+#7d. Compile All Period Summaries
+my_period_summary_forward <- compile_basic_recent(my_period_summary_forward_metals,  my_period_summary_forward_pah, my_period_summary_forward_other)
+
+
+
+
 
 
 #9. Format period summary
