@@ -56,4 +56,19 @@ create_ir_appendix_b_class_d <- function(basic_summary,
            has_there_been_multi_class_d_exceedance_in_3yr,
            when_was_last_period_with_multi_class_d_exceedance)
 
+  df <- df %>%
+    dplyr::mutate_all(as.character) %>%
+    dplyr::mutate(number_of_samples_1990_to_2021 = tidyr::replace_na(number_of_samples_1990_to_2021, "0"),
+                  number_of_samples_2016_to_2021 = tidyr::replace_na(number_of_samples_2016_to_2021, "0"),
+                  most_recent_sample_year = tidyr::replace_na(most_recent_sample_year, "Never"),
+                  number_of_detects = tidyr::replace_na(number_of_detects, "0"),
+                  most_recent_detect_year = tidyr::replace_na(most_recent_detect_year, "Never"),
+                  number_of_samples_exceeding_class_d = tidyr::replace_na(number_of_samples_exceeding_class_d, "0 (D)"),
+                  most_recent_class_d_exceedance = tidyr::replace_na(most_recent_class_d_exceedance, "Never (D)"),
+                  number_of_samples_since_last_class_d_exceedance = tidyr::replace_na(number_of_samples_since_last_class_d_exceedance, "0 (D)"),
+                  has_there_been_multi_class_d_exceedance_in_3yr = tidyr::replace_na(has_there_been_multi_class_d_exceedance_in_3yr, "No (D)"),
+                  when_was_last_period_with_multi_class_d_exceedance = tidyr::replace_na(when_was_last_period_with_multi_class_d_exceedance, "Never (D)"))
+
+  return(df)
+
 }

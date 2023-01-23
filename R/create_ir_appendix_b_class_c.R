@@ -62,6 +62,20 @@ create_ir_appendix_b_class_c <- function (basic_summary,
            has_there_been_multi_class_c_exceedance_in_3yr,
            when_was_last_period_with_multi_class_c_exceedance)
 
+  df <- df %>%
+    dplyr::mutate_all(as.character) %>%
+    dplyr::mutate(number_of_samples_1990_to_2021 = tidyr::replace_na(number_of_samples_1990_to_2021, "0"),
+                  number_of_samples_2016_to_2021 = tidyr::replace_na(number_of_samples_2016_to_2021, "0"),
+                  most_recent_sample_year = tidyr::replace_na(most_recent_sample_year, "Never"),
+                  number_of_detects = tidyr::replace_na(number_of_detects, "0"),
+                  most_recent_detect_year = tidyr::replace_na(most_recent_detect_year, "Never"),
+                  number_of_samples_exceeding_class_c = tidyr::replace_na(number_of_samples_exceeding_class_c, "0 (CCC) 0 (CMC)"),
+                  most_recent_class_c_exceedance = tidyr::replace_na(most_recent_class_c_exceedance, "Never (CCC) Never (CMC)"),
+                  number_of_samples_since_last_class_c_exceedance = tidyr::replace_na(number_of_samples_since_last_class_c_exceedance, "0 (CCC) 0 (CMC)"),
+                  has_there_been_multi_class_c_exceedance_in_3yr = tidyr::replace_na(has_there_been_multi_class_c_exceedance_in_3yr, "No (CCC) No (CMC)"),
+                  when_was_last_period_with_multi_class_c_exceedance = tidyr::replace_na(when_was_last_period_with_multi_class_c_exceedance, "Never (CCC) Never (CMC)"))
+
+  return(df)
 
 
 }

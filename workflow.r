@@ -21,7 +21,7 @@ basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTAC
 ir_data <- lookup_criteria(ir_data)
 
 ########## Write intermediate output #############
-write.csv(ir_data, "output/curated_ir_data_draft_20230119.csv")
+write.csv(ir_data, "output/curated_ir_data_draft_20230123.csv")
 ##################################################
 
 
@@ -29,7 +29,7 @@ write.csv(ir_data, "output/curated_ir_data_draft_20230119.csv")
 criteria_results <- evaluate_criteria(ir_data)
 
 ########## Write intermediate output #############
-write.csv(criteria_results, "output/criteria_results_draft_20230119.csv")
+write.csv(criteria_results, "output/criteria_results_draft_20230123.csv")
 ##################################################
 
 
@@ -85,12 +85,12 @@ my_formatted_period <- format_period_summary(my_period_summary_forward, period_e
 
 #9. consolidate for Appendix B - Class C
 my_appendix_b_class_c <- create_ir_appendix_b_class_c(my_basic_summary, my_basic_summary_recent, my_formatted_period)
-write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230119.csv", row.names = F)
+write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230123.csv", row.names = F)
 
 
 #10. consolidate for Appendix B - Class D
 my_appendix_b_class_d <- create_ir_appendix_b_class_d(my_basic_summary, my_basic_summary_recent, my_formatted_period)
-write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230119.csv", row.names = F)
+write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230123.csv", row.names = F)
 
 
 
