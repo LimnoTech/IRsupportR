@@ -40,7 +40,7 @@ summarize_basic_pah <- function(criteria_results) {
     dplyr::group_by(waterbody_segment, pollutant_group, sample_id) %>%
     dplyr::filter(exceedance_ccc > 0) %>%
     dplyr::summarize(most_recent_ccc_exceedance_date = max(sample_date),
-                     most_recent_ccc_exceedance_year = max(year)) %>%
+                     most_recent_ccc_exceedance_year = as.character(max(year))) %>%
     dplyr::right_join(df_summary_pah_samples) %>%
     dplyr::relocate(most_recent_ccc_exceedance_date, .after = dplyr::last_col()) %>%
     dplyr::relocate(most_recent_ccc_exceedance_year, .after = dplyr::last_col())
@@ -51,7 +51,7 @@ summarize_basic_pah <- function(criteria_results) {
     dplyr::group_by(waterbody_segment, pollutant_group, sample_id) %>%
     dplyr::filter(exceedance_cmc > 0) %>%
     dplyr::summarize(most_recent_cmc_exceedance_date = max(sample_date),
-                     most_recent_cmc_exceedance_year = max(year)) %>%
+                     most_recent_cmc_exceedance_year = as.character(max(year))) %>%
     dplyr::right_join(df_summary_pah_samples) %>%
     dplyr::relocate(most_recent_cmc_exceedance_date, .after = dplyr::last_col()) %>%
     dplyr::relocate(most_recent_cmc_exceedance_year, .after = dplyr::last_col())
@@ -62,7 +62,7 @@ summarize_basic_pah <- function(criteria_results) {
     dplyr::group_by(waterbody_segment, pollutant_group, sample_id) %>%
     dplyr::filter(exceedance_d > 0) %>%
     dplyr::summarize(most_recent_d_exceedance_date = max(sample_date),
-                     most_recent_d_exceedance_year = max(year)) %>%
+                     most_recent_d_exceedance_year = as.character(max(year))) %>%
     dplyr::right_join(df_summary_pah_samples) %>%
     dplyr::relocate(most_recent_d_exceedance_date, .after = dplyr::last_col()) %>%
     dplyr::relocate(most_recent_d_exceedance_year, .after = dplyr::last_col())
@@ -114,8 +114,10 @@ summarize_basic_pah <- function(criteria_results) {
                      most_recent_d_exceedance_year = max(most_recent_d_exceedance_year, na.rm = TRUE),
                      n_since_most_recent_ccc_exceedance = sum(most_recent_result_date > max(most_recent_ccc_exceedance_date)),
                      n_since_most_recent_cmc_exceedance = sum(most_recent_result_date > max(most_recent_cmc_exceedance_date)),
-                     n_since_most_recent_d_exceedance = sum(most_recent_result_date > max(most_recent_d_exceedance_date))
-                  )
+                     n_since_most_recent_d_exceedance = sum(most_recent_result_date > max(most_recent_d_exceedance_date))) %>%
+    dplyr::mutate(n_since_most_recent_ccc_exceedance = tidyr::replace_na(n_since_most_recent_ccc_exceedance, 0),
+                  n_since_most_recent_cmc_exceedance = tidyr::replace_na(n_since_most_recent_cmc_exceedance, 0),
+                  n_since_most_recent_d_exceedance = tidyr::replace_na(n_since_most_recent_d_exceedance, 0))
 
   # Correct counts of samples since most recent exceedance (should be zero) when there are no exceedances
   df_summary_pah <- df_summary_pah %>%
@@ -149,10 +151,10 @@ summarize_basic_pah <- function(criteria_results) {
   # Make formats consistent with other basic summary tables
   df_summary_pah <- df_summary_pah %>%
     dplyr::na_if(-Inf) %>%
-    dplyr::mutate(most_recent_detect_year = tidyr::replace_na(most_recent_detect_year, "never"),
-                  most_recent_ccc_exceedance_year = as.integer(most_recent_ccc_exceedance_year),
-                  most_recent_cmc_exceedance_year = as.integer(most_recent_cmc_exceedance_year),
-                  most_recent_d_exceedance_year = as.integer(most_recent_d_exceedance_year),
+    dplyr::mutate(most_recent_detect_year = tidyr::replace_na(most_recent_detect_year, "Never"),
+                  most_recent_ccc_exceedance_year = tidyr::replace_na(most_recent_ccc_exceedance_year, "Never"),
+                  most_recent_cmc_exceedance_year = tidyr::replace_na(most_recent_cmc_exceedance_year, "Never"),
+                  most_recent_d_exceedance_year = tidyr::replace_na(most_recent_d_exceedance_year, "Never"),
                   n_since_most_recent_ccc_exceedance = as.integer(n_since_most_recent_ccc_exceedance),
                   n_since_most_recent_cmc_exceedance = as.integer(n_since_most_recent_cmc_exceedance),
                   n_since_most_recent_d_exceedance = as.integer(n_since_most_recent_d_exceedance),

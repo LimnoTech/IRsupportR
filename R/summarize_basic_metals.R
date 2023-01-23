@@ -33,7 +33,7 @@ summarize_basic_metals <- function(criteria_results) {
     dplyr::filter(processed_detect_status == "D") %>%
     dplyr::summarize(most_recent_detect_year = as.character(max(year))) %>%
     dplyr::right_join(df_summary_metals) %>%
-    dplyr::mutate(most_recent_detect_year = tidyr::replace_na(most_recent_detect_year, "never")) %>%
+    dplyr::mutate(most_recent_detect_year = tidyr::replace_na(most_recent_detect_year, "Never")) %>%
     dplyr::relocate(waterbody_segment, pollutant_group, n_samples, most_recent_sample_year, n_detects)
 
   # most recent CCC
@@ -42,7 +42,7 @@ summarize_basic_metals <- function(criteria_results) {
     dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::filter(exceedance_ccc > 0) %>%
     dplyr::summarize(most_recent_ccc_exceedance_date = max(sample_date),
-                     most_recent_ccc_exceedance_year = max(year)) %>%
+                     most_recent_ccc_exceedance_year = as.character(max(year))) %>%
     dplyr::right_join(df_summary_metals) %>%
     dplyr::relocate(most_recent_ccc_exceedance_date, .after = dplyr::last_col()) %>%
     dplyr::relocate(most_recent_ccc_exceedance_year, .after = dplyr::last_col())
@@ -53,7 +53,7 @@ summarize_basic_metals <- function(criteria_results) {
     dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::filter(exceedance_cmc > 0) %>%
     dplyr::summarize(most_recent_cmc_exceedance_date = max(sample_date),
-                     most_recent_cmc_exceedance_year = max(year)) %>%
+                     most_recent_cmc_exceedance_year = as.character(max(year))) %>%
     dplyr::right_join(df_summary_metals) %>%
     dplyr::relocate(most_recent_cmc_exceedance_date, .after = dplyr::last_col()) %>%
     dplyr::relocate(most_recent_cmc_exceedance_year, .after = dplyr::last_col())
@@ -64,7 +64,7 @@ summarize_basic_metals <- function(criteria_results) {
     dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::filter(exceedance_d > 0) %>%
     dplyr::summarize(most_recent_d_exceedance_date = max(sample_date),
-                     most_recent_d_exceedance_year = max(year)) %>%
+                     most_recent_d_exceedance_year = as.character(max(year))) %>%
     dplyr::right_join(df_summary_metals) %>%
     dplyr::relocate(most_recent_d_exceedance_date, .after = dplyr::last_col()) %>%
     dplyr::relocate(most_recent_d_exceedance_year, .after = dplyr::last_col())
@@ -72,6 +72,9 @@ summarize_basic_metals <- function(criteria_results) {
 
   # report formatting most recent ccc / cmc / d:
   df_summary_metals <- df_summary_metals %>%
+    dplyr::mutate(most_recent_ccc_exceedance_year = tidyr::replace_na(most_recent_ccc_exceedance_year, "Never"),
+                  most_recent_cmc_exceedance_year = tidyr::replace_na(most_recent_cmc_exceedance_year, "Never"),
+                  most_recent_d_exceedance_year = tidyr::replace_na(most_recent_d_exceedance_year, "Never")) %>%
     dplyr::mutate(most_recent_class_c_exceedance = paste0(most_recent_ccc_exceedance_year, " (CCC) ", most_recent_cmc_exceedance_year, " (CMC)")) %>%
     dplyr::mutate(most_recent_class_d_exceedance = paste0(most_recent_d_exceedance_year, " (D)"))
 
@@ -83,6 +86,9 @@ summarize_basic_metals <- function(criteria_results) {
     dplyr::summarize(n_since_most_recent_ccc_exceedance = sum(sample_date > most_recent_ccc_exceedance_date),
                      n_since_most_recent_cmc_exceedance = sum(sample_date > most_recent_cmc_exceedance_date),
                      n_since_most_recent_d_exceedance = sum(sample_date > most_recent_d_exceedance_date)) %>%
+    dplyr::mutate(n_since_most_recent_ccc_exceedance = tidyr::replace_na(n_since_most_recent_ccc_exceedance, 0),
+                  n_since_most_recent_cmc_exceedance = tidyr::replace_na(n_since_most_recent_cmc_exceedance, 0),
+                  n_since_most_recent_d_exceedance = tidyr::replace_na(n_since_most_recent_d_exceedance, 0)) %>%
     dplyr::right_join(df_summary_metals) %>%
     dplyr::relocate(n_since_most_recent_ccc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_cmc_exceedance, .after = dplyr::last_col()) %>%
