@@ -23,8 +23,8 @@ summarize_basic_metals <- function(criteria_results) {
                      n_detects = sum(processed_detect_status == "D"),
                      n_ccc_exceedance = sum(exceedance_ccc),
                      n_cmc_exceedance = sum(exceedance_cmc),
-                     n_d_exceedance = sum(exceedance_d)) %>%
-    dplyr::mutate(n_exc_ccc_or_cmc = paste0(n_ccc_exceedance, " (CCC) ", n_cmc_exceedance, " (CMC)"))
+                     n_d_exceedance = sum(exceedance_d))
+    # dplyr::mutate(n_exc_ccc_or_cmc = paste0(n_ccc_exceedance, " (CCC) ", n_cmc_exceedance, " (CMC)"))
 
   # most recent detect
 
@@ -74,9 +74,9 @@ summarize_basic_metals <- function(criteria_results) {
   df_summary_metals <- df_summary_metals %>%
     dplyr::mutate(most_recent_ccc_exceedance_year = tidyr::replace_na(most_recent_ccc_exceedance_year, "Never"),
                   most_recent_cmc_exceedance_year = tidyr::replace_na(most_recent_cmc_exceedance_year, "Never"),
-                  most_recent_d_exceedance_year = tidyr::replace_na(most_recent_d_exceedance_year, "Never")) %>%
-    dplyr::mutate(most_recent_class_c_exceedance = paste0(most_recent_ccc_exceedance_year, " (CCC) ", most_recent_cmc_exceedance_year, " (CMC)")) %>%
-    dplyr::mutate(most_recent_class_d_exceedance = paste0(most_recent_d_exceedance_year, " (D)"))
+                  most_recent_d_exceedance_year = tidyr::replace_na(most_recent_d_exceedance_year, "Never"))
+    # dplyr::mutate(most_recent_class_c_exceedance = paste0(most_recent_ccc_exceedance_year, " (CCC) ", most_recent_cmc_exceedance_year, " (CMC)")) %>%
+    # dplyr::mutate(most_recent_class_d_exceedance = paste0(most_recent_d_exceedance_year, " (D)"))
 
 
   # n samples since last ccc / cmc / d

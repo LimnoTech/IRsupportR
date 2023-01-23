@@ -57,7 +57,7 @@ summarize_basic_recent_pah <- function(criteria_results,
                      n_ccc_exceedance_recent = as.numeric(sum(n_ccc_exceedance_recent > 0)),
                      n_cmc_exceedance_recent = as.numeric(sum(n_cmc_exceedance_recent > 0)),
                      n_d_exceedance_recent = as.numeric(sum(n_d_exceedance_recent > 0))) %>%
-    dplyr::mutate(most_recent_detect_recent = stringr::str_replace_all(most_recent_detect_recent, "-Inf", "never"))
+    dplyr::mutate(most_recent_detect_recent = stringr::str_replace_all(most_recent_detect_recent, "-Inf", "Never"))
 
 
 

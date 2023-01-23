@@ -42,7 +42,7 @@ summarize_basic_recent_metals <- function(criteria_results,
     dplyr::filter(processed_detect_status == "D") %>%
     dplyr::summarize(most_recent_detect_recent = as.character(max(year))) %>%
     dplyr::right_join(df_summary) %>%
-    dplyr::mutate(most_recent_detect_recent = tidyr::replace_na(most_recent_detect_recent, "never")) %>%
+    dplyr::mutate(most_recent_detect_recent = tidyr::replace_na(most_recent_detect_recent, "Never")) %>%
     dplyr::relocate(waterbody_segment, pollutant_group, n_samples_recent, most_recent_sample_recent, n_detects_recent)
 
 

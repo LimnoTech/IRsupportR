@@ -74,13 +74,10 @@ my_period_summary_forward_other <- summarize_periods_forward(criteria_results)
 #7d. Compile All Period Summaries
 my_period_summary_forward <- compile_basic_recent(my_period_summary_forward_metals,  my_period_summary_forward_pah, my_period_summary_forward_other)
 
-
-
-
-
-
 #9. Format period summary
 my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2021")
+
+
 
 
 #9. consolidate for Appendix B - Class C
