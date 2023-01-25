@@ -18,7 +18,7 @@ summarize_basic_recent <- function(criteria_results,
   ######### Group Data ##############
 
   df <- criteria_results %>%
-    dplyr::filter(pollutant_name %in% basic_other)
+    dplyr::filter(pollutant_group %in% basic_other)
 
   start_date <- as.Date(start_date, format = "%m/%d/%Y")
   end_date <- as.Date(end_date, format = "%m/%d/%Y")

@@ -8,7 +8,7 @@
 #' @examples
 evaluate_criteria <- function(df) {
 
-  # Determine all non-metals using list of all metals
+  # Determine all non-metal pollutant_name(s) using list of all metals
   metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
   non_metals <- unique(ir_data$pollutant_name[!(ir_data$pollutant_name %in% metals)])
 

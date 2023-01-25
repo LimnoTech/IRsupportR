@@ -12,7 +12,7 @@ summarize_basic <- function(criteria_results) {
   ######### Group Data ##############
 
   df <- criteria_results %>%
-    dplyr::filter(pollutant_name %in% basic_other)
+    dplyr::filter(pollutant_group %in% basic_other)
 
   # very basic summary
 
