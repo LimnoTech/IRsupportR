@@ -9,12 +9,6 @@
 summarize_periods_forward <- function(criteria_results) {
 
 
-  ######### Capture expressions #######
-
-
-
-  #####################################
-
 
   df <- criteria_results %>%
     dplyr::filter(pollutant_group %in% basic_other)

@@ -14,9 +14,6 @@ summarize_basic_recent <- function(criteria_results,
 
 
 
-
-  ######### Group Data ##############
-
   df <- criteria_results %>%
     dplyr::filter(pollutant_group %in% basic_other)
 

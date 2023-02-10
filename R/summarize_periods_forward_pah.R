@@ -9,11 +9,6 @@
 summarize_periods_forward_pah <- function(criteria_results) {
 
 
-  ######### Capture expressions #######
-
-
-
-  #####################################
 
   df <- criteria_results %>%
     dplyr::filter(pollutant_group %in% baSic_pahs)
