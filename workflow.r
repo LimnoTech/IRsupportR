@@ -17,8 +17,8 @@ file <- "data/final_processed_data_20230125.csv"
 ir_data <- read_ir_data(file)
 
 # Categories of pollutant_group
-# metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
-# organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PAH1", "PAH2","PAH3", "PCB_TOTAL")
+metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
+organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PAH1", "PAH2","PAH3", "PCB_TOTAL")
 
 # Categories for Basic Summary
 basic_metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
