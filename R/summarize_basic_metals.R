@@ -18,6 +18,7 @@ summarize_basic_metals <- function(criteria_results) {
   df_summary_metals <- df %>%
     dplyr::group_by(waterbody_segment, pollutant_group, test_fraction) %>%
     dplyr::summarize(n_samples = dplyr::n(),
+                     n_sample_dates = dplyr::n_distinct(sample_date),
                      most_recent_sample_year = max(year),
                      n_detects = sum(processed_detect_status == "D"),
                      n_ccc_exceedance = sum(exceedance_ccc),

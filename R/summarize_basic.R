@@ -17,7 +17,9 @@ summarize_basic <- function(criteria_results) {
 
   df_summary <- df %>%
     dplyr::group_by(waterbody_segment, pollutant_group) %>%
-    dplyr::summarize(n_samples = dplyr::n(),
+    dplyr::summarize(
+              n_samples = dplyr::n(),
+              n_sample_dates = dplyr::n_distinct(sample_date),
               most_recent_sample_year = max(year),
               n_detects = sum(processed_detect_status == "D"),
               n_ccc_exceedance = sum(exceedance_ccc),

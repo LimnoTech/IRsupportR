@@ -23,7 +23,7 @@ organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLO
 
 # # Categories for Basic Summary
 # basic_metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
-# baSic_pahs <- c("PAH1", "PAH2", "PAH3")
+# basic_pahs <- c("PAH1", "PAH2", "PAH3")
 # basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PCB_TOTAL")
 
 
@@ -52,7 +52,7 @@ write.csv(ir_data, "output/curated_ir_data_draft_20230324.csv")
 
 criteria_results <- evaluate_criteria(ir_data)
 
-write.csv(criteria_results, "output/criteria_results_draft_20230324.csv")
+# write.csv(criteria_results, "output/criteria_results_draft_20230324.csv")
 
 
 # ------------------------------------------------------------------------------
@@ -70,6 +70,8 @@ my_basic_summary_other <- summarize_basic(criteria_results)
 
 # 3d. Compile All Basic Summaries
 my_basic_summary <- compile_basic(my_basic_summary_other, my_basic_summary_metals)
+
+write.csv(my_basic_summary, "output/intermediate_results_draft_20230324.csv")
 
 
 # ------------------------------------------------------------------------------
