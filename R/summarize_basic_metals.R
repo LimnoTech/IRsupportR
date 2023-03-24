@@ -11,7 +11,7 @@ summarize_basic_metals <- function(criteria_results) {
 
 
   df <- criteria_results %>%
-    dplyr::filter(pollutant_group %in% basic_metals)
+    dplyr::filter(pollutant_group %in% metals)
 
   # very basic summary
 

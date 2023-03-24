@@ -21,10 +21,10 @@ ir_data <- all_processed_data
 metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
 organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PAH1", "PAH2","PAH3", "PCB_TOTAL")
 
-# Categories for Basic Summary
-basic_metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
-baSic_pahs <- c("PAH1", "PAH2", "PAH3")
-basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PCB_TOTAL")
+# # Categories for Basic Summary
+# basic_metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
+# baSic_pahs <- c("PAH1", "PAH2", "PAH3")
+# basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PCB_TOTAL")
 
 
 # ------------------------------------------------------------------------------
@@ -63,13 +63,13 @@ write.csv(criteria_results, "output/criteria_results_draft_20230324.csv")
 my_basic_summary_metals <- summarize_basic_metals(criteria_results)
 
 # 3b. PAHs only (Exceedances of more than one PAH within a PAH group within one sample is considered one exceedance)
-my_basic_summary_pah <- summarize_basic_pah(criteria_results)
+# my_basic_summary_pah <- summarize_basic_pah(criteria_results)
 
-# 3c. Other (non Metal/PAH) parameters
+# 3c. Other (non Metal) parameters
 my_basic_summary_other <- summarize_basic(criteria_results)
 
 # 3d. Compile All Basic Summaries
-my_basic_summary <- compile_basic(my_basic_summary_other, my_basic_summary_pah, my_basic_summary_metals)
+my_basic_summary <- compile_basic(my_basic_summary_other, my_basic_summary_metals)
 
 
 # ------------------------------------------------------------------------------
@@ -80,36 +80,36 @@ my_basic_summary <- compile_basic(my_basic_summary_other, my_basic_summary_pah, 
 my_basic_summary_recent_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
 
 # 4b. PAHs Only
-my_basic_summary_recent_pah <- summarize_basic_recent_pah(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+# my_basic_summary_recent_pah <- summarize_basic_recent_pah(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
 
-# 4c. Other (non Metal/PAH) parameters
+# 4c. Other (non Metal) parameters
 my_basic_summary_recent_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
 
 # 4d. Compile All Last 5 Year Summaries
-my_basic_summary_recent <- compile_basic_recent(my_basic_summary_recent_metals,  my_basic_summary_recent_pah, my_basic_summary_recent_other)
+my_basic_summary_recent <- compile_basic_recent(my_basic_summary_recent_metals, my_basic_summary_recent_other)
 
 
-# ------------------------------------------------------------------------------
-# 5. Summarize Period (3 Year Period)
-# ------------------------------------------------------------------------------
-
-# Detailed Exceedance Summary (Sum exceedances for three year periods starting in June and ending in July)
-
-# 5a. Metals Only
-my_period_summary_forward_metals <- summarize_periods_forward_metals(criteria_results)
-
-# 5b. PAHs Only
-my_period_summary_forward_pah <- summarize_periods_forward_pah(criteria_results)
-
-# 5c. Other (non Metal/PAH) parameters
-my_period_summary_forward_other <- summarize_periods_forward(criteria_results)
-
-# 5d. Compile All Period Summaries
-my_period_summary_forward <- compile_basic_recent(my_period_summary_forward_metals,  my_period_summary_forward_pah, my_period_summary_forward_other)
-
-# 5e. Format period summary
-my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2021")
-
+# # ------------------------------------------------------------------------------
+# # 5. Summarize Period (3 Year Period)
+# # ------------------------------------------------------------------------------
+#
+# # Detailed Exceedance Summary (Sum exceedances for three year periods starting in June and ending in July)
+#
+# # 5a. Metals Only
+# my_period_summary_forward_metals <- summarize_periods_forward_metals(criteria_results)
+#
+# # 5b. PAHs Only
+# my_period_summary_forward_pah <- summarize_periods_forward_pah(criteria_results)
+#
+# # 5c. Other (non Metal/PAH) parameters
+# my_period_summary_forward_other <- summarize_periods_forward(criteria_results)
+#
+# # 5d. Compile All Period Summaries
+# my_period_summary_forward <- compile_basic_recent(my_period_summary_forward_metals,  my_period_summary_forward_pah, my_period_summary_forward_other)
+#
+# # 5e. Format period summary
+# my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2021")
+#
 
 
 # ------------------------------------------------------------------------------

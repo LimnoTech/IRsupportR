@@ -11,7 +11,7 @@ summarize_basic <- function(criteria_results) {
 
 
   df <- criteria_results %>%
-    dplyr::filter(pollutant_group %in% basic_other)
+    dplyr::filter(pollutant_group %in% organics)
 
   # very basic summary
 

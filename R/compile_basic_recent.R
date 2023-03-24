@@ -8,11 +8,11 @@
 #' @export
 #'
 #' @examples
-compile_basic_recent <- function(my_basic_summary_recent_metals,  my_basic_summary_recent_pah, my_basic_summary_recent_other) {
+compile_basic_recent <- function(my_basic_summary_recent_metals, my_basic_summary_recent_other) {
 
 
   df_compiled <- my_basic_summary_recent_metals %>%
-    dplyr::bind_rows(my_basic_summary_recent_pah, my_basic_summary_recent_other)
+    dplyr::bind_rows( my_basic_summary_recent_other)
 
   return(df_compiled)
 

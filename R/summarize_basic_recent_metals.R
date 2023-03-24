@@ -15,7 +15,7 @@ summarize_basic_recent_metals <- function(criteria_results,
 
 
   df <- criteria_results %>%
-    dplyr::filter(pollutant_group %in% basic_metals)
+    dplyr::filter(pollutant_group %in% metals)
 
   start_date <- as.Date(start_date, format = "%m/%d/%Y")
   end_date <- as.Date(end_date, format = "%m/%d/%Y")
