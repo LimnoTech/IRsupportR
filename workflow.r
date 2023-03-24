@@ -71,7 +71,23 @@ my_basic_summary_other <- summarize_basic(criteria_results)
 # 3d. Compile All Basic Summaries
 my_basic_summary <- compile_basic(my_basic_summary_other, my_basic_summary_metals)
 
-write.csv(my_basic_summary, "output/intermediate_results_draft_20230324.csv")
+# ------------------------------------------------------------------------------
+# 4. Summarize Basic Recent Summary (Last 10 Years)
+# ------------------------------------------------------------------------------
+
+# 4a. Metals Only
+my_basic_summary_10yr_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = "07/01/2011", end_date = "06/30/2021")
+
+# 4b. PAHs Only
+# my_basic_summary_10yr_pah <- summarize_basic_recent_pah(criteria_results = criteria_results, start_date = "07/01/2011", end_date = "06/30/2021")
+
+# 4c. Other (non Metal) parameters
+my_basic_summary_10yr_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2011", end_date = "06/30/2021")
+
+# 4d. Compile All Last 5 Year Summaries
+my_basic_summary_10yr <- compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other)
+
+write.csv(my_basic_summary_10yr, "output/intermediate_results_draft_20230324.csv")
 
 
 # ------------------------------------------------------------------------------
@@ -79,16 +95,20 @@ write.csv(my_basic_summary, "output/intermediate_results_draft_20230324.csv")
 # ------------------------------------------------------------------------------
 
 # 4a. Metals Only
-my_basic_summary_recent_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+my_basic_summary_5yr_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
 
 # 4b. PAHs Only
-# my_basic_summary_recent_pah <- summarize_basic_recent_pah(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+# my_basic_summary_5yr_pah <- summarize_basic_recent_pah(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
 
 # 4c. Other (non Metal) parameters
-my_basic_summary_recent_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+my_basic_summary_5yr_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
 
 # 4d. Compile All Last 5 Year Summaries
-my_basic_summary_recent <- compile_basic_recent(my_basic_summary_recent_metals, my_basic_summary_recent_other)
+my_basic_summary_5yr <- compile_basic_recent(my_basic_summary_5yr_metals, my_basic_summary_5yr_other)
+
+
+
+
 
 
 # # ------------------------------------------------------------------------------
@@ -112,6 +132,15 @@ my_basic_summary_recent <- compile_basic_recent(my_basic_summary_recent_metals, 
 # # 5e. Format period summary
 # my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2021")
 #
+
+
+
+# ------------------------------------------------------------------------------
+# 6. Create Decision Logic
+# ------------------------------------------------------------------------------
+
+# 6a. consolidate for Appendix B - Class C
+my_decision_logic <- create_decision_logic(my_basic_summary, my_basic_summary_10yr, my_basic_summary_5yr)
 
 
 # ------------------------------------------------------------------------------
