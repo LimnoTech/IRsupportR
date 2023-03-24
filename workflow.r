@@ -13,8 +13,9 @@ devtools::load_all()
 # 0. Load Processed Data
 # ------------------------------------------------------------------------------
 
-file <- "data/final_processed_data_20230125.csv"
-ir_data <- read_ir_data(file)
+# file <- "data/final_processed_data_20230125.csv"
+# ir_data <- read_ir_data(file)
+ir_data <- all_processed_data
 
 # Categories of pollutant_group
 metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
@@ -27,12 +28,22 @@ basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTAC
 
 
 # ------------------------------------------------------------------------------
-# 1. Lookup Criteria
+# 1. Lookup Current Categorization
 # ------------------------------------------------------------------------------
+
+ir_data <- lookup_category(ir_data)
+
+
+
+# ------------------------------------------------------------------------------
+# 1. Lookup Criteria and Ratios
+# ------------------------------------------------------------------------------
+
+ir_data <- lookup_criteria_ratio(ir_data)
 
 ir_data <- lookup_criteria(ir_data)
 
-write.csv(ir_data, "output/curated_ir_data_draft_20230125_2.csv")
+write.csv(ir_data, "output/curated_ir_data_draft_20230324.csv")
 
 
 # ------------------------------------------------------------------------------
@@ -41,7 +52,7 @@ write.csv(ir_data, "output/curated_ir_data_draft_20230125_2.csv")
 
 criteria_results <- evaluate_criteria(ir_data)
 
-write.csv(criteria_results, "output/criteria_results_draft_20230125_2.csv")
+write.csv(criteria_results, "output/criteria_results_draft_20230324.csv")
 
 
 # ------------------------------------------------------------------------------
@@ -107,11 +118,11 @@ my_formatted_period <- format_period_summary(my_period_summary_forward, period_e
 
 # 6a. consolidate for Appendix B - Class C
 my_appendix_b_class_c <- create_ir_appendix_b_class_c(my_basic_summary, my_basic_summary_recent, my_formatted_period)
-write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230125_2.csv", row.names = F)
+write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230324.csv", row.names = F)
 
 # 6b. consolidate for Appendix B - Class D
 my_appendix_b_class_d <- create_ir_appendix_b_class_d(my_basic_summary, my_basic_summary_recent, my_formatted_period)
-write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230125_2.csv", row.names = F)
+write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230324.csv", row.names = F)
 
 
 
