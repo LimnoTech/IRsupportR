@@ -11,7 +11,7 @@ summarize_basic_pah <- function(criteria_results) {
 
 
   df <- criteria_results %>%
-    dplyr::filter(pollutant_group %in% baSic_pahs)
+    dplyr::filter(pollutant_group %in% basic_pahs)
 
   # very basic summary
 

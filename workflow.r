@@ -27,19 +27,12 @@ organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLO
 # basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PCB_TOTAL")
 
 
-# ------------------------------------------------------------------------------
-# 1. Lookup Current Categorization
-# ------------------------------------------------------------------------------
-
-ir_data <- lookup_category(ir_data)
-
 
 
 # ------------------------------------------------------------------------------
 # 1. Lookup Criteria and Ratios
 # ------------------------------------------------------------------------------
 
-ir_data <- lookup_criteria_ratio(ir_data)
 
 ir_data <- lookup_criteria(ir_data)
 
@@ -87,7 +80,7 @@ my_basic_summary_10yr_other <- summarize_basic_recent(criteria_results = criteri
 # 4d. Compile All Last 5 Year Summaries
 my_basic_summary_10yr <- compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other)
 
-write.csv(my_basic_summary_10yr, "output/intermediate_results_draft_20230324.csv")
+
 
 
 # ------------------------------------------------------------------------------
@@ -134,6 +127,14 @@ my_basic_summary_5yr <- compile_basic_recent(my_basic_summary_5yr_metals, my_bas
 #
 
 
+# ------------------------------------------------------------------------------
+# 6. Compile Summaries
+# ------------------------------------------------------------------------------
+
+# 6a. consolidate for Appendix B - Class C
+my_decision_logic <- compile_summaries(my_basic_summary, my_basic_summary_10yr, my_basic_summary_5yr)
+
+write.csv(my_decision_logic, "output/intermediate_results_draft_20230324.csv")
 
 # ------------------------------------------------------------------------------
 # 6. Create Decision Logic
