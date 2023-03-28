@@ -7,8 +7,8 @@
 #'
 #' @examples
 compile_summaries <- function (my_basic_summary,
-                                          my_basic_summary_10yr,
-                                          my_basic_summary_5yr) {
+                               my_basic_summary_10yr,
+                               my_basic_summary_5yr) {
 
 
   df_grid <- expand.grid(waterbody_segment = unique(my_basic_summary$waterbody_segment), pollutant_name = pollutant_name$pollutant_name,  test_fraction = c("TOTAL", "DISSOLVED", NA))
