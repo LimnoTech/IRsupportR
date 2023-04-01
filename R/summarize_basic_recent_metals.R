@@ -17,13 +17,13 @@ summarize_basic_recent_metals <- function(criteria_results,
   df <- criteria_results %>%
     dplyr::filter(pollutant_group %in% metals)
 
-  start_date <- as.Date(start_date, format = "%m/%d/%Y")
-  end_date <- as.Date(end_date, format = "%m/%d/%Y")
+
+  start_date <- as.POSIXct(start_date, format = "%m/%d/%Y")
+  end_date <- as.POSIXct(end_date, format = "%m/%d/%Y")
 
 
   df_summary <- df %>%
-    # dplyr::filter(dplyr::between(sample_date, start_date, end_date)) %>%
-    dplyr::filter(sample_date >= start_date & sample_date <= end_date) %>%
+    dplyr::filter(dplyr::between(sample_date, start_date, end_date)) %>%
     dplyr::group_by(waterbody_segment, pollutant_name , pollutant_group, test_fraction) %>%
     dplyr::summarize(n_samples_recent = dplyr::n(),
                      most_recent_sample_recent = max(year),
