@@ -36,7 +36,7 @@ organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLO
 
 ir_data <- lookup_criteria(ir_data)
 
-write.csv(ir_data, "output/curated_ir_data_draft_20230328.csv")
+write.csv(ir_data, "output/curated_ir_data_draft_20230404.csv")
 
 
 # ------------------------------------------------------------------------------
@@ -45,7 +45,7 @@ write.csv(ir_data, "output/curated_ir_data_draft_20230328.csv")
 
 criteria_results <- evaluate_criteria(ir_data)
 
-write.csv(criteria_results, "output/criteria_results_draft_20230328.csv")
+write.csv(criteria_results, "output/criteria_results_draft_20230404.csv")
 
 
 # ------------------------------------------------------------------------------
@@ -80,6 +80,7 @@ my_basic_summary_10yr_other <- summarize_basic_recent(criteria_results = criteri
 # 4d. Compile All Last 5 Year Summaries
 my_basic_summary_10yr <- compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other)
 
+# write.csv(my_basic_summary_10yr, file = "output/intermediate_results_d_draft_20230404.csv", row.names = F)
 
 
 
@@ -134,7 +135,7 @@ my_basic_summary_5yr <- compile_basic_recent(my_basic_summary_5yr_metals, my_bas
 # 6a. consolidate for Appendix B - Class C
 my_compiled_summaries <- compile_summaries(my_basic_summary, my_basic_summary_10yr, my_basic_summary_5yr)
 
-write.csv(my_decision_logic, "output/intermediate_results_draft_20230328.csv")
+
 
 # ------------------------------------------------------------------------------
 # 6. Create Decision Logic
@@ -142,7 +143,7 @@ write.csv(my_decision_logic, "output/intermediate_results_draft_20230328.csv")
 
 # Class D
 my_decision_logic <- create_decision_logic(my_compiled_summaries)
-write.csv(my_decision_logic, file = "output/appendix_b_class_d_draft_20230328.csv", row.names = F)
+# write.csv(my_decision_logic, file = "output/appendix_b_class_d_draft_20230404.csv", row.names = F)
 
 
 
@@ -152,11 +153,11 @@ write.csv(my_decision_logic, file = "output/appendix_b_class_d_draft_20230328.cs
 #
 # # 6a. consolidate for Appendix B - Class C
 # my_appendix_b_class_c <- create_ir_appendix_b_class_c(my_basic_summary, my_basic_summary_recent, my_formatted_period)
-# write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230324.csv", row.names = F)
-#
-# # 6b. consolidate for Appendix B - Class D
-# my_appendix_b_class_d <- create_ir_appendix_b_class_d(my_basic_summary, my_basic_summary_recent, my_formatted_period)
-# write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230324.csv", row.names = F)
+# write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230404.csv", row.names = F)
+
+# 6b. consolidate for Appendix B - Class D
+my_appendix_b_class_d <- create_ir_appendix_b_class_d(my_decision_logic, five_year_start_date = "07/01/2016")
+write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230404.csv", row.names = F)
 
 
 

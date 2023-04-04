@@ -18,7 +18,6 @@ compile_summaries <- function (my_basic_summary,
     dplyr::left_join(my_basic_summary_10yr) %>%
     dplyr::left_join(my_basic_summary_5yr) %>%
     dplyr::filter(n_samples != "") %>%
-    dplyr::filter(!pollutant_group %in% metals | test_fraction == "DISSOLVED") %>% #Keep only dissolved metals. Remove metals where test fraction is DISSOLVED or NA
     dplyr::filter(!pollutant_group %in% organics | is.na(test_fraction))  #Remove total and dissolved rows for organics - data tracked without test fraction
 
 
