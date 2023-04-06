@@ -142,8 +142,12 @@ my_compiled_summaries <- compile_summaries(my_basic_summary, my_basic_summary_10
 # ------------------------------------------------------------------------------
 
 # Class D
-my_decision_logic <- create_decision_logic(my_compiled_summaries)
-# write.csv(my_decision_logic, file = "output/appendix_b_class_d_draft_20230404.csv", row.names = F)
+# my_decision_logic_class_c <- create_decision_logic_class_c(my_compiled_summaries)
+# write.csv(my_decision_logic_class_c, file = "output/my_decision_logic_class_c.csv", row.names = F)
+
+# Class D
+my_decision_logic_class_d <- create_decision_logic_class_d(my_compiled_summaries)
+write.csv(my_decision_logic_class_d, file = "output/my_decision_logic_class_d.csv", row.names = F)
 
 
 
@@ -152,11 +156,11 @@ my_decision_logic <- create_decision_logic(my_compiled_summaries)
 # # ------------------------------------------------------------------------------
 #
 # # 6a. consolidate for Appendix B - Class C
-# my_appendix_b_class_c <- create_ir_appendix_b_class_c(my_basic_summary, my_basic_summary_recent, my_formatted_period)
+# my_appendix_b_class_c <- create_ir_appendix_b_class_c(my_decision_logic_class_c, five_year_start_date = "07/01/2016")
 # write.csv(my_appendix_b_class_c, file = "output/appendix_b_class_c_draft_20230404.csv", row.names = F)
 
 # 6b. consolidate for Appendix B - Class D
-my_appendix_b_class_d <- create_ir_appendix_b_class_d(my_decision_logic, five_year_start_date = "07/01/2016")
+my_appendix_b_class_d <- create_ir_appendix_b_class_d(my_decision_logic_class_d, five_year_start_date = "07/01/2016")
 write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_draft_20230404.csv", row.names = F)
 
 

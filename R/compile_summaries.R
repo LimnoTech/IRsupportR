@@ -14,15 +14,16 @@ compile_summaries <- function (my_basic_summary,
   df_grid <- expand.grid(waterbody_segment = unique(my_basic_summary$waterbody_segment), pollutant_name = pollutant_name$pollutant_name,  test_fraction = c("TOTAL", "DISSOLVED", NA))
 
   df <- df_grid %>%
-    dplyr::left_join(my_basic_summary) %>%
-    dplyr::left_join(my_basic_summary_10yr) %>%
-    dplyr::left_join(my_basic_summary_5yr) %>%
-    dplyr::filter(n_samples != "") %>%
+    dplyr::left_join(pollutant_name, by = "pollutant_name") %>%
+    dplyr::left_join(my_basic_summary, by = c("waterbody_segment", "pollutant_name", "pollutant_group", "test_fraction")) %>%
+    dplyr::left_join(my_basic_summary_10yr, by = c("waterbody_segment", "pollutant_name", "pollutant_group", "test_fraction")) %>%
+    dplyr::left_join(my_basic_summary_5yr, by = c("waterbody_segment", "pollutant_name", "pollutant_group", "test_fraction")) %>%
+    # dplyr::filter(n_samples != "")
     dplyr::filter(!pollutant_group %in% organics | is.na(test_fraction))  #Remove total and dissolved rows for organics - data tracked without test fraction
 
 
   df <- df %>%
     dplyr::left_join(ir_categories, by = c("pollutant_name", "waterbody_segment")) %>%
-    dplyr::left_join(criteria_ratios, by = "pollutant_name")
+    dplyr::left_join(criteria_ratios, by = c("pollutant_name", "test_fraction"))
 
 }

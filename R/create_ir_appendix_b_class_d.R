@@ -21,23 +21,20 @@ create_ir_appendix_b_class_d <- function(my_decision_logic, five_year_start_date
   df <- df %>%
     dplyr::mutate(was_last_d_exceedance_within_5_year_period = dplyr::case_when(most_recent_d_exceedance_date >= five_year_start_date ~ "Yes",
                                                                                 most_recent_d_exceedance_date < five_year_start_date ~ "No")) %>%
-    dplyr::mutate(n_d_exceedance = tidyr::replace_na(n_d_exceedance, 0),
-                  n_since_most_recent_d_exceedance = tidyr::replace_na(n_since_most_recent_d_exceedance, 0)) %>%
     dplyr::mutate_all(as.character) %>%
-    dplyr::mutate(most_recent_d_exceedance_year = tidyr::replace_na(most_recent_d_exceedance_year, "Never")) %>%
     dplyr::mutate(number_of_unique_days_sampled = n_sample_dates,
                   number_of_samples_1990_to_2021 = n_samples,
                   number_of_samples_2011_to_2021 = n_samples_2011_to_2021,
                   number_of_samples_2016_to_2021 = n_samples_2016_to_2021,
                   number_of_detects_1990_to_2021 = n_detects,
-                  n_d_exceedance_1990_to_2021 = paste0(n_d_exceedance, " (D)"),
-                  number_of_samples_since_last_class_d_exceedance = paste0(n_since_most_recent_d_exceedance, " (D)")) %>%
+                  n_d_exceedance_1990_to_2021 = n_d_exceedance,
+                  number_of_samples_since_last_class_d_exceedance = n_since_most_recent_d_exceedance) %>%
     dplyr::mutate(number_of_samples_1990_to_2021 = tidyr::replace_na(number_of_samples_1990_to_2021, "0"),
                   number_of_samples_2011_to_2021 = tidyr::replace_na(number_of_samples_2011_to_2021, "0"),
                   number_of_samples_2016_to_2021 = tidyr::replace_na(number_of_samples_2016_to_2021, "0"),
                   number_of_detects_1990_to_2021 = tidyr::replace_na(number_of_detects_1990_to_2021, "0"),
-                  n_d_exceedance_1990_to_2021 = tidyr::replace_na(n_d_exceedance_1990_to_2021, "0 (D)"),
-                  number_of_samples_since_last_class_d_exceedance = tidyr::replace_na(number_of_samples_since_last_class_d_exceedance, "0 (D)")) %>%
+                  number_of_unique_days_sampled = tidyr::replace_na(number_of_unique_days_sampled, "0"),
+                  n_d_exceedance_1990_to_2021 = tidyr::replace_na(n_d_exceedance_1990_to_2021, "0")) %>%
     dplyr::select(waterbody_segment,
                   pollutant_name,
                   pollutant_group,
@@ -50,7 +47,7 @@ create_ir_appendix_b_class_d <- function(my_decision_logic, five_year_start_date
                   number_of_samples_2011_to_2021,
                   n_d_exceedance_2011_to_2021,
                   number_of_samples_2016_to_2021,
-                  n_d_exceedance_2016_to_2021,
+                  # n_d_exceedance_2016_to_2021,
                   number_of_samples_since_last_class_d_exceedance,
                   d_criterion,
                   d_dl_ratio_range,
