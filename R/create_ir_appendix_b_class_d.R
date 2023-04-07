@@ -34,7 +34,8 @@ create_ir_appendix_b_class_d <- function(my_decision_logic, five_year_start_date
                   number_of_samples_2016_to_2021 = tidyr::replace_na(number_of_samples_2016_to_2021, "0"),
                   number_of_detects_1990_to_2021 = tidyr::replace_na(number_of_detects_1990_to_2021, "0"),
                   number_of_unique_days_sampled = tidyr::replace_na(number_of_unique_days_sampled, "0"),
-                  n_d_exceedance_1990_to_2021 = tidyr::replace_na(n_d_exceedance_1990_to_2021, "0")) %>%
+                  n_d_exceedance_1990_to_2021 = tidyr::replace_na(n_d_exceedance_1990_to_2021, "0"),
+                  number_of_samples_since_last_class_d_exceedance = tidyr::replace_na(number_of_samples_since_last_class_d_exceedance, "No exceedance")) %>%
     dplyr::select(waterbody_segment,
                   pollutant_name,
                   pollutant_group,
@@ -52,9 +53,10 @@ create_ir_appendix_b_class_d <- function(my_decision_logic, five_year_start_date
                   d_criterion,
                   d_dl_ratio_range,
                   was_last_d_exceedance_within_5_year_period,
-                  tidal_type,
+                  fish_tissue_results_class_d,
                   decision_description,
-                  decision_case_number)
+                  decision_case_number,
+                  updated_tmdl)
 
   return(df)
 

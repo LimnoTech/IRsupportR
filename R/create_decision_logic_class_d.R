@@ -18,6 +18,7 @@ create_decision_logic_class_d <- function (df) {
 
 
 
+
   for (i in 1:nrow(df)) {
 
     if ( df[i, "d_criterion"] == "no criteria") {

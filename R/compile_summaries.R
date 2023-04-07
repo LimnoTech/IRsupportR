@@ -24,6 +24,9 @@ compile_summaries <- function (my_basic_summary,
 
   df <- df %>%
     dplyr::left_join(ir_categories, by = c("pollutant_name", "waterbody_segment")) %>%
-    dplyr::left_join(criteria_ratios, by = c("pollutant_name", "test_fraction"))
+    dplyr::left_join(criteria_ratios, by = c("pollutant_name", "test_fraction")) %>%
+    dplyr::left_join(tidal_type, by = "waterbody_segment") %>%
+    dplyr::left_join(fish_tissue_results, by = c("pollutant_name", "tidal_type")) %>%
+    dplyr::left_join(updated_tmdl, by = c("pollutant_name", "waterbody_segment"))
 
 }
