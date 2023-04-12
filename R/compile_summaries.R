@@ -11,6 +11,7 @@ compile_summaries <- function (my_basic_summary,
                                my_basic_summary_5yr) {
 
 
+  # Join Summary Tables
   df_grid <- expand.grid(waterbody_segment = unique(my_basic_summary$waterbody_segment), pollutant_name = pollutant_name$pollutant_name,  test_fraction = c("TOTAL", "DISSOLVED", NA))
 
   df <- df_grid %>%
@@ -22,6 +23,15 @@ compile_summaries <- function (my_basic_summary,
     dplyr::filter(!pollutant_group %in% organics | is.na(test_fraction))  #Remove total and dissolved rows for organics - data tracked without test fraction
 
 
+  # Consolidate CCC and CMC
+  df <- df %>%
+    dplyr::mutate(n_c_exceedance = pmax(n_ccc_exceedance, n_cmc_exceedance, na.rm = TRUE),
+                  n_c_exceedance_2011_to_2021 = pmax(n_ccc_exceedance_2011_to_2021, n_cmc_exceedance_2011_to_2021, na.rm = TRUE),
+                  n_c_exceedance_2016_to_2021 = pmax(n_ccc_exceedance_2016_to_2021, n_cmc_exceedance_2016_to_2021, na.rm = TRUE),
+                  n_since_most_recent_c_exceedance = pmax(n_since_most_recent_ccc_exceedance, n_since_most_recent_cmc_exceedance, na.rm = TRUE),
+                  most_recent_c_exceedance_date = pmax(most_recent_ccc_exceedance_date, most_recent_cmc_exceedance_date, na.rm = TRUE))
+
+  # Join Additional Lookup Tables
   df <- df %>%
     dplyr::left_join(ir_categories, by = c("pollutant_name", "waterbody_segment")) %>%
     dplyr::left_join(criteria_ratios, by = c("pollutant_name", "test_fraction")) %>%

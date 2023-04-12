@@ -19,24 +19,23 @@ create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_dat
 
 
   df <- df %>%
-    dplyr::mutate(was_last_c_exceedance_within_5_year_period = dplyr::case_when(pmax(most_recent_ccc_exceedance_date, most_recent_cmc_exceedance_date, na.rm = TRUE) >= five_year_start_date ~ "Yes",
-                                                                                pmax(most_recent_ccc_exceedance_date, most_recent_cmc_exceedance_date, na.rm = TRUE) < five_year_start_date ~ "No")) %>%
+    dplyr::mutate(was_last_c_exceedance_within_5_year_period = dplyr::case_when(most_recent_c_exceedance_date >= five_year_start_date ~ "Yes",
+                                                                                most_recent_c_exceedance_date < five_year_start_date ~ "No")) %>%
     dplyr::mutate_all(as.character) %>%
     dplyr::mutate(number_of_unique_days_sampled = n_sample_dates,
                   number_of_samples_1990_to_2021 = n_samples,
                   number_of_samples_2011_to_2021 = n_samples_2011_to_2021,
                   number_of_samples_2016_to_2021 = n_samples_2016_to_2021,
                   number_of_detects_1990_to_2021 = n_detects,
-                  n_c_exceedance_1990_to_2021 = pmax(n_ccc_exceedance, n_cmc_exceedance, na.rm = TRUE),
-                  n_c_exceedance_2011_to_2021 = pmax(n_ccc_exceedance_2011_to_2021, n_cmc_exceedance_2011_to_2021, na.rm = TRUE),
-                  number_of_samples_since_last_class_c_exceedance = pmax(n_since_most_recent_ccc_exceedance, n_since_most_recent_cmc_exceedance, na.rm = TRUE)) %>%
+                  n_c_exceedance_1990_to_2021 = n_c_exceedance,
+                  number_of_samples_since_last_class_c_exceedance = n_since_most_recent_c_exceedance) %>%
     dplyr::mutate(number_of_samples_1990_to_2021 = tidyr::replace_na(number_of_samples_1990_to_2021, "0"),
                   number_of_samples_2011_to_2021 = tidyr::replace_na(number_of_samples_2011_to_2021, "0"),
                   number_of_samples_2016_to_2021 = tidyr::replace_na(number_of_samples_2016_to_2021, "0"),
                   number_of_detects_1990_to_2021 = tidyr::replace_na(number_of_detects_1990_to_2021, "0"),
                   number_of_unique_days_sampled = tidyr::replace_na(number_of_unique_days_sampled, "0"),
                   n_c_exceedance_1990_to_2021 = tidyr::replace_na(n_c_exceedance_1990_to_2021, "0"),
-                  n_c_exceedance_2011_to_2021 = tidyr::replace_na(n_c_exceedance_2011_to_2021, "0")) %>%
+                  number_of_samples_since_last_class_c_exceedance = tidyr::replace_na(number_of_samples_since_last_class_c_exceedance, "No exceedance")) %>%
     dplyr::select(waterbody_segment,
                   pollutant_name,
                   pollutant_group,
@@ -56,9 +55,10 @@ create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_dat
                   cmc_criterion,
                   cmc_dl_ratio_range,
                   was_last_c_exceedance_within_5_year_period,
-                  tidal_type,
+                  # fish_tissue_results_class_d,
                   decision_description,
-                  decision_case_number)
+                  decision_case_number,
+                  updated_tmdl)
 
 
   # period <- formatted_period_results %>%

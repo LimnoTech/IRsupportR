@@ -93,6 +93,18 @@ summarize_basic_metals <- function(criteria_results) {
 
 
 
+  # # Formatting
+  # df_summary_metals <- df_summary_metals %>%
+  #   dplyr::mutate(n_since_most_recent_ccc_exceedance = dplyr::case_when(is.na(most_recent_ccc_exceedance_date) ~ NA,
+  #                                                                       TRUE ~ n_since_most_recent_ccc_exceedance),
+  #                 n_since_most_recent_cmc_exceedance = dplyr::case_when(is.na(most_recent_cmc_exceedance_date) ~ NA,
+  #                                                                       TRUE ~ n_since_most_recent_cmc_exceedance),
+  #                 n_since_most_recent_d_exceedance = dplyr::case_when(is.na(most_recent_d_exceedance_date) ~ NA,
+  #                                                                     TRUE ~ n_since_most_recent_d_exceedance))
+
+
+
+
 
   return(df_summary_metals)
 
