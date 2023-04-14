@@ -47,6 +47,10 @@ create_decision_logic_class_c <- function (df) {
 
               df[i, "decision_case_number"] <- 5
 
+            } else if ( df[i, "c_dl_ratio"] == "no ratio" ) {
+
+              df[i, "decision_case_number"] <- 5
+
             }
           } else {
 
