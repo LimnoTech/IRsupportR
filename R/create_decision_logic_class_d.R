@@ -143,6 +143,13 @@ create_decision_logic_class_d <- function (df) {
 
 
 
+  df <- df %>%
+    dplyr::left_join(decisions, by = c("current_category", "decision_case_number")) %>%
+    dplyr::rename(d_decision_description = decision_description,
+                  d_decision_case_number = decision_case_number)
+
+
+
   return(df)
 
 
