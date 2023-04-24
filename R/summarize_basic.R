@@ -84,25 +84,10 @@ summarize_basic <- function(criteria_results) {
     dplyr::summarize(n_since_most_recent_ccc_exceedance = sum(sample_date > most_recent_ccc_exceedance_date),
                      n_since_most_recent_cmc_exceedance = sum(sample_date > most_recent_cmc_exceedance_date),
                      n_since_most_recent_d_exceedance = sum(sample_date > most_recent_d_exceedance_date)) %>%
-    dplyr::mutate(n_since_most_recent_ccc_exceedance = tidyr::replace_na(n_since_most_recent_ccc_exceedance, 0),
-                  n_since_most_recent_cmc_exceedance = tidyr::replace_na(n_since_most_recent_cmc_exceedance, 0),
-                  n_since_most_recent_d_exceedance = tidyr::replace_na(n_since_most_recent_d_exceedance, 0)) %>%
     dplyr::right_join(df_summary) %>%
     dplyr::relocate(n_since_most_recent_ccc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_cmc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_d_exceedance, .after = dplyr::last_col())
-
-
-  # # Formatting
-  # df_summary_metals <- df_summary_metals %>%
-  #   dplyr::mutate(n_since_most_recent_ccc_exceedance = dplyr::case_when(is.na(most_recent_ccc_exceedance_date) ~ NA,
-  #                                                                       TRUE ~ n_since_most_recent_ccc_exceedance),
-  #                 n_since_most_recent_cmc_exceedance = dplyr::case_when(is.na(most_recent_cmc_exceedance_date) ~ NA,
-  #                                                                       TRUE ~ n_since_most_recent_cmc_exceedance),
-  #                 n_since_most_recent_d_exceedance = dplyr::case_when(is.na(most_recent_d_exceedance_date) ~ NA,
-  #                                                                     TRUE ~ n_since_most_recent_d_exceedance))
-
-
 
 
 

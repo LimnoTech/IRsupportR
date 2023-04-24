@@ -83,9 +83,6 @@ summarize_basic_metals <- function(criteria_results) {
     dplyr::summarize(n_since_most_recent_ccc_exceedance = sum(sample_date > most_recent_ccc_exceedance_date),
                      n_since_most_recent_cmc_exceedance = sum(sample_date > most_recent_cmc_exceedance_date),
                      n_since_most_recent_d_exceedance = sum(sample_date > most_recent_d_exceedance_date)) %>%
-    dplyr::mutate(n_since_most_recent_ccc_exceedance = tidyr::replace_na(n_since_most_recent_ccc_exceedance, 0),
-                  n_since_most_recent_cmc_exceedance = tidyr::replace_na(n_since_most_recent_cmc_exceedance, 0),
-                  n_since_most_recent_d_exceedance = tidyr::replace_na(n_since_most_recent_d_exceedance, 0)) %>%
     dplyr::right_join(df_summary_metals) %>%
     dplyr::relocate(n_since_most_recent_ccc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_cmc_exceedance, .after = dplyr::last_col()) %>%

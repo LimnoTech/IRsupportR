@@ -34,7 +34,12 @@ create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_dat
                   number_of_detects_1990_to_2021 = tidyr::replace_na(number_of_detects_1990_to_2021, "0"),
                   number_of_unique_days_sampled = tidyr::replace_na(number_of_unique_days_sampled, "0"),
                   n_c_exceedance_1990_to_2021 = tidyr::replace_na(n_c_exceedance_1990_to_2021, "0"),
-                  number_of_samples_since_last_class_c_exceedance = tidyr::replace_na(number_of_samples_since_last_class_c_exceedance, "No exceedance")) %>%
+                  number_of_samples_since_last_class_c_exceedance = tidyr::replace_na(number_of_samples_since_last_class_c_exceedance, "No exceedance"),
+                  was_last_c_exceedance_within_5_year_period = tidyr::replace_na(was_last_c_exceedance_within_5_year_period, "No exceedance")) %>%
+    dplyr::mutate(n_c_exceedance_1990_to_2021 = dplyr::case_when(ccc_criterion == "no criteria" & cmc_criterion == "no criteria" ~ "N/A - no Class C WQ criteria",
+                                                                 TRUE ~ n_c_exceedance_1990_to_2021),
+                  n_c_exceedance_2011_to_2021 = dplyr::case_when(ccc_criterion == "no criteria" & cmc_criterion == "no criteria" ~ "N/A - no Class C WQ criteria",
+                                                                 TRUE ~ n_c_exceedance_2011_to_2021),) %>%
     dplyr::select(waterbody_segment,
                   pollutant_name,
                   pollutant_group,
@@ -54,8 +59,7 @@ create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_dat
                   cmc_dl_ratio_range,
                   was_last_c_exceedance_within_5_year_period,
                   c_decision_description,
-                  c_decision_case_number,
-                  updated_tmdl)
+                  c_decision_case_number)
 
   df <- df %>%
     dplyr::rename("Waterbody" = waterbody_segment,
@@ -70,15 +74,14 @@ create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_dat
                   "# of Samples Within Last 10 Years (2011-2021)" = number_of_samples_2011_to_2021,
                   "# of Exceedances Within Last 10 Years (2011 - 2021)" = n_c_exceedance_2011_to_2021,
                   "# of Samples Within Last 5 Years (2016 - 2021)" = number_of_samples_2016_to_2021,
-                  "# Samples Since Last Exceed-ance" = number_of_samples_since_last_class_c_exceedance,
+                  "# Samples Since Last Exceedance" = number_of_samples_since_last_class_c_exceedance,
                   "Class C CCC Criterion (ug/L)" = ccc_criterion,
                   "Range of Ratios Between Detection Limit and Criterion for CCC" = cmc_dl_ratio_range,
                   "Class C CMC Criterion (ug/L)" = cmc_criterion,
                   "Range of Ratios Between Detection Limit and Criterion for CMC" = cmc_dl_ratio_range,
                   "Was Last Exceedance Within Current 5-year Assessment Period (2016 - 2021)?" = was_last_c_exceedance_within_5_year_period,
                   "Reevaluation Categorization Decision for Class C" = c_decision_description,
-                  "Decision Logic Case #" = c_decision_case_number,
-                  "Updated TMDL?" = updated_tmdl)
+                  "Decision Logic Case #" = c_decision_case_number)
 
 
 
