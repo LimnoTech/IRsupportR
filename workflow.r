@@ -169,6 +169,9 @@ write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_20230421.csv"
 my_appendix_b_reconciliation <- create_ir_appendix_b_reconciliation(my_decision_logic_class_c, my_decision_logic_class_d)
 write.csv(my_appendix_b_reconciliation, file = "output/appendix_b_reconciliation_20230421.csv", row.names = F)
 
+# 6d. consolidate for Appendix B - Class D Merge
+my_appendix_b_class_d_merge <- create_ir_appendix_b_class_d_merge(my_decision_logic_class_d, five_year_start_date = "07/01/2016")
+
 
 
 
