@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_date) {
+create_ir_appendix_b_class_c_merge <- function (my_decision_logic, five_year_start_date) {
 
 
   five_year_start_date <- as.POSIXct(five_year_start_date, format = "%m/%d/%Y")
@@ -60,8 +60,6 @@ create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_dat
                   was_last_c_exceedance_within_5_year_period,
                   c_decision_description,
                   c_decision_case_number)
-
-  write.xlsx(df, file = "output/appendix_b_class_c_merge_20230421.xlsx", row.names = F)
 
   #Create lists of pollutants to determine which cells need to be merged
   pollutants_c_merge <- c("BENZO_A_ANTHRACENE", "BENZO_A_PYRENE", "BENZO_K_FLUORANTHENE", "CHRYSENE", "DIBENZO_A_H_ANTHRACENE", "FLUORENE", "INDENO_1_2_3_CD_PYRENE", "PYRENE")
