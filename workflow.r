@@ -169,7 +169,11 @@ write.csv(my_appendix_b_class_d, file = "output/appendix_b_class_d_20230510.csv"
 my_appendix_b_reconciliation <- create_ir_appendix_b_reconciliation(my_decision_logic_class_c, my_decision_logic_class_d)
 write.csv(my_appendix_b_reconciliation, file = "output/appendix_b_reconciliation_20230510.csv", row.names = F)
 
-# 6d. consolidate for Appendix B - Class D Merge
+# 6d. consolidate for Appendix B - Class C Merge
+my_appendix_b_class_c_merge <- create_ir_appendix_b_class_c_merge(my_decision_logic_class_c, five_year_start_date = "07/01/2016")
+write.xlsx(my_appendix_b_class_c_merge, file = "output/appendix_b_class_c_merge_20230421.xlsx", row.names = F)
+
+# 6e. consolidate for Appendix B - Class D Merge
 my_appendix_b_class_d_merge <- create_ir_appendix_b_class_d_merge(my_decision_logic_class_d, five_year_start_date = "07/01/2016")
 write.xlsx(my_appendix_b_class_d_merge, file = "output/appendix_b_class_d_merge_20230421.xlsx", row.names = F)
 
