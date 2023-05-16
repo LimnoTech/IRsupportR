@@ -158,8 +158,8 @@ create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_dat
     }
   }
   #Saving the workbook as an excel file
-  saveWorkbook(mv, "output/appendix_b_class_d_merge_partial.xlsx", overwrite = TRUE)
-  saveWorkbook(mv_cmc, "output/appendix_b_class_d_merge_partial_cmc.xlsx", overwrite = TRUE)
+  saveWorkbook(mv, "output/appendix_b_class_c_merge_partial.xlsx", overwrite = TRUE)
+  saveWorkbook(mv_cmc, "output/appendix_b_class_c_merge_partial_cmc.xlsx", overwrite = TRUE)
 
   #Renaming df columns
   df <- df %>%
