@@ -60,6 +60,37 @@ create_ir_appendix_b_class_d_merge <- function(my_decision_logic, five_year_star
                   d_decision_description,
                   d_decision_case_number)
 
+  #Create lists of pollutants to determine which cells need to be merged
+  pollutants_d_merge <- c("COPPER", "LEAD", "NAPHTHALENE")
+
+  #Updating contents on col M based on pollutant and exceedance value
+  df <- df %>%
+    dplyr::mutate(number_of_samples_since_last_class_d_exceedance = dplyr::case_when(pollutant_name %in% pollutants_d_merge &
+                                                                                       n_d_exceedance_1990_to_2021 == "N/A - no Class D WQ criteria" ~ "N/A - no Class D WQ criteria",
+                                                                                     TRUE ~ number_of_samples_since_last_class_d_exceedance))
+  #Create new data frames for values that need to be merged and other values
+  mergeValues <- df %>%
+    filter(number_of_samples_since_last_class_d_exceedance == "N/A - no Class D WQ criteria")
+  df <- df %>%
+    filter(!number_of_samples_since_last_class_d_exceedance == "N/A - no Class D WQ criteria")
+
+  #Renaming the columns
+
+  #Creating a workbook from mergedValues data frame
+  write.xlsx(mergeValues, file = "data/mergedrows.xlsx", rowNames = F)
+  mv <- loadWorkbook(file = "data/mergedrows.xlsx")
+
+  #Merging cells with for loop to reference row index
+  for(i in 1:nrow(mergeValues)) {
+    x <- mergeValues[i,13]
+    if(x == "N/A - no Class D WQ criteria"){
+      mergeCells(mv, 1, cols = 13:16, rows = i)
+    }
+  }
+  #Saving the workbook as an excel file
+  saveWorkbook(mv, "output/create_ir_appendix_b_class_d_merged_cells.xlsx", overwrite = TRUE)
+
+  #Renaming columns
 
   df <- df %>%
     dplyr::rename("Waterbody" = waterbody_segment,
@@ -82,6 +113,9 @@ create_ir_appendix_b_class_d_merge <- function(my_decision_logic, five_year_star
                   "Reevaluation Categorization Decision for Class D" = d_decision_description,
                   "Decision Logic Case #" = d_decision_case_number)
 
+
   return(df)
 
 }
+
+
