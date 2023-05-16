@@ -1,12 +1,19 @@
 Package: IRsupportR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Analyze Toxics Data from District of Columbia Waterbodies
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: c(
+    person("Shanna", "Rucker", email = "srucker@limno.com", 
+        role = c("aut", "cre")),
+    person("Ben", "Crary", email = "bcrary@hazenandsawyer.com", role = "aut"),
+    person("Diana", "Teran", email = "dteran@limno.com", role = "ctb"))
+Description: The objective of this package is to compile and evaluate historic 
+    water quality data to verify if the data supports impairments attributed to 
+    toxics. In order to accomplish this objective, data from various datasets 
+    are compiled and processed into one consistent dataset for comparing to 
+    numeric water quality criteria.  Categorization reevaluation decisions are 
+    proposed based on the implementation of a defined decision logic.  
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: 
