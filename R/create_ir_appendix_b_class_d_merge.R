@@ -60,7 +60,61 @@ create_ir_appendix_b_class_d_merge <- function(my_decision_logic, five_year_star
                   d_decision_description,
                   d_decision_case_number)
 
+  #Create lists of pollutants to determine which cells need to be merged
+  pollutants_d_merge <- c("COPPER", "LEAD", "NAPHTHALENE")
 
+  #Updating contents of col M based on pollutant and exceedance value
+  df <- df %>%
+    dplyr::mutate(number_of_samples_since_last_class_d_exceedance = dplyr::case_when(pollutant_name %in% pollutants_d_merge &
+                                                                                       n_d_exceedance_1990_to_2021 == "N/A - no Class D WQ criteria" ~ "N/A - no Class D WQ criteria",
+                                                                                     TRUE ~ number_of_samples_since_last_class_d_exceedance))
+
+  #Create new data frame for values that need to be merged
+  mergeValues <- df %>%
+    filter(number_of_samples_since_last_class_d_exceedance == "N/A - no Class D WQ criteria")
+
+  df <- df %>%
+    filter(!number_of_samples_since_last_class_d_exceedance == "N/A - no Class D WQ criteria")
+
+  #Renaming the columns
+  mergeValues <- mergeValues %>%
+    dplyr::rename("Waterbody" = waterbody_segment,
+                  "Pollutant" = pollutant_name,
+                  "Pollutant Group" = pollutant_group,
+                  "Test Fraction " = test_fraction,
+                  "Current Categorization in 2020 IR" = current_category,
+                  "Impaired Use Class in 2020 IR" = number_of_unique_days_sampled,
+                  "# Samples 1990-2021" = number_of_samples_1990_to_2021,
+                  "# Detects 1990-2021" = number_of_detects_1990_to_2021,
+                  "# Exceedances 1990-2021" = n_d_exceedance_1990_to_2021,
+                  "# of Samples Within Last 10 Years (2011-2021)" = number_of_samples_2011_to_2021,
+                  "# of Exceedances Within Last 10 Years (2011 - 2021)" = n_d_exceedance_2011_to_2021,
+                  "# of Samples Within Last 5 Years (2016 - 2021)" = number_of_samples_2016_to_2021,
+                  "# Samples Since Last Exceedance" = number_of_samples_since_last_class_d_exceedance,
+                  "Criterion (ug/L)" = d_criterion,
+                  "Range of Ratios Between Detection Limit and Criterion" = d_dl_ratio_range,
+                  "Was Last Exceedance Within Current 5-year Assessment Period (2016 - 2021)?" = was_last_d_exceedance_within_5_year_period,
+                  "Fish Tissue Results" = fish_tissue_results_class_d,
+                  "Reevaluation Categorization Decision for Class D" = d_decision_description,
+                  "Decision Logic Case #" = d_decision_case_number)
+
+
+  #Creating a workbook from mergedValues data frame
+  write.xlsx(mergeValues, file = "output/mergedrows.xlsx", rowNames = F)
+  mv <- loadWorkbook(file = "output/mergedrows.xlsx")
+
+  #Merging cells with for loop to reference row index
+  for(i in 1:nrow(mergeValues)) {
+    x <- mergeValues[i,13]
+    if(x == "N/A - no Class D WQ criteria"){
+      mergeCells(mv, 1, cols = 13:16, rows = i+1)
+    }
+  }
+
+  #Saving the workbook as an excel file
+  saveWorkbook(mv, "output/appendix_b_class_d_merge_partial.xlsx", overwrite = TRUE)
+
+  #Renaming df columns
   df <- df %>%
     dplyr::rename("Waterbody" = waterbody_segment,
                   "Pollutant" = pollutant_name,
@@ -85,3 +139,5 @@ create_ir_appendix_b_class_d_merge <- function(my_decision_logic, five_year_star
   return(df)
 
 }
+
+
