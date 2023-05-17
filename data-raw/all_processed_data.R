@@ -27,10 +27,6 @@ df <- df %>%
   dplyr::mutate(dplyr::across(where(is.character), toupper))
 
 
-# writexl::write_xlsx(df,"output/compiled_raw_data.xlsx")
-
-
-
 # ------------------------------------------------------------------------------
 # Step 1 -- Filter & Format Date:  01/01/1990 - 06/30/2021
 # ------------------------------------------------------------------------------
@@ -41,7 +37,6 @@ df <- df %>%
                 sample_date <= '2021-06-30') %>%
   dplyr::mutate(year = lubridate::year(sample_date),
                 month = lubridate::month(sample_date))
-
 
 
 # ------------------------------------------------------------------------------
@@ -77,12 +72,11 @@ df <- df %>%
   tidyr::drop_na(waterbody_segment)
 
 
-
 # ------------------------------------------------------------------------------
 # Step 4 -- Filter Pollutants
 # ------------------------------------------------------------------------------
 
-df_pollutant <- readxl::read_excel("data-raw/reference_tables/Pollutant_Crosswalk_20230103.xlsx", sheet = "Unique Paramaters")
+df_pollutant <- readxl::read_excel("data-raw/reference_tables/pollutant_crosswalk_20230511.xlsx", sheet = "Unique Paramaters")
 
 df_pollutant <- df_pollutant %>%
   dplyr::select(parameter, pollutant_name, pollutant_group)
@@ -105,6 +99,7 @@ df <- df %>%
                                                   result_unit == "NG/L" ~ "UG/L",
                                                   result_unit == "UG/L" ~ "UG/L"))
 
+
 # ------------------------------------------------------------------------------
 # Step 6 -- Determine Detect Status
 # ------------------------------------------------------------------------------
@@ -114,8 +109,6 @@ df <- df %>%
   dplyr::mutate(processed_detect_status = dplyr::case_when(grepl("U", qualifier) ~ "ND",
                                              TRUE ~ "D"))
 
-
-# writexl::write_xlsx(df,"output/processed_data_before_pcb_sums.xlsx")
 
 # ------------------------------------------------------------------------------
 # Step 7 -- Calculate PCB Totals
@@ -171,14 +164,19 @@ df_pcb_total <- df_pcb_tox_ph1 %>%
 all_processed_data <- df %>%
   dplyr::bind_rows(df_pcb_total)
 
-# writexl::write_xlsx(all_processed_data,"output/all_processed_data_20230125.xlsx")
-# write.csv(all_processed_data, "output/all_processed_data_20230125.csv")
-
 
 # ------------------------------------------------------------------------------
 # Step 8 -- Create RDA file
 # ------------------------------------------------------------------------------
 
 usethis::use_data(all_processed_data, overwrite = TRUE)
+writexl::write_xlsx(all_processed_data, "data/all_processed_data.xlsx")
+
+pollutant_name <- readxl::read_excel("data-raw/reference_tables/pollutant_crosswalk_20230511.xlsx", sheet = "pollutant_name")
+usethis::use_data(pollutant_name, overwrite = TRUE)
+
+pollutant_group <- readxl::read_excel("data-raw/reference_tables/pollutant_crosswalk_20230511.xlsx", sheet = "pollutant_group")
+usethis::use_data(pollutant_group, overwrite = TRUE)
+
 
 

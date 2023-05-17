@@ -13,8 +13,6 @@ devtools::load_all()
 # 0. Load Processed Data
 # ------------------------------------------------------------------------------
 
-# file <- "data/final_processed_data_20230125.csv"
-# ir_data <- read_ir_data(file)
 ir_data <- all_processed_data
 
 # Categories of pollutant_group
@@ -25,7 +23,6 @@ organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLO
 # basic_metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
 # basic_pahs <- c("PAH1", "PAH2", "PAH3")
 # basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PCB_TOTAL")
-
 
 
 
