@@ -1,11 +1,15 @@
-#' Title
+#' Look Up Criteria
 #'
-#' @param df
+#' Add water quality criteria to dataset.
 #'
-#' @return
+#' @param df obtained from all_processed_data.R script in data-raw folder.
+#'
+#' @return dataframe with water quality criteria columns added.
 #' @export
 #'
 #' @examples
+#' lookup_criteria(ir_data)
+
 lookup_criteria <- function(df) {
 
   # Expand organics_criteria table so that there is a record for pollutant/waterbody combination

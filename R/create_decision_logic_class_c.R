@@ -1,11 +1,18 @@
-#' create_decision_logic_class_c
+#' Create Class C Decision Logic
 #'
-#' @param df
+#' Determine decision case number based on established logic for Class C
+#' criteria.
 #'
-#' @return
+#' @param my_compiled_summaries obtained from
+#'   \code{\link{compile_summaries}}.
+#'
+#' @return dataframe with columns added for decision case number and decision
+#'   description.
 #' @export
 #'
 #' @examples
+#' create_decision_logic_class_c(my_compiled_summaries)
+
 create_decision_logic_class_c <- function (df) {
 
   # Code fails if there are any NA entries in the columns being evaluated

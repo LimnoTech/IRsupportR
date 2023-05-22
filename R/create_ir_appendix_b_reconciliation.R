@@ -1,11 +1,20 @@
-#' create_ir_appendix_b_reconciliation
+#' Create Decision Reconciliation Table
 #'
-#' @param
+#' Create table for reconciliation between Class C and Class D decisions.
 #'
-#' @return df
+#' @param my_decision_logic_class_c obtained from
+#'   \code{\link{create_decision_logic_class_c}}.
+#' @param my_decision_logic_class_d obtained from
+#'   \code{\link{create_decision_logic_class_d}}.
+#'
+#' @return dataframe with Class C and Class D decisions and descriptions plus
+#' the reconciled decision descriptions.
 #' @export
 #'
 #' @examples
+#' create_ir_appendix_b_reconciliation(my_decision_logic_class_c,
+#'                                     my_decision_logic_class_d)
+
 create_ir_appendix_b_reconciliation <- function (my_decision_logic_class_c, my_decision_logic_class_d) {
 
   df_c <- my_decision_logic_class_c %>%

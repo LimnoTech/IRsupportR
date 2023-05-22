@@ -1,11 +1,16 @@
-#' Title
+#' Evaluate Criteria
 #'
-#' @param df
+#' Determine whether Class C and Class D criteria are exceeded for each sample.
 #'
-#' @return
+#' @param df obtained from \code{\link{lookup_criteria}}.
+#'
+#' @return dataframe with boolean columns `exceedance_ccc`, `exceedance_cmc`,
+#'   `exceedance_d`.
 #' @export
 #'
 #' @examples
+#' evaluate_criteria(ir_data)
+
 evaluate_criteria <- function(df) {
 
   # Determine all non-metal pollutant_name(s) using list of all metals

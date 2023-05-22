@@ -1,13 +1,20 @@
-#' summarize_basic_recent_metals
+#' Basic Summary of Metals for Recent Timeframe
 #'
-#' @param df
-#' @param start_date
-#' @param end_date
+#' Create basic summary statistics for all metal parameters within specified
+#' timeframe.
 #'
-#' @return
+#' @param criteria_results obtained from \code{\link{evaluate_criteria}}.
+#' @param start_date beginning of date range of interest in "mm/dd/yyyy" format.
+#' @param end_date end of date range of interest in "mm/dd/yyyy" format.
+#'
+#' @return dataframe with added columns based on specified timeframe.
 #' @export
 #'
 #' @examples
+#' summarize_basic_recent_metals(criteria_results = criteria_results,
+#'                               start_date = "07/01/2011",
+#'                               end_date = "06/30/2021")
+
 summarize_basic_recent_metals <- function(criteria_results,
                                    start_date,
                                    end_date) {

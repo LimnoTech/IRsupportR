@@ -1,11 +1,19 @@
-#' create_ir_appendix_b_class_c
+#' Create Class C Results Appendix Table
 #'
-#' @param df
+#' Format table for inclusion in report appendices.
 #'
-#' @return
+#' @param my_decision_logic obtained from
+#'   \code{\link{create_decision_logic_class_c}}.
+#' @param five_year_start_date beginning of date range for last five year
+#'  analysis in "mm/dd/yyyy" format.
+#'
+#' @return dataframe with formatting adjusted and columns renamed.
 #' @export
 #'
 #' @examples
+#' create_ir_appendix_b_class_c(my_decision_logic_class_c,
+#'                              five_year_start_date = "07/01/2016")
+
 create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_date) {
 
 

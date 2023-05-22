@@ -1,11 +1,19 @@
-#' summarize_basic_metals
+#' Basic Summary of Metals
 #'
-#' @param df
+#' Create basic summary statistics for all metal parameters.
 #'
-#' @return
+#' @param criteria_results obtained from \code{\link{evaluate_criteria}}.
+#'
+#' @return dataframe with added columns `most_recent_ccc_exceedance_date`,
+#'   `most_recent_ccc_exceedance_year`, `most_recent_cmc_exceedance_date`,
+#'   `most_recent_cmc_exceedance_year`, `most_recent_d_exceedance_date`,
+#'   `most_recent_d_exceedance_year`, `n_since_most_recent_ccc_exceedance`,
+#'   `n_since_most_recent_cmc_exceedance`, `n_since_most_recent_d_exceedance`.
 #' @export
 #'
 #' @examples
+#' summarize_basic_metals(criteria_results)
+
 summarize_basic_metals <- function(criteria_results) {
 
 
@@ -88,16 +96,6 @@ summarize_basic_metals <- function(criteria_results) {
     dplyr::relocate(n_since_most_recent_cmc_exceedance, .after = dplyr::last_col()) %>%
     dplyr::relocate(n_since_most_recent_d_exceedance, .after = dplyr::last_col())
 
-
-
-  # # Formatting
-  # df_summary_metals <- df_summary_metals %>%
-  #   dplyr::mutate(n_since_most_recent_ccc_exceedance = dplyr::case_when(is.na(most_recent_ccc_exceedance_date) ~ NA,
-  #                                                                       TRUE ~ n_since_most_recent_ccc_exceedance),
-  #                 n_since_most_recent_cmc_exceedance = dplyr::case_when(is.na(most_recent_cmc_exceedance_date) ~ NA,
-  #                                                                       TRUE ~ n_since_most_recent_cmc_exceedance),
-  #                 n_since_most_recent_d_exceedance = dplyr::case_when(is.na(most_recent_d_exceedance_date) ~ NA,
-  #                                                                     TRUE ~ n_since_most_recent_d_exceedance))
 
 
 

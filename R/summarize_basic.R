@@ -1,11 +1,19 @@
-#' summarize_basic
+#' Basic Summary of Organic Parameters
 #'
-#' @param df
+#' Create basic summary statistics for all organic parameters.
 #'
-#' @return
+#' @param criteria_results obtained from \code{\link{evaluate_criteria}}.
+#'
+#' @return dataframe with columns `most_recent_ccc_exceedance_date`,
+#'   `most_recent_ccc_exceedance_year`, `most_recent_cmc_exceedance_date`,
+#'   `most_recent_cmc_exceedance_year`, `most_recent_d_exceedance_date`,
+#'   `most_recent_d_exceedance_year`, `n_since_most_recent_ccc_exceedance`,
+#'   `n_since_most_recent_cmc_exceedance`, `n_since_most_recent_d_exceedance`.
 #' @export
 #'
 #' @examples
+#' summarize_basic(criteria_results)
+
 summarize_basic <- function(criteria_results) {
 
 

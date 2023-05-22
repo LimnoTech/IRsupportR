@@ -1,11 +1,22 @@
-#' compile_summaries
+#' Compile All Summaries
 #'
-#' @param df
+#' Join basic summary with period based summaries. Add data from lookup tables.
 #'
-#' @return
+#' @param my_basic_summary obtained from
+#'   \code{\link{compile_basic}}.
+#' @param my_basic_summary_10yr obtained from
+#'   \code{\link{compile_basic_recent}}.
+#' @param my_basic_summary_5yr obtained from
+#'   \code{\link{compile_basic_recent}}.
+#'
+#' @return dataframe with columns from inputs plus additional lookup tables.
 #' @export
 #'
 #' @examples
+#' compile_summaries(my_basic_summary,
+#'                   my_basic_summary_10yr,
+#'                   my_basic_summary_5yr)
+
 compile_summaries <- function (my_basic_summary,
                                my_basic_summary_10yr,
                                my_basic_summary_5yr) {

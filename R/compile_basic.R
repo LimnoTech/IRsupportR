@@ -1,13 +1,17 @@
-#' compile_basic
+#' Compile Basic Summaries
 #'
-#' @param my_basic_summary_metals
-#' @param my_basic_summary_pah
-#' @param my_basic_summary_other
+#' Bind together metal and organic basic data summaries.
 #'
-#' @return
+#' @param my_basic_summary_metals obtained from
+#'   \code{\link{summarize_basic_metals}}.
+#' @param my_basic_summary_other obtained from \code{\link{summarize_basic}}.
+#'
+#' @return dataframe with same columns as inputs. Column order may change.
 #' @export
 #'
 #' @examples
+#' compile_basic(my_basic_summary_other, my_basic_summary_metals)
+
 compile_basic <- function(my_basic_summary_metals, my_basic_summary_other) {
 
 

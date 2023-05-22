@@ -1,13 +1,19 @@
-#' compile_basic_recent
+#' Compile Basic Summaries for Recent Timeframe
 #'
-#' @param my_basic_summary_metals
-#' @param my_basic_summary_pah
-#' @param my_basic_summary_other
+#' Bind together metal and organic basic data summaries for the same recent
+#' timeframe.
 #'
-#' @return
+#' @param my_basic_summary_recent_metals obtained from
+#'   \code{\link{summarize_basic_recent_metals}}.
+#' @param my_basic_summary_recent_other obtained from
+#'   \code{\link{summarize_basic_recent}}.
+#'
+#' @return dataframe with same columns as inputs.
 #' @export
 #'
 #' @examples
+#' compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other)
+
 compile_basic_recent <- function(my_basic_summary_recent_metals, my_basic_summary_recent_other) {
 
 
