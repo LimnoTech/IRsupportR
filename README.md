@@ -25,11 +25,72 @@ You can install the development version of IRsupportR from
 devtools::install_github("LimnoTech/IRsupportR")
 ```
 
-## Example
+## Using the Package
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
-library(IRsupportR)
-## basic example code
-```
+### Data Processing
+
+The original formatted data used for this analysis can be found in the
+[data-raw](https://github.com/LimnoTech/IRsupportR/tree/main/data-raw/formatted_data)
+folder. Data was compiled for seven different datasets and formatting
+was standardized across the datasets. The
+[all_processed_data.R](https://github.com/LimnoTech/IRsupportR/blob/main/data-raw/all_processed_data.R)
+script is used to further process the data. The final output of the
+script is saved as all_processed_data.rda in the
+[data](https://github.com/LimnoTech/IRsupportR/tree/main/data) folder.
+
+### Lookup Tables
+
+In addition to the input data, the
+[data](https://github.com/LimnoTech/IRsupportR/tree/main/data) folder
+contains various lookup tables used throughout the analysis. The package
+utilizes the .rda files. For ease of reference, .xlsx files have also
+been included for each lookup table.
+
+### Data Analysis
+
+The steps for the data analysis can be found in the
+[worflow.R](https://github.com/LimnoTech/IRsupportR/blob/main/workflow.r)
+file. Source the contents of this document to complete the analysis.
+Functions are run to evaluate criteria, perform summary statistics,
+execute decision logic, and compile results tables.
+
+### Outputs
+
+Multiple tables and spreadsheets are produced from the analysis and
+saved in the
+[output](https://github.com/LimnoTech/IRsupportR/tree/main/output)
+folder. They include the following:
+
+- Intermediate results with criteria evaluated
+
+  - criteria_results.csv
+
+- Final results as CSVs
+
+  - appendix_b\_class_c.csv
+
+  - appendix_b\_class_d.csv
+
+- Final results as Excel spreadsheets to allow for merge cell formatting
+
+  - Class C
+
+    - appendix_b\_class_c\_merge_part1.xlsx
+
+    - appendix_b\_class_c\_merge_part2.xlsx
+
+    - appendix_b\_class_c\_merge_part3.xlsx
+
+  - Class D
+
+    - appendix_b\_class_d\_merge_part1.xlsx
+
+    - appendix_b\_class_d\_merge_part2.xlsx
+
+- Final results as combined Excel spreadsheets. Includes merge cell
+  formatting. Combined manually
+
+  - manual_merge_parts/appendix_b\_class_c\_merged_all.xlsx
+  - manual_merge_parts/appendix_b\_class_d\_merged_all.xlsx
