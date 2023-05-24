@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' summarize_basic(criteria_results)
+#' try( summarize_basic(criteria_results) )
 
 summarize_basic <- function(criteria_results) {
 

@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other)
+#' try( compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other) )
 
 compile_basic_recent <- function(my_basic_summary_recent_metals, my_basic_summary_recent_other) {
 

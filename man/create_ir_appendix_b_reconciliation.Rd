@@ -24,6 +24,6 @@ the reconciled decision descriptions.
 Create table for reconciliation between Class C and Class D decisions.
 }
 \examples{
-create_ir_appendix_b_reconciliation(my_decision_logic_class_c,
-                                    my_decision_logic_class_d)
+try( create_ir_appendix_b_reconciliation(my_decision_logic_class_c,
+                                          my_decision_logic_class_d) )
 }

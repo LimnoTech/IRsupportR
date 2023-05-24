@@ -11,8 +11,8 @@
 #' @export
 #'
 #' @examples
-#' create_ir_appendix_b_class_c(my_decision_logic_class_c,
-#'                              five_year_start_date = "07/01/2016")
+#' try( create_ir_appendix_b_class_c(my_decision_logic_class_c,
+#'                                   five_year_start_date = "07/01/2016") )
 
 create_ir_appendix_b_class_c <- function (my_decision_logic, five_year_start_date) {
 

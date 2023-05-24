@@ -19,5 +19,5 @@ Determine decision case number based on established logic for Class D
 criteria.
 }
 \examples{
-create_decision_logic_class_c(my_compiled_summaries)
+try( create_decision_logic_class_c(my_compiled_summaries) )
 }

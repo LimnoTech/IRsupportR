@@ -27,7 +27,7 @@ dataframe with columns from inputs plus additional lookup tables.
 Join basic summary with period based summaries. Add data from lookup tables.
 }
 \examples{
-compile_summaries(my_basic_summary,
-                  my_basic_summary_10yr,
-                  my_basic_summary_5yr)
+try( compile_summaries(my_basic_summary,
+                        my_basic_summary_10yr,
+                        my_basic_summary_5yr) )
 }

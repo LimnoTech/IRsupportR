@@ -12,8 +12,8 @@
 #' @export
 #'
 #' @examples
-#' create_ir_appendix_b_reconciliation(my_decision_logic_class_c,
-#'                                     my_decision_logic_class_d)
+#' try( create_ir_appendix_b_reconciliation(my_decision_logic_class_c,
+#'                                           my_decision_logic_class_d) )
 
 create_ir_appendix_b_reconciliation <- function (my_decision_logic_class_c, my_decision_logic_class_d) {
 

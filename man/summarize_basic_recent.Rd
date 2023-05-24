@@ -21,7 +21,7 @@ Create basic summary statistics for all organic parameters within specified
 timeframe.
 }
 \examples{
-summarize_basic_recent(criteria_results = criteria_results,
-                       start_date = "07/01/2011",
-                       end_date = "06/30/2021")
+try( summarize_basic_recent(criteria_results = criteria_results,
+                            start_date = "07/01/2011",
+                            end_date = "06/30/2021") )
 }

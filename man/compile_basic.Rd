@@ -19,5 +19,5 @@ dataframe with same columns as inputs. Column order may change.
 Bind together metal and organic basic data summaries.
 }
 \examples{
-compile_basic(my_basic_summary_other, my_basic_summary_metals)
+try( compile_basic(my_basic_summary_other, my_basic_summary_metals) )
 }

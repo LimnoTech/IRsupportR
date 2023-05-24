@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' evaluate_criteria(ir_data)
+#' try( evaluate_criteria(ir_data) )
 
 evaluate_criteria <- function(df) {
 

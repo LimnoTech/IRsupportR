@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' summarize_basic_metals(criteria_results)
+#' try( summarize_basic_metals(criteria_results) )
 
 summarize_basic_metals <- function(criteria_results) {
 

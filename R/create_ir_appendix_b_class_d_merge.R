@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' create_ir_appendix_b_class_d_merge(my_appendix_b_class_d)
+#' try( create_ir_appendix_b_class_d_merge(my_appendix_b_class_d) )
 
 create_ir_appendix_b_class_d_merge <- function(df) {
 

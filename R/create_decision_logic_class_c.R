@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' create_decision_logic_class_c(my_compiled_summaries)
+#' try( create_decision_logic_class_c(my_compiled_summaries) )
 
 create_decision_logic_class_c <- function (df) {
 

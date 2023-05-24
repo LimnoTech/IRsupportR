@@ -11,11 +11,18 @@ Description: The objective of this package is to compile and evaluate historic
     water quality data to verify if the data supports impairments attributed to 
     toxics. In order to accomplish this objective, data from various datasets 
     are compiled and processed into one consistent dataset for comparing to 
-    numeric water quality criteria.  Categorization reevaluation decisions are 
-    proposed based on the implementation of a defined decision logic.  
+    numeric water quality criteria. Exceedances of the water quality criteria 
+    are determined and categorization reevaluation decisions are proposed based 
+    on the implementation of an approved decision logic.  
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10)
 RoxygenNote: 7.2.1
+Imports: 
+    dplyr,
+    magrittr,
+    openxlsx,
+    tidyr,
+    writexl

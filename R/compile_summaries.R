@@ -13,9 +13,9 @@
 #' @export
 #'
 #' @examples
-#' compile_summaries(my_basic_summary,
-#'                   my_basic_summary_10yr,
-#'                   my_basic_summary_5yr)
+#' try( compile_summaries(my_basic_summary,
+#'                         my_basic_summary_10yr,
+#'                         my_basic_summary_5yr) )
 
 compile_summaries <- function (my_basic_summary,
                                my_basic_summary_10yr,

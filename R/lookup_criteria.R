@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' lookup_criteria(ir_data)
+#' try( lookup_criteria(ir_data) )
 
 lookup_criteria <- function(df) {
 

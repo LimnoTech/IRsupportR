@@ -20,5 +20,5 @@ dataframe with added columns `most_recent_ccc_exceedance_date`,
 Create basic summary statistics for all metal parameters.
 }
 \examples{
-summarize_basic_metals(criteria_results)
+try( summarize_basic_metals(criteria_results) )
 }

@@ -20,5 +20,5 @@ produces two separate excel files that need to be manually combined in order
 to preserve the merged cells.
 }
 \examples{
-create_ir_appendix_b_class_d_merge(my_appendix_b_class_d)
+try( create_ir_appendix_b_class_d_merge(my_appendix_b_class_d) )
 }

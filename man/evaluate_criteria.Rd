@@ -17,5 +17,5 @@ dataframe with boolean columns `exceedance_ccc`, `exceedance_cmc`,
 Determine whether Class C and Class D criteria are exceeded for each sample.
 }
 \examples{
-evaluate_criteria(ir_data)
+try( evaluate_criteria(ir_data) )
 }

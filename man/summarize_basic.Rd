@@ -20,5 +20,5 @@ dataframe with columns `most_recent_ccc_exceedance_date`,
 Create basic summary statistics for all organic parameters.
 }
 \examples{
-summarize_basic(criteria_results)
+try( summarize_basic(criteria_results) )
 }

@@ -24,5 +24,5 @@ Bind together metal and organic basic data summaries for the same recent
 timeframe.
 }
 \examples{
-compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other)
+try( compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other) )
 }

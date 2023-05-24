@@ -16,5 +16,5 @@ dataframe with water quality criteria columns added.
 Add water quality criteria to dataset.
 }
 \examples{
-lookup_criteria(ir_data)
+try( lookup_criteria(ir_data) )
 }

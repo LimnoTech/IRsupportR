@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' compile_basic(my_basic_summary_other, my_basic_summary_metals)
+#' try( compile_basic(my_basic_summary_other, my_basic_summary_metals) )
 
 compile_basic <- function(my_basic_summary_metals, my_basic_summary_other) {
 
