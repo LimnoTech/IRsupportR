@@ -1,4 +1,4 @@
-#' Create Class D Results Appendix Table
+#' Create Class D Results Table
 #'
 #' Format table for inclusion in report appendices.
 #'

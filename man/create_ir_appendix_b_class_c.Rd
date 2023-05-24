@@ -2,7 +2,7 @@
 % Please edit documentation in R/create_ir_appendix_b_class_c.R
 \name{create_ir_appendix_b_class_c}
 \alias{create_ir_appendix_b_class_c}
-\title{Create Class C Results Appendix Table}
+\title{Create Class C Results Table}
 \usage{
 create_ir_appendix_b_class_c(my_decision_logic, five_year_start_date)
 }

@@ -2,13 +2,25 @@
 % Please edit documentation in R/create_ir_appendix_b_class_c_merge.R
 \name{create_ir_appendix_b_class_c_merge}
 \alias{create_ir_appendix_b_class_c_merge}
-\title{create_ir_appendix_b_class_c}
+\title{Create Class C Results Table with Merge Cell Formatting}
 \usage{
-create_ir_appendix_b_class_c_merge(my_decision_logic, five_year_start_date)
+create_ir_appendix_b_class_c_merge(df)
 }
 \arguments{
-\item{df}{}
+\item{dataframe}{obtained from
+\code{\link{create_ir_appendix_b_class_c}}.}
+}
+\value{
+Three excel files. One file has merged cells for cases with no CCC
+ and CMC water quality criteria. A second file has merged cells for cases
+ with no CMC criteria. A third file has no cell merging for cases with both
+ CCC and CMC criteria.
 }
 \description{
-create_ir_appendix_b_class_c
+Add additional formatting so certain cells are merged together. Function
+produces three separate excel files that need to be manually combined in
+order to preserve the merged cells.
+}
+\examples{
+create_ir_appendix_b_class_c_merge(my_appendix_b_class_c)
 }

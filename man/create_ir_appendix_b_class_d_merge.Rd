@@ -2,13 +2,23 @@
 % Please edit documentation in R/create_ir_appendix_b_class_d_merge.R
 \name{create_ir_appendix_b_class_d_merge}
 \alias{create_ir_appendix_b_class_d_merge}
-\title{create_ir_appendix_b_class_d_merge}
+\title{Create Class D Results Table with Merge Cell Formatting}
 \usage{
-create_ir_appendix_b_class_d_merge(my_decision_logic, five_year_start_date)
+create_ir_appendix_b_class_d_merge(df)
 }
 \arguments{
-\item{df}{}
+\item{dataframe}{obtained from
+\code{\link{create_ir_appendix_b_class_d}}.}
+}
+\value{
+Two excel files. One file has merged cells for cases with no Class D
+ water quality criteria. A second file has no cell merging.
 }
 \description{
-create_ir_appendix_b_class_d_merge
+Add additional formatting so certain cells are merged together. Function
+produces two separate excel files that need to be manually combined in order
+to preserve the merged cells.
+}
+\examples{
+create_ir_appendix_b_class_d_merge(my_appendix_b_class_d)
 }
