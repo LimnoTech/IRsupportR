@@ -11,10 +11,10 @@
 #' @export
 #'
 #' @examples
-#' try( create_ir_appendix_b_class_c(my_decision_logic_class_d,
-#'                                   five_year_start_date = "07/01/2016") )
+#' try( create_results_class_c(my_decision_logic_class_d,
+#'                             five_year_start_date = "07/01/2016") )
 
-create_ir_appendix_b_class_d <- function(my_decision_logic, five_year_start_date) {
+create_results_class_d <- function(my_decision_logic, five_year_start_date) {
 
 
   five_year_start_date <- as.POSIXct(five_year_start_date, format = "%m/%d/%Y")

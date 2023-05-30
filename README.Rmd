@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 
 The objective of this package is to compile and evaluate historic water quality data to verify if the data supports impairments attributed to toxics. In order to accomplish this objective, data from various datasets are compiled and processed into one consistent dataset for comparing to numeric water quality criteria. Exceedances of the water quality criteria are determined and categorization reevaluation decisions are proposed based on the implementation of an approved decision logic.
 
+
 ## Installation
 
 You can install the development version of IRsupportR from [GitHub](https://github.com/) with:
@@ -29,10 +30,12 @@ You can install the development version of IRsupportR from [GitHub](https://gith
 # install.packages("devtools")
 devtools::install_github("LimnoTech/IRsupportR")
 ```
+The repository can also be downloaded as a zip file by clicking on the green 'code' dropdown button.
+
 
 ## Using the Package
 
-This is a basic example which shows you how to solve a common problem:
+This package contains several functions that encompass the analysis for reevaluating toxic impairments in District of Columbia waterbodies.
 
 ### Data Processing
 
@@ -56,27 +59,27 @@ Multiple tables and spreadsheets are produced from the analysis and saved in the
 
 -   Final results as CSVs
 
-    -   appendix_b\_class_c.csv
+    -   results\_class_c.csv
 
-    -   appendix_b\_class_d.csv
+    -   results\_class_d.csv
 
 -   Final results as Excel spreadsheets to allow for merge cell formatting
 
     -   Class C
 
-        -   appendix_b\_class_c\_merge_part1.xlsx
+        -   results\_class_c\_merge_part1.xlsx
 
-        -   appendix_b\_class_c\_merge_part2.xlsx
+        -   results\_class_c\_merge_part2.xlsx
 
-        -   appendix_b\_class_c\_merge_part3.xlsx
+        -   results\_class_c\_merge_part3.xlsx
 
     -   Class D
 
-        -   appendix_b\_class_d\_merge_part1.xlsx
+        -   results\_class_d\_merge_part1.xlsx
 
-        -   appendix_b\_class_d\_merge_part2.xlsx
+        -   results\_class_d\_merge_part2.xlsx
 
 -   Final results as combined Excel spreadsheets. Includes merge cell formatting. Combined manually
 
-    -   manual_merge_parts/appendix_b\_class_c\_merged_all.xlsx
-    -   manual_merge_parts/appendix_b\_class_d\_merged_all.xlsx
+    -   manual_merge_parts/results\_class_c\_merged_all.xlsx
+    -   merge_parts_manual/results\_class_d\_merged_all.xlsx

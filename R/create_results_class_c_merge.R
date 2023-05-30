@@ -5,7 +5,7 @@
 #' order to preserve the merged cells.
 #'
 #' @param dataframe obtained from
-#'   \code{\link{create_ir_appendix_b_class_c}}.
+#'   \code{\link{create_results_class_c}}.
 #'
 #' @return Three excel files. One file has merged cells for cases with no CCC
 #'  and CMC water quality criteria. A second file has merged cells for cases
@@ -14,9 +14,9 @@
 #' @export
 #'
 #' @examples
-#' try( create_ir_appendix_b_class_c_merge(my_appendix_b_class_c) )
+#' try( create_results_class_c_merge(my_results_class_c) )
 
-create_ir_appendix_b_class_c_merge <- function (df) {
+create_results_class_c_merge <- function (df) {
 
 
 
@@ -27,11 +27,11 @@ create_ir_appendix_b_class_c_merge <- function (df) {
   #Updating contents of col M based on pollutant and exceedance value
   df <- df %>%
     dplyr::mutate(`# Samples Since Last Exceedance` = dplyr::case_when(`Pollutant` %in% pollutants_c_merge ~ "N/A – no Class C WQ criteria",
-                                                                                     TRUE ~ `# Samples Since Last Exceedance`))
+                                                                       TRUE ~ `# Samples Since Last Exceedance`))
 
   df <- df %>%
     dplyr::mutate(`Class C CMC Criterion (ug/L)` = dplyr::case_when(`Pollutant` %in% pollutants_c_merge_cmc ~ "N/A – no Class C CMC WQ criteria",
-                                                   TRUE ~ `Class C CMC Criterion (ug/L)`))
+                                                                    TRUE ~ `Class C CMC Criterion (ug/L)`))
 
   #Create new dataframe for values that need to be merged
   df_c_merge <- df %>%
@@ -47,11 +47,11 @@ create_ir_appendix_b_class_c_merge <- function (df) {
 
 
   #Creating a workbook from mergedValues data frame
-  openxlsx::write.xlsx(df_c_merge, file = "output/appendix_b_class_c_merge_part1.xlsx", rowNames = F)
-  openxlsx::write.xlsx(df_c_merge_cmc, file = "output/appendix_b_class_c_merge_part2.xlsx", rowNames = F)
+  openxlsx::write.xlsx(df_c_merge, file = "output/results_class_c_merge_part1.xlsx", rowNames = F)
+  openxlsx::write.xlsx(df_c_merge_cmc, file = "output/results_class_c_merge_part2.xlsx", rowNames = F)
 
-  mv <- openxlsx::loadWorkbook(file = "output/appendix_b_class_c_merge_part1.xlsx")
-  mv_cmc <- openxlsx::loadWorkbook(file = "output/appendix_b_class_c_merge_part2.xlsx")
+  mv <- openxlsx::loadWorkbook(file = "output/results_class_c_merge_part1.xlsx")
+  mv_cmc <- openxlsx::loadWorkbook(file = "output/results_class_c_merge_part2.xlsx")
 
 
   #Merging cells with for loop to reference row index
@@ -69,12 +69,12 @@ create_ir_appendix_b_class_c_merge <- function (df) {
     }
   }
   #Saving the workbook as an excel file
-  openxlsx::saveWorkbook(mv, "output/appendix_b_class_c_merge_part1.xlsx", overwrite = TRUE)
-  openxlsx::saveWorkbook(mv_cmc, "output/appendix_b_class_c_merge_part2.xlsx", overwrite = TRUE)
+  openxlsx::saveWorkbook(mv, "output/results_class_c_merge_part1.xlsx", overwrite = TRUE)
+  openxlsx::saveWorkbook(mv_cmc, "output/results_class_c_merge_part2.xlsx", overwrite = TRUE)
 
 
   # Save the df_no_merge dataframe as an excel file
-  writexl::write_xlsx(df_no_merge, "output/appendix_b_class_c_merge_part3.xlsx")
+  writexl::write_xlsx(df_no_merge, "output/results_class_c_merge_part3.xlsx")
 
 
 }

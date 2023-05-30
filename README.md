@@ -25,9 +25,13 @@ You can install the development version of IRsupportR from
 devtools::install_github("LimnoTech/IRsupportR")
 ```
 
+The repository can also be downloaded as a zip file by clicking on the
+green ‘code’ dropdown button.
+
 ## Using the Package
 
-This is a basic example which shows you how to solve a common problem:
+This package contains several functions that encompass the analysis for
+reevaluating toxic impairments in District of Columbia waterbodies.
 
 ### Data Processing
 
@@ -69,28 +73,28 @@ folder. They include the following:
 
 - Final results as CSVs
 
-  - appendix_b\_class_c.csv
+  - results_class_c.csv
 
-  - appendix_b\_class_d.csv
+  - results_class_d.csv
 
 - Final results as Excel spreadsheets to allow for merge cell formatting
 
   - Class C
 
-    - appendix_b\_class_c\_merge_part1.xlsx
+    - results_class_c\_merge_part1.xlsx
 
-    - appendix_b\_class_c\_merge_part2.xlsx
+    - results_class_c\_merge_part2.xlsx
 
-    - appendix_b\_class_c\_merge_part3.xlsx
+    - results_class_c\_merge_part3.xlsx
 
   - Class D
 
-    - appendix_b\_class_d\_merge_part1.xlsx
+    - results_class_d\_merge_part1.xlsx
 
-    - appendix_b\_class_d\_merge_part2.xlsx
+    - results_class_d\_merge_part2.xlsx
 
 - Final results as combined Excel spreadsheets. Includes merge cell
   formatting. Combined manually
 
-  - manual_merge_parts/appendix_b\_class_c\_merged_all.xlsx
-  - manual_merge_parts/appendix_b\_class_d\_merged_all.xlsx
+  - manual_merge_parts/results_class_c\_merged_all.xlsx
+  - merge_parts_manual/results_class_d\_merged_all.xlsx

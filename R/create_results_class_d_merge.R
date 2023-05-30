@@ -5,16 +5,16 @@
 #' to preserve the merged cells.
 #'
 #' @param dataframe obtained from
-#'   \code{\link{create_ir_appendix_b_class_d}}.
+#'   \code{\link{create_results_class_d}}.
 #'
 #' @return Two excel files. One file has merged cells for cases with no Class D
 #'  water quality criteria. A second file has no cell merging.
 #' @export
 #'
 #' @examples
-#' try( create_ir_appendix_b_class_d_merge(my_appendix_b_class_d) )
+#' try( create_results_class_d_merge(my_results_class_d) )
 
-create_ir_appendix_b_class_d_merge <- function(df) {
+create_results_class_d_merge <- function(df) {
 
 
 
@@ -24,8 +24,8 @@ create_ir_appendix_b_class_d_merge <- function(df) {
   # Update contents of col M based on pollutant and exceedance value
   df <- df %>%
     dplyr::mutate(`# Samples Since Last Exceedance` = dplyr::case_when(`Pollutant` %in% pollutants_d_merge &
-                                                                                       `# Exceedances 1990-2021` == "N/A - no Class D WQ criteria" ~ "N/A - no Class D WQ criteria",
-                                                                                     TRUE ~ `# Samples Since Last Exceedance`))
+                                                                         `# Exceedances 1990-2021` == "N/A - no Class D WQ criteria" ~ "N/A - no Class D WQ criteria",
+                                                                       TRUE ~ `# Samples Since Last Exceedance`))
 
   # Create separate dataframes for values that need to be merged and those that don't need to be merged
   df_merge <- df %>%
@@ -37,8 +37,8 @@ create_ir_appendix_b_class_d_merge <- function(df) {
 
 
   # Create a workbook from df_merge dataframe
-  openxlsx::write.xlsx(df_merge, file = "output/appendix_b_class_d_merge_part1.xlsx", rowNames = F)
-  mv <- openxlsx::loadWorkbook(file = "output/appendix_b_class_d_merge_part1.xlsx")
+  openxlsx::write.xlsx(df_merge, file = "output/results_class_d_merge_part1.xlsx", rowNames = F)
+  mv <- openxlsx::loadWorkbook(file = "output/results_class_d_merge_part1.xlsx")
 
   # Merge cells with for loop to reference row index
   for(i in 1:nrow(df_merge)) {
@@ -49,10 +49,10 @@ create_ir_appendix_b_class_d_merge <- function(df) {
   }
 
   # Save the merged workbook as an excel file
-  openxlsx::saveWorkbook(mv, "output/appendix_b_class_d_merge_part1.xlsx", overwrite = TRUE)
+  openxlsx::saveWorkbook(mv, "output/results_class_d_merge_part1.xlsx", overwrite = TRUE)
 
   # Save the df_no_merge dataframe as an excel file
-  writexl::write_xlsx(df_no_merge, "output/appendix_b_class_d_merge_part2.xlsx")
+  writexl::write_xlsx(df_no_merge, "output/results_class_d_merge_part2.xlsx")
 
 
 
