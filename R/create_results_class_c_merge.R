@@ -40,13 +40,13 @@ create_results_class_c_merge <- function (df) {
   df_c_merge_cmc <- df %>%
     dplyr::filter(`Class C CMC Criterion (ug/L)` == "N/A – no Class C CMC WQ criteria")
 
-  df_no_merge <- df %>%
+  df_c_no_merge <- df %>%
     dplyr::filter(!`# Samples Since Last Exceedance` == "N/A – no Class C WQ criteria") %>%
     dplyr::filter(!`Class C CMC Criterion (ug/L)` == "N/A – no Class C CMC WQ criteria")
 
 
 
-  #Creating a workbook from mergedValues data frame
+  #Create a workbook for each data frame
   openxlsx::write.xlsx(df_c_merge, file = "output/results_class_c_merge_part1.xlsx", rowNames = F)
   openxlsx::write.xlsx(df_c_merge_cmc, file = "output/results_class_c_merge_part2.xlsx", rowNames = F)
 
@@ -54,7 +54,7 @@ create_results_class_c_merge <- function (df) {
   mv_cmc <- openxlsx::loadWorkbook(file = "output/results_class_c_merge_part2.xlsx")
 
 
-  #Merging cells with for loop to reference row index
+  #Merge cells with for loop to reference row index
   for(i in 1:nrow(df_c_merge)) {
     x <- df_c_merge[i,13]
     if(x == "N/A – no Class C WQ criteria"){
@@ -68,13 +68,13 @@ create_results_class_c_merge <- function (df) {
       openxlsx::mergeCells(mv_cmc, 1, cols = 16:17, rows = i+1)
     }
   }
-  #Saving the workbook as an excel file
+
+  #Saving the merged workbooks as excel files
   openxlsx::saveWorkbook(mv, "output/results_class_c_merge_part1.xlsx", overwrite = TRUE)
   openxlsx::saveWorkbook(mv_cmc, "output/results_class_c_merge_part2.xlsx", overwrite = TRUE)
 
-
-  # Save the df_no_merge dataframe as an excel file
-  writexl::write_xlsx(df_no_merge, "output/results_class_c_merge_part3.xlsx")
+  # Save the df_no_merge dataframe as a csv file
+  write.csv(df_c_no_merge, file = "output/results_class_c_merge_part3.csv", row.names = F)
 
 
 }

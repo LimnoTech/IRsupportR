@@ -12,10 +12,10 @@
 #' @export
 #'
 #' @examples
-#' try( create_ir_appendix_b_reconciliation(my_decision_logic_class_c,
-#'                                           my_decision_logic_class_d) )
+#' try( create_results_reconciliation(my_decision_logic_class_c,
+#'                                    my_decision_logic_class_d) )
 
-create_ir_appendix_b_reconciliation <- function (my_decision_logic_class_c, my_decision_logic_class_d) {
+create_results_reconciliation <- function (my_decision_logic_class_c, my_decision_logic_class_d) {
 
   df_c <- my_decision_logic_class_c %>%
     dplyr::filter(!pollutant_group %in% metals | test_fraction == "DISSOLVED") %>% # Keep only dissolved metals. Remove metals where test fraction is TOTAL or NA

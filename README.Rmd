@@ -63,7 +63,7 @@ Multiple tables and spreadsheets are produced from the analysis and saved in the
 
     -   results\_class_d.csv
 
--   Final results as Excel spreadsheets to allow for merge cell formatting
+-   Final results with merged cell formatting. Excel files required for merged cells. Csv files used for parts with no merged cells
 
     -   Class C
 
@@ -71,15 +71,15 @@ Multiple tables and spreadsheets are produced from the analysis and saved in the
 
         -   results\_class_c\_merge_part2.xlsx
 
-        -   results\_class_c\_merge_part3.xlsx
+        -   results\_class_c\_merge_part3.csv
 
     -   Class D
 
         -   results\_class_d\_merge_part1.xlsx
 
-        -   results\_class_d\_merge_part2.xlsx
+        -   results\_class_d\_merge_part2.csv
 
--   Final results as combined Excel spreadsheets. Includes merge cell formatting. Combined manually
+-   Final results as combined Excel spreadsheets. Includes merged cell formatting. Combined manually
 
     -   manual_merge_parts/results\_class_c\_merged_all.xlsx
     -   merge_parts_manual/results\_class_d\_merged_all.xlsx
