@@ -24,5 +24,4 @@ Imports:
     dplyr,
     magrittr,
     openxlsx,
-    tidyr,
-    writexl
+    tidyr
