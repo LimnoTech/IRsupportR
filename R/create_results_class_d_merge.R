@@ -48,11 +48,11 @@ create_results_class_d_merge <- function(df) {
     }
   }
 
-  # Save the merged workbook as an excel file
+  #Saving the merged workbook as an excel file
   openxlsx::saveWorkbook(mv, "output/results_class_d_merge_part1.xlsx", overwrite = TRUE)
 
-  # Save the df_no_merge dataframe as an excel file
-  writexl::write_xlsx(df_no_merge, "output/results_class_d_merge_part2.xlsx")
+  # Save the df_no_merge dataframe as a csv file
+  write.csv(df_no_merge, file = "output/results_class_d_merge_part2.csv", row.names = F)
 
 
 

@@ -77,7 +77,8 @@ folder. They include the following:
 
   - results_class_d.csv
 
-- Final results as Excel spreadsheets to allow for merge cell formatting
+- Final results with merged cell formatting. Excel files required for
+  merged cells. Csv files used for parts with no merged cells
 
   - Class C
 
@@ -85,15 +86,15 @@ folder. They include the following:
 
     - results_class_c\_merge_part2.xlsx
 
-    - results_class_c\_merge_part3.xlsx
+    - results_class_c\_merge_part3.csv
 
   - Class D
 
     - results_class_d\_merge_part1.xlsx
 
-    - results_class_d\_merge_part2.xlsx
+    - results_class_d\_merge_part2.csv
 
-- Final results as combined Excel spreadsheets. Includes merge cell
+- Final results as combined Excel spreadsheets. Includes merged cell
   formatting. Combined manually
 
   - manual_merge_parts/results_class_c\_merged_all.xlsx
