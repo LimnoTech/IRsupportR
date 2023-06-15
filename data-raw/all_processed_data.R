@@ -1,4 +1,4 @@
-## code to prepare `all_processed_data` dataset goes here
+## Code to prepare `all_processed_data` dataset
 
 
 
@@ -179,4 +179,17 @@ pollutant_group <- readxl::read_excel("data-raw/reference_tables/pollutant_cross
 usethis::use_data(pollutant_group, overwrite = TRUE)
 
 
+# ------------------------------------------------------------------------------
+# Step 9 -- Create Summary Table for Tech Memo
+# ------------------------------------------------------------------------------
+
+dataset_summary <- all_processed_data %>%
+  dplyr::group_by(data_source) %>%
+  dplyr::summarise(min_date = format(min(sample_date), "%Y"),
+                   max_date = format(max(sample_date), "%Y"),
+                   date_range = paste0(min_date, "-", max_date),
+                   n_wb = dplyr::n_distinct(waterbody_segment),
+                   n_pollutants = dplyr::n_distinct(pollutant_name),
+                   n_samples = dplyr::n_distinct(sample_id),
+                   n_compare = dplyr::n())
 
