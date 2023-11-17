@@ -46,7 +46,7 @@ df <- df %>%
 ### Filter_out_qc_types
 # Keep Duplicates: "FD", "FIELD DUP", "FIELD-DUP","DUP", "DUPLICATE"
 # Remove QC blanks
-qc_types <- c("QUALITY CONTROL SAMPLE-FIELD BLANK", "RB", "RINSATE BLANK")
+qc_types <- c("QUALITY CONTROL SAMPLE-FIELD BLANK", "RB", "RINSATE BLANK", "MS/MSD")
 
 
 df <- df %>%
