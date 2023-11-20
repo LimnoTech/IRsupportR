@@ -33,8 +33,8 @@ df <- df %>%
 
 # Filter for analysis timeframe and create column for year and month
 df <- df %>%
-  dplyr::filter(sample_date >= '1990-01-01',
-                sample_date <= '2021-06-30') %>%
+  dplyr::filter(sample_date >= '1990-01-01') %>%
+                # sample_date <= '2021-06-30') %>%
   dplyr::mutate(year = lubridate::year(sample_date),
                 month = lubridate::month(sample_date))
 
