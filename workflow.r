@@ -10,15 +10,20 @@ devtools::load_all()
 
 
 # ------------------------------------------------------------------------------
-# 0. Load Processed Data
+# 0. Load Processed Data & Update Variables
 # ------------------------------------------------------------------------------
 
 ir_data <- all_processed_data
 
-# Categories of pollutant_group
+# Categories of pollutant_group - Updates also required in pollutant crosswalk spreadsheet
 metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
 organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PAH1", "PAH2","PAH3", "PCB_TOTAL")
 
+# Timeframe for analysis - Update as needed
+start_date_5yr <- "07/01/2018"
+end_date_5yr <- "06/30/2023"
+start_date_10yr <- "07/01/2013"
+end_date_10yr <- "06/30/2023"
 
 
 # ------------------------------------------------------------------------------
@@ -56,10 +61,10 @@ my_basic_summary <- compile_basic(my_basic_summary_other, my_basic_summary_metal
 # ------------------------------------------------------------------------------
 
 # 4a. Metals Only
-my_basic_summary_10yr_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = "07/01/2011", end_date = "06/30/2021")
+my_basic_summary_10yr_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = start_date_10yr, end_date = end_date_10yr)
 
 # 4b. Other (non Metal) parameters
-my_basic_summary_10yr_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2011", end_date = "06/30/2021")
+my_basic_summary_10yr_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = start_date_10yr, end_date = end_date_10yr)
 
 # 4c. Compile All Last 5 Year Summaries
 my_basic_summary_10yr <- compile_basic_recent(my_basic_summary_10yr_metals, my_basic_summary_10yr_other)
@@ -71,10 +76,10 @@ my_basic_summary_10yr <- compile_basic_recent(my_basic_summary_10yr_metals, my_b
 # ------------------------------------------------------------------------------
 
 # 5a. Metals Only
-my_basic_summary_5yr_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+my_basic_summary_5yr_metals <- summarize_basic_recent_metals(criteria_results = criteria_results, start_date = start_date_5yr, end_date = end_date_5yr)
 
 # 5b. Other (non Metal) parameters
-my_basic_summary_5yr_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = "07/01/2016", end_date = "06/30/2021")
+my_basic_summary_5yr_other <- summarize_basic_recent(criteria_results = criteria_results, start_date = start_date_5yr, end_date = end_date_5yr)
 
 # 5c. Compile All Last 5 Year Summaries
 my_basic_summary_5yr <- compile_basic_recent(my_basic_summary_5yr_metals, my_basic_summary_5yr_other)
@@ -86,7 +91,7 @@ my_basic_summary_5yr <- compile_basic_recent(my_basic_summary_5yr_metals, my_bas
 # ------------------------------------------------------------------------------
 
 # Consolidate Summaries
-my_compiled_summaries <- compile_summaries(my_basic_summary, my_basic_summary_10yr, my_basic_summary_5yr)
+my_compiled_summaries <- compile_summaries(my_basic_summary, my_basic_summary_10yr, my_basic_summary_5yr, five_year_start_date = start_date_5yr, five_year_end_date = end_date_5yr, ten_year_start_date = start_date_10yr, ten_year_end_date = end_date_10yr)
 
 
 # ------------------------------------------------------------------------------
@@ -94,10 +99,10 @@ my_compiled_summaries <- compile_summaries(my_basic_summary, my_basic_summary_10
 # ------------------------------------------------------------------------------
 
 # 7a. Class C
-my_decision_logic_class_c <- create_decision_logic_class_c(my_compiled_summaries)
+my_decision_logic_class_c <- create_decision_logic_class_c(my_compiled_summaries, five_year_start_date = start_date_5yr, five_year_end_date = end_date_5yr, ten_year_start_date = start_date_10yr, ten_year_end_date = end_date_10yr)
 
 # 7b. Class D
-my_decision_logic_class_d <- create_decision_logic_class_d(my_compiled_summaries)
+my_decision_logic_class_d <- create_decision_logic_class_d(my_compiled_summaries, five_year_start_date = start_date_5yr, five_year_end_date = end_date_5yr, ten_year_start_date = start_date_10yr, ten_year_end_date = end_date_10yr)
 
 
 
@@ -106,11 +111,11 @@ my_decision_logic_class_d <- create_decision_logic_class_d(my_compiled_summaries
 # ------------------------------------------------------------------------------
 
 # 8a. Consolidate for Results - Class C
-my_results_class_c <- create_results_class_c(my_decision_logic_class_c, five_year_start_date = "07/01/2016")
+my_results_class_c <- create_results_class_c(my_decision_logic_class_c, five_year_start_date = start_date_5yr, five_year_end_date = end_date_5yr, ten_year_start_date = start_date_10yr, ten_year_end_date = end_date_10yr)
 write.csv(my_results_class_c, file = "output/results_class_c.csv", row.names = F)
 
 # 8b. Consolidate for Results - Class D
-my_results_class_d <- create_results_class_d(my_decision_logic_class_d, five_year_start_date = "07/01/2016")
+my_results_class_d <- create_results_class_d(my_decision_logic_class_d, five_year_start_date = start_date_5yr, five_year_end_date = end_date_5yr, ten_year_start_date = start_date_10yr, ten_year_end_date = end_date_10yr)
 write.csv(my_results_class_d, file = "output/results_class_d.csv", row.names = F)
 
 # 8c. Reconcile Class C and Class D decisions

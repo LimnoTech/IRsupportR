@@ -19,7 +19,11 @@
 
 compile_summaries <- function (my_basic_summary,
                                my_basic_summary_10yr,
-                               my_basic_summary_5yr) {
+                               my_basic_summary_5yr,
+                               five_year_start_date,
+                               five_year_end_date,
+                               ten_year_start_date,
+                               ten_year_end_date) {
 
 
   # Join Summary Tables
@@ -35,11 +39,27 @@ compile_summaries <- function (my_basic_summary,
 
 
   # Consolidate CCC and CMC
+  five_year_start_year = format(as.Date(five_year_start_date, format="%m/%d/%Y"), "%Y")
+  five_year_end_year <- format(as.Date(five_year_end_date, format="%m/%d/%Y"), "%Y")
+  ten_year_start_year <- format(as.Date(ten_year_start_date, format="%m/%d/%Y"), "%Y")
+  ten_year_end_year <- format(as.Date(ten_year_end_date, format="%m/%d/%Y"), "%Y")
+
+  n_ccc_exceedance_5yr <- paste0("n_ccc_exceedance_", five_year_start_year, "_to_", five_year_end_year)
+  n_ccc_exceedance_10yr <- paste0("n_ccc_exceedance_", ten_year_start_year, "_to_", ten_year_end_year)
+  n_cmc_exceedance_5yr <- paste0("n_cmc_exceedance_", five_year_start_year, "_to_", five_year_end_year)
+  n_cmc_exceedance_10yr <- paste0("n_cmc_exceedance_", ten_year_start_year, "_to_", ten_year_end_year)
+
+  n_c_exceedance_5yr <- paste0("n_c_exceedance_", five_year_start_year, "_to_", five_year_end_year)
+  n_c_exceedance_10yr <- paste0("n_c_exceedance_", ten_year_start_year, "_to_", ten_year_end_year)
+
+
+
+  df$n_c_exceedance = pmax(df$n_ccc_exceedance, df$n_cmc_exceedance, na.rm = TRUE) # Columns exist with current names
+  df[[n_c_exceedance_10yr]] = pmax(df[[n_ccc_exceedance_10yr]], df[[n_cmc_exceedance_10yr]], na.rm = TRUE) # Create columns with new names
+  df[[n_c_exceedance_5yr]] = pmax(df[[n_ccc_exceedance_5yr]], df[[n_cmc_exceedance_5yr]], na.rm = TRUE) # Create columns with new names
+
   df <- df %>%
-    dplyr::mutate(n_c_exceedance = pmax(n_ccc_exceedance, n_cmc_exceedance, na.rm = TRUE),
-                  n_c_exceedance_2011_to_2021 = pmax(n_ccc_exceedance_2011_to_2021, n_cmc_exceedance_2011_to_2021, na.rm = TRUE),
-                  n_c_exceedance_2016_to_2021 = pmax(n_ccc_exceedance_2016_to_2021, n_cmc_exceedance_2016_to_2021, na.rm = TRUE),
-                  n_since_most_recent_c_exceedance = pmax(n_since_most_recent_ccc_exceedance, n_since_most_recent_cmc_exceedance, na.rm = TRUE),
+    dplyr::mutate(n_since_most_recent_c_exceedance = pmax(n_since_most_recent_ccc_exceedance, n_since_most_recent_cmc_exceedance, na.rm = TRUE),
                   most_recent_c_exceedance_date = pmax(most_recent_ccc_exceedance_date, most_recent_cmc_exceedance_date, na.rm = TRUE))
 
   # Join Additional Lookup Tables
