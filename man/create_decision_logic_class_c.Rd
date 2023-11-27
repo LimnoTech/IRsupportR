@@ -4,7 +4,13 @@
 \alias{create_decision_logic_class_c}
 \title{Create Class C Decision Logic}
 \usage{
-create_decision_logic_class_c(df)
+create_decision_logic_class_c(
+  df,
+  five_year_start_date,
+  five_year_end_date,
+  ten_year_start_date,
+  ten_year_end_date
+)
 }
 \arguments{
 \item{my_compiled_summaries}{obtained from

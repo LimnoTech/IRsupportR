@@ -1,7 +1,8 @@
 #' Basic Summary of Metals for Recent Timeframe
 #'
 #' Create basic summary statistics for all metal parameters within specified
-#' timeframe.
+#' timeframe. For metals, sample counts depend on the test fraction. Class C
+#' uses dissolved metals. Class D uses total metals.
 #'
 #' @param criteria_results obtained from \code{\link{evaluate_criteria}}.
 #' @param start_date beginning of date range of interest in "mm/dd/yyyy" format.

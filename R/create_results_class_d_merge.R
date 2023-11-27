@@ -24,7 +24,7 @@ create_results_class_d_merge <- function(df) {
   # Update contents of col M based on pollutant and exceedance value
   df <- df %>%
     dplyr::mutate(`# Samples Since Last Exceedance` = dplyr::case_when(`Pollutant` %in% pollutants_d_merge &
-                                                                         `# Exceedances 1990-2021` == "N/A - no Class D WQ criteria" ~ "N/A - no Class D WQ criteria",
+                                                                         `# Exceedances` == "N/A - no Class D WQ criteria" ~ "N/A - no Class D WQ criteria",
                                                                        TRUE ~ `# Samples Since Last Exceedance`))
 
   # Create separate dataframes for values that need to be merged and those that don't need to be merged

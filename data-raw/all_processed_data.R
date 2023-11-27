@@ -28,7 +28,7 @@ df <- df %>%
 
 
 # ------------------------------------------------------------------------------
-# Step 1 -- Filter & Format Date:  01/01/1990 - 06/30/2021
+# Step 1 -- Filter & Format Date
 # ------------------------------------------------------------------------------
 
 # Filter for analysis timeframe and create column for year and month

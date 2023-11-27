@@ -12,7 +12,10 @@
 #'
 #' @examples
 #' try( create_results_class_c(my_decision_logic_class_d,
-#'                             five_year_start_date = "07/01/2016") )
+#'                             five_year_start_date = "07/01/2018",
+#'                             five_year_end_date <- "06/30/2023",
+#'                             ten_year_start_date <- "07/01/2013",
+#'                             ten_year_end_date <- "06/30/2023")
 
 create_results_class_d <- function(my_decision_logic,
                                    five_year_start_date,
@@ -87,9 +90,9 @@ create_results_class_d <- function(my_decision_logic,
     dplyr::select(dplyr::one_of(cols))
 
 
-  rename_n_samples_10yr <- paste("# of Samples Within Last 10 Years (", range_10yr, ")")
-  rename_n_d_exceedance_10yr <- paste("# of Exceedances Within Last 10 Years (", range_10yr, ")")
-  rename_n_samples_5yr <- paste("# of Samples Within Last 5 Years (", range_5yr, ")")
+  rename_n_samples_10yr <- paste0("# of Samples Within Last 10 Years (", range_10yr, ")")
+  rename_n_d_exceedance_10yr <- paste0("# of Exceedances Within Last 10 Years (", range_10yr, ")")
+  rename_n_samples_5yr <- paste0("# of Samples Within Last 5 Years (", range_5yr, ")")
 
 
   df <- df %>%
@@ -99,16 +102,16 @@ create_results_class_d <- function(my_decision_logic,
                   "Test Fraction " = test_fraction,
                   "Current Categorization in 2020 IR" = current_category,
                   "Impaired Use Class in 2020 IR" = n_sample_dates,
-                  "# Samples 1990-2021" = n_samples,
-                  "# Detects 1990-2021" = n_detects,
-                  "# Exceedances 1990-2021" = n_d_exceedance,
+                  "# Samples" = n_samples,
+                  "# Detects" = n_detects,
+                  "# Exceedances" = n_d_exceedance,
                   !!rename_n_samples_10yr := n_samples_10yr,
                   !!rename_n_d_exceedance_10yr := n_d_exceedance_10yr,
                   !!rename_n_samples_5yr := n_samples_5yr,
                   "# Samples Since Last Exceedance" = n_since_most_recent_d_exceedance,
                   "Criterion (ug/L)" = d_criterion,
                   "Range of Ratios Between Detection Limit and Criterion" = d_dl_ratio_range,
-                  "Was Last Exceedance Within Current 5-year Assessment Period (2016 - 2021)?" = was_last_d_exceedance_within_5_year_period,
+                  "Was Last Exceedance Within Current 5-year Assessment Period?" = was_last_d_exceedance_within_5_year_period,
                   "Fish Tissue Results" = fish_tissue_results_class_d,
                   "Reevaluation Categorization Decision for Class D" = d_decision_description,
                   "Decision Logic Case #" = d_decision_case_number)

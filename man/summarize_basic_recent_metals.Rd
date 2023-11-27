@@ -18,7 +18,8 @@ dataframe with added columns based on specified timeframe.
 }
 \description{
 Create basic summary statistics for all metal parameters within specified
-timeframe.
+timeframe. For metals, sample counts depend on the test fraction. Class C
+uses dissolved metals. Class D uses total metals.
 }
 \examples{
 try( summarize_basic_recent_metals(criteria_results = criteria_results,

@@ -18,6 +18,8 @@ dataframe with added columns `most_recent_ccc_exceedance_date`,
 }
 \description{
 Create basic summary statistics for all metal parameters.
+For metals, sample counts depend on the test fraction. Class C uses dissolved
+metals. Class D uses total metals.
 }
 \examples{
 try( summarize_basic_metals(criteria_results) )

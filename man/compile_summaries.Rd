@@ -7,7 +7,11 @@
 compile_summaries(
   my_basic_summary,
   my_basic_summary_10yr,
-  my_basic_summary_5yr
+  my_basic_summary_5yr,
+  five_year_start_date,
+  five_year_end_date,
+  ten_year_start_date,
+  ten_year_end_date
 )
 }
 \arguments{

@@ -4,7 +4,13 @@
 \alias{create_results_class_c}
 \title{Create Class C Results Table}
 \usage{
-create_results_class_c(my_decision_logic, five_year_start_date)
+create_results_class_c(
+  my_decision_logic,
+  five_year_start_date,
+  five_year_end_date,
+  ten_year_start_date,
+  ten_year_end_date
+)
 }
 \arguments{
 \item{my_decision_logic}{obtained from
@@ -21,5 +27,8 @@ Format table for inclusion in report appendices.
 }
 \examples{
 try( create_results_class_c(my_decision_logic_class_c,
-                            five_year_start_date = "07/01/2016") )
+                            five_year_start_date = "07/01/2018",
+                            five_year_end_date <- "06/30/2023",
+                            ten_year_start_date <- "07/01/2013",
+                            ten_year_end_date <- "06/30/2023")
 }
