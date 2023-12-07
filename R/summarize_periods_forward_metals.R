@@ -35,12 +35,12 @@ summarize_periods_forward_metals <- function(criteria_results) {
 
     # CCC Exceedances
     for (row in 1:nrow(df_exceed_ccc)) {
-      seg <- df_exceed_ccc[row, "waterbody_segment"]
-      grp <- df_exceed_ccc[row, "pollutant_group"]
-      frc <- df_exceed_ccc[row, "test_fraction"]
-      dat <- df_exceed_ccc[row, "sample_date"]
-      yr <- df_exceed_ccc[row, "year"]
-      mo <- df_exceed_ccc[row, "month"]
+      seg <- df_exceed_ccc$waterbody_segment[row]
+      grp <- df_exceed_ccc$pollutant_group[row]
+      frc <- df_exceed_ccc$test_fraction[row]
+      dat <- df_exceed_ccc$sample_date[row]
+      yr <- df_exceed_ccc$year[row]
+      mo <- df_exceed_ccc$month[row]
 
 
       # if sample_month is from January to June, filter between 7/1/(sample_year - 1) and 6/30/(sample_year + 2)
@@ -76,12 +76,12 @@ summarize_periods_forward_metals <- function(criteria_results) {
 
     # CMC Exceedances
     for (row in 1:nrow(df_exceed_cmc)) {
-      seg <- df_exceed_cmc[row, "waterbody_segment"]
-      grp <- df_exceed_cmc[row, "pollutant_group"]
-      frc <- df_exceed_cmc[row, "test_fraction"]
-      dat <- df_exceed_cmc[row, "sample_date"]
-      yr <- df_exceed_cmc[row, "year"]
-      mo <- df_exceed_cmc[row, "month"]
+      seg <- df_exceed_cmc$waterbody_segment[row]
+      grp <- df_exceed_cmc$pollutant_group[row]
+      frc <- df_exceed_cmc$test_fraction[row]
+      dat <- df_exceed_cmc$sample_date[row]
+      yr <- df_exceed_cmc$year[row]
+      mo <- df_exceed_cmc$month[row]
 
 
       # if sample_month is from January to June, filter between 7/1/(sample_year - 1) and 6/30/(sample_year + 2)
@@ -115,12 +115,12 @@ summarize_periods_forward_metals <- function(criteria_results) {
 
     # Class D Exceedances
     for (row in 1:nrow(df_exceed_d)) {
-      seg <- df_exceed_d[row, "waterbody_segment"]
-      grp <- df_exceed_d[row, "pollutant_group"]
-      frc <- df_exceed_d[row, "test_fraction"]
-      dat <- df_exceed_d[row, "sample_date"]
-      yr <- df_exceed_d[row, "year"]
-      mo <- df_exceed_d[row, "month"]
+      seg <- df_exceed_d$waterbody_segment[row]
+      grp <- df_exceed_d$pollutant_group[row]
+      frc <- df_exceed_d$test_fraction[row]
+      dat <- df_exceed_d$sample_date[row]
+      yr <- df_exceed_d$year[row]
+      mo <- df_exceed_d$month[row]
 
 
       # if sample_month is from January to June, filter between 7/1/(sample_year - 1) and 6/30/(sample_year + 2)

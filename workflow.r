@@ -135,6 +135,12 @@ my_results_class_d_merge <- create_results_class_d_merge(my_results_class_d)
 
 # Detailed Exceedance Summary (Sum exceedances for three year periods starting in June and ending in July)
 
+# Categories for Basic Summary
+basic_metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
+basic_pahs <- c("PAH1", "PAH2", "PAH3")
+basic_other <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PCB_TOTAL")
+
+
 # 5a. Metals Only
 my_period_summary_forward_metals <- summarize_periods_forward_metals(criteria_results)
 
@@ -145,8 +151,9 @@ my_period_summary_forward_pah <- summarize_periods_forward_pah(criteria_results)
 my_period_summary_forward_other <- summarize_periods_forward(criteria_results)
 
 # 5d. Compile All Period Summaries
-my_period_summary_forward <- compile_basic_recent(my_period_summary_forward_metals,  my_period_summary_forward_pah, my_period_summary_forward_other)
+my_period_summary_forward <- my_period_summary_forward_metals %>%
+  dplyr::bind_rows(my_period_summary_forward_pah, my_period_summary_forward_other)
 
 # 5e. Format period summary
-my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2021")
+my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2023")
 
