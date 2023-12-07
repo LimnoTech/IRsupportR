@@ -156,4 +156,5 @@ my_period_summary_forward <- my_period_summary_forward_metals %>%
 
 # 5e. Format period summary
 my_formatted_period <- format_period_summary(my_period_summary_forward, period_end_year = "2023")
+write.csv(my_formatted_period, file = "output/results_3_year_exceedances", row.names = F)
 
