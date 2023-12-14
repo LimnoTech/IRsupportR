@@ -95,11 +95,11 @@ create_results_class_c <- function (my_decision_logic,
   rename_n_samples_5yr <- paste0("# of Samples Within Last 5 Years (", range_5yr, ")")
 
 
-  df <- df %>%
+  df_renamed <- df %>%
     dplyr::rename("Waterbody" = waterbody_segment,
                   "Pollutant" = pollutant_name,
                   "Pollutant Group" = pollutant_group,
-                  "Test Fraction " = test_fraction,
+                  "Test Fraction" = test_fraction,
                   "Current Categorization in 2020 IR" = current_category,
                   "Impaired Use Class in 2020 IR" = impaired_use_2020_ir,
                   "# Samples" = n_samples,
@@ -121,7 +121,7 @@ create_results_class_c <- function (my_decision_logic,
 
 
 
-  return(df)
+  return(list(df_renamed, df))
 
 
 }

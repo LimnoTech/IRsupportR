@@ -112,20 +112,20 @@ my_decision_logic_class_d <- create_decision_logic_class_d(my_compiled_summaries
 
 # 8a. Consolidate for Results - Class C
 my_results_class_c <- create_results_class_c(my_decision_logic_class_c, five_year_start_date = start_date_5yr, five_year_end_date = end_date_5yr, ten_year_start_date = start_date_10yr, ten_year_end_date = end_date_10yr)
-write.csv(my_results_class_c, file = "output/results_class_c.csv", row.names = F)
+write.csv(my_results_class_c[[1]], file = "output/results_class_c.csv", row.names = F)
 
 # 8b. Consolidate for Results - Class D
 my_results_class_d <- create_results_class_d(my_decision_logic_class_d, five_year_start_date = start_date_5yr, five_year_end_date = end_date_5yr, ten_year_start_date = start_date_10yr, ten_year_end_date = end_date_10yr)
-write.csv(my_results_class_d, file = "output/results_class_d.csv", row.names = F)
+write.csv(my_results_class_d[[1]], file = "output/results_class_d.csv", row.names = F)
 
 # 8c. Reconcile Class C and Class D decisions
 my_results_reconciliation <- create_results_reconciliation(my_decision_logic_class_c, my_decision_logic_class_d)
 write.csv(my_results_reconciliation, file = "output/results_reconciliation.csv", row.names = F)
 
 # 8d. Recreate Results - Class C tables with merge formatting
-my_results_class_c_merge <- create_results_class_c_merge(my_results_class_c)
+my_results_class_c_merge <- create_results_class_c_merge(my_results_class_c[[1]])
 
 # 8e. Recreate Results - Class D tables with merge formatting
-my_results_class_d_merge <- create_results_class_d_merge(my_results_class_d)
+my_results_class_d_merge <- create_results_class_d_merge(my_results_class_d[[1]])
 
 
