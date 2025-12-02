@@ -6,10 +6,10 @@
 # Step 0 -- Import Data & Initial Processing
 # ------------------------------------------------------------------------------
 
-column_types <- c(rep("text", times = 4), "date", rep("text", times = 7), "numeric", rep("text", times = 7), "numeric", rep("text", times = 7))
+column_types <- c(rep("text", times = 4), "date", rep("text", times = 7), "numeric", rep("text", times = 7), "numeric", rep("text", times = 2))
 
 
-usgs_nwis <- readxl::read_excel("data-raw/formatted_data/USGS_NWIS.xlsx", sheet = "Formatted", col_types = column_types)
+usgs_wdfn <- readxl::read_excel("data-raw/formatted_data/USGS_WDFN.xlsx", sheet = "Formatted", col_types = column_types)
 usgs_trib_study <- readxl::read_excel("data-raw/formatted_data/USGS_Tributary_Study.xlsx", sheet = "Formatted", col_types = column_types)
 anacostia_sed <- readxl::read_excel("data-raw/formatted_data/Anacostia_River_Sediment_Project.xlsm", sheet = "Formatted_All", col_types = column_types)
 toxics_phase1 <- readxl::read_excel("data-raw/formatted_data/District_of_Columbia_Toxic_Characterization_Phase_1.xlsx", sheet = "Formatted", col_types = column_types)
@@ -19,7 +19,7 @@ background_study <- readxl::read_excel("data-raw/formatted_data/DOEE_Background_
 
 
 # Combine datasets
-df <- dplyr::bind_rows(usgs_nwis, usgs_trib_study, anacostia_sed, toxics_phase1, toxics_phase2, doee_lab, background_study)
+df <- dplyr::bind_rows(usgs_wdfn, usgs_trib_study, anacostia_sed, toxics_phase1, toxics_phase2, doee_lab, background_study)
 
 
 # Convert all text columns to uppercase
@@ -191,4 +191,4 @@ dataset_summary <- all_processed_data %>%
                    n_pollutants = dplyr::n_distinct(pollutant_name),
                    n_samples = dplyr::n_distinct(sample_id),
                    n_compare = dplyr::n())
-
+writexl::write_xlsx(dataset_summary, "output/dataset_summary.xlsx")
