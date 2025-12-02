@@ -34,7 +34,6 @@ df <- df %>%
 # Filter for analysis timeframe and create column for year and month
 df <- df %>%
   dplyr::filter(sample_date >= '1990-01-01') %>%
-                # sample_date <= '2021-06-30') %>%
   dplyr::mutate(year = lubridate::year(sample_date),
                 month = lubridate::month(sample_date))
 
@@ -59,7 +58,7 @@ df <- df %>%
 # Step 3 -- Assign Waterbody
 # ------------------------------------------------------------------------------
 
-df_wb <- readxl::read_excel("data-raw/reference_tables/Location_ID_waterbody_crosswalk_20230113.xlsx", sheet = "Import")
+df_wb <- readxl::read_excel("data-raw/reference_tables/Location_ID_waterbody_crosswalk_20251201.xlsx", sheet = "Import")
 
 df_wb <- df_wb %>%
   dplyr::select(location_id, waterbody_segment) %>%
