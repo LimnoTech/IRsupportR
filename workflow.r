@@ -20,10 +20,10 @@ metals <- c("ARSENIC", "COPPER", "LEAD", "MERCURY", "ZINC")
 organics <- c("CHLORDANE_TECHNICAL", "DDD", "DDE", "DDT", "DIELDRIN", "HEPTACHLOR_EPOXIDE", "PAH1", "PAH2","PAH3", "PCB_TOTAL")
 
 # Timeframe for analysis - Update as needed
-start_date_5yr <- "07/01/2018"
-end_date_5yr <- "06/30/2023"
-start_date_10yr <- "07/01/2013"
-end_date_10yr <- "06/30/2023"
+start_date_5yr <- "07/01/2020"
+end_date_5yr <- "06/30/2025"
+start_date_10yr <- "07/01/2015"
+end_date_10yr <- "06/30/2025"
 
 
 # ------------------------------------------------------------------------------
