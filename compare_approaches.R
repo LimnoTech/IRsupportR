@@ -17,15 +17,15 @@ library(openxlsx)
 
 
 # Dataset 1
-label_1 = "2024"
+label_1 = "2026"
 file_c_1 <- "output/results_class_c.csv"
 file_d_1 <- "output/results_class_d.csv"
 
 
 # Dataset 2
-label_2 = "2022"
-file_c_2 <- "output/Results_for_2022_Integrated_Report/results_class_c.csv"
-file_d_2 <- "output/Results_for_2022_Integrated_Report/results_class_d.csv"
+label_2 = "2024"
+file_c_2 <- "output/Results_for_2024_Integrated_Report/results_class_c.csv"
+file_d_2 <- "output/Results_for_2024_Integrated_Report/results_class_d.csv"
 
 
 # ------------------------------------------------------------------------------
@@ -94,15 +94,12 @@ compare_d <- results_d_2 %>%
                                                TRUE ~ "No"))
 
 
-# datasets <- list('Class C - 2022 vs 2024' = compare_c, 'Class D - 2022 vs 2024' = compare_d)
-# datasets <- list(paste0("Class C - ", label_2, " vs ", label_1) = compare_c, paste0("Class D - ", label_2, " vs ", label_1) = compare_d)
-
 datasets <- list(compare_c, compare_d)
 names(datasets) <- c(
   paste0("Class C - ", label_2, " vs ", label_1),
   paste0("Class D - ", label_2, " vs ", label_1)
 )
-write.xlsx(datasets, file='output/results_comparison.xlsx')
+write.xlsx(datasets, file= paste0("output/results_comparison_", label_2, "_vs_", label_1, ".xlsx"))
 
 
 
